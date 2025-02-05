@@ -1,8 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root{
     --turquoise: #23f7dd;
-    --black : #000000;
+    --noir : #000000;
     --or : #e2db8a;
     --blanc : #ffffff;
     --gris : #3f3d3d;
-
+    --police : montserrat;
 }
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.bandeau {
+    display: flex;
+    background-color: var(--noir);
+    justify-content: space-between;
+    font-family: var(--police);
+    font-weight: bold;
+    
+}
+.bandeau div {
+    display: flex;
+    align-items: center;
+}
+.bandeau a {
+    text-decoration: none;
+    color: var(--gris);
+    margin: 0px 10px 0px 20px;
+}
+
+.bandeau img[src="logo.png"]{
+    width: 75px;
+    margin-left: 85px;
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 5px;
+}
+
+.bandeau img[src="icon_profil_gris.png"]{
+    width: 37px;
+    margin-right: 60px;
+}
+
+a[href="page_inscription.html"]{
+    border: var(--turquoise) 1.5px solid;
+    padding: 5px 12px;
+    border-radius: 5px;
+    color: var(--turquoise);
+}
+
+a[href="page_inscription.html"]:hover {
+    border-color: var(--turquoise);
+    color: var(--turquoise);
+    text-shadow: 0px 0px 15px var(--turquoise);
+    box-shadow: 0px 0px 7px var(--turquoise);
+    
+}
+
+.bandeau img[src="icon_profil_gris.png"]:hover {
+    content: url("icon_profil.png");
+}
+
+a:hover {
+    color: var(--blanc);   
+}
+
+span{
+    color: var(--gris);
+    margin-left: 15px;
+    font-size: 20px;
+}
+
