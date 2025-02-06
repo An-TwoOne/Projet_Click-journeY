@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --turquoise: #23f7dd;
+    --noir : #000000;
+    --or : #e2db8a;
+    --blanc : #ffffff;
+    --gris : #3f3d3d;
+    --police : montserrat;
+    --taille-police : 18px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--noir);
+}
+
+.bandeau {
+    display: flex;
+    background-color: var(--noir);
+    justify-content: space-between;
+    font-family: var(--police);
+    font-weight: bold;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    box-sizing: border-box;
+}
+.bandeau div {
+    display: flex;
+    align-items: center;
+}
+.bandeau a {
+    text-decoration: none;
+    color: var(--gris);
+    margin: 0px 10px 0px 20px;
+}
+
+.bandeau img[src="logo.png"]{
+    width: 75px;
+    margin-left: 85px;
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 5px;
+}
+
+.bandeau img[src="icon_profil_gris.png"]{
+    width: 37px;
+    margin-right: 60px;
+}
+
+a[href="page_inscription.html"]{
+    border: var(--turquoise) 1.5px solid;
+    padding: 5px 12px;
+    border-radius: 5px;
+    color: var(--turquoise);
+}
+
+a[href="page_inscription.html"]:hover {
+    border-color: var(--turquoise);
+    color: var(--turquoise);
+    text-shadow: 0px 0px 15px var(--turquoise);
+    box-shadow: 0px 0px 7px var(--turquoise);
+    
+}
+
+.bandeau img[src="icon_profil_gris.png"]:hover {
+    content: url("icon_profil.png");
+}
+
+a:hover {
+    color: var(--blanc);   
+}
+
+span{
+    color: var(--gris);
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+.bloc{
+    position: relative;
+    height: 87vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.bloc video{
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -100;
+}
+
+.bloc h1{
+    color: var(--blanc);
+    text-align: center;
+    font-family: var(--police);
+    margin-top: 365px;
+    font-size: 60px;
+    text-shadow: 0px 0px 3px var(--blanc);
+}
+
+.bloc h1:hover{
+    font-size: 70px;
+    text-shadow: 0px 0px 7px var(--turquoise);
+}
+
+.presentation{
+    background-color: var(--gris);
+    margin-top: -30px;
+    margin-left: 110px;
+    margin-right: 110px;
+    font-family: var(--police);
+    padding: 10px 0px 10px 30px;
+    color: var(--blanc);
+    font-size: var(--taille-police);
+    line-height: 1.8;
+    border-radius: 10px;
+    position: relative;
+}
+
+.destinations {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background-color: var(--turquoise);
+    color: var(--noir);
+    padding: 10px 15px 10px 20px;
+    border-radius: 5px; 
+    text-decoration: none;
+    font-weight: bold;
+    align-items: center;
+    display: flex;
+   
+}
+
+.destinations img {
+    width: 30px; 
+    margin-left: 10px ;
+}
+
+.destinations:hover{
+    background-color: #6dfdeb ; 
+    box-shadow: 0px 0px 7px #6dfdeb;
+    color : var(--noir);
+}
+
+#bloc2 {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin : 150px 70px;
+}
+
+.zone1 {
+    background-color: var(--gris);
+    color: var(--blanc);
+    font-family: var(--police);
+    font-size: var(--taille-police);
+    padding: 25px;
+    border-radius: 10px;
+    margin : 40px;
+    flex: 1;
+    min-width: 300px;
+    box-sizing: border-box;
+    line-height: 1.8;
+}
+
+.zone1 ul li {
+    margin-bottom: 15px; 
+}
+
+
+.zone1 p{
+    margin-top: 5px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-size: 22px;
+}
+
+#bloc2:hover > .zone1:hover {
+    transform: scale(1.05);
+    transition: all 1s ease;
+    
+}
+
+#bloc2:hover > :not(:hover) {
+    transform: scale(0.9);
+    transition: all 1s ease;
+    filter: grayscale(65%);
+    background: #413f3f8c;
+}
+
+
+
+
+
+
+
+
+
