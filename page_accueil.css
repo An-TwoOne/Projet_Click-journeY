@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+
 :root{
     --turquoise: #23f7dd;
     --noir : #000000;
@@ -57,12 +58,13 @@ a[href="page_inscription.html"]{
     color: var(--turquoise);
 }
 
+
+
 a[href="page_inscription.html"]:hover {
     border-color: var(--turquoise);
-    color: var(--turquoise);
+    color: #6dfdeb;
     text-shadow: 0px 0px 15px var(--turquoise);
     box-shadow: 0px 0px 7px var(--turquoise);
-    
 }
 
 .bandeau img[src="contenu_css/icon_profil_gris.png"]:hover {
@@ -84,7 +86,7 @@ a[href="page_inscription.html"]:hover {
 }
 
 a:hover {
-    color: var(--blanc);   
+    color: var(--blanc);
 }
 
 span{
@@ -147,31 +149,29 @@ span{
     background-color: var(--turquoise);
     color: var(--noir);
     padding: 10px 15px 10px 20px;
-    border-radius: 5px; 
+    border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
     align-items: center;
     display: flex;
-   
 }
 
 .destinations img {
-    width: 30px; 
-    margin-left: 10px ;
+    width: 30px;
+    margin-left: 10px;
 }
 
 .destinations:hover{
-    background-color: #6dfdeb ; 
+    background-color: #6dfdeb;
     box-shadow: 0px 0px 7px #6dfdeb;
-    color : var(--noir);
+    color: var(--noir);
 }
-
 
 #bloc2{
     background-color:#141414;
     margin-top: -25px;
     padding-top: 120px;
-    padding-bottom: 30px;
+    padding-bottom: 90px;
 }
 
 #sousbloc2 {
@@ -179,7 +179,7 @@ span{
     justify-content: space-around;
     flex-direction: row;
     flex-wrap: wrap;
-    margin : 50px 70px;
+    margin: 50px 70px;
     background-color: #141414;
 }
 
@@ -190,7 +190,7 @@ span{
     font-size: var(--taille-police);
     padding: 25px;
     border-radius: 10px;
-    margin : 40px;
+    margin: 40px;
     flex: 1;
     min-width: 300px;
     box-sizing: border-box;
@@ -198,9 +198,8 @@ span{
 }
 
 .zone1 ul li {
-    margin-bottom: 15px; 
+    margin-bottom: 15px;
 }
-
 
 .zone1 p{
     margin-top: 5px;
@@ -212,7 +211,6 @@ span{
 #sousbloc2:hover > .zone1:hover {
     transform: scale(1.05);
     transition: all 1s ease;
-    
 }
 
 #sousbloc2:hover > :not(:hover) {
@@ -222,13 +220,33 @@ span{
     background: #413f3f8c;
 }
 
+#sousbloc2:hover > :not(:hover) .casque_vr {
+    content: url("contenu_css/casque_vr_sombre.png");
+}
+
 .casque_vr {
     margin-top: -100px;
     margin-left: 600px;
-    width: 28%;      
+    width: 28%;
 }
 
+footer{
+    background-color: var(--noir);
+    text-align: center;
+    padding: 10px;
+    font-family: var(--police);
+    font-weight: bold;
+    font-size: var(--taille-police);
+}
 
+.Multivers{
+    color: var(--blanc);
+}
+
+.Trip{
+    margin-left: 0px;
+    color: var(--turquoise);
+}
 
 
 
