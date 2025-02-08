@@ -37,7 +37,7 @@ body {
     margin: 0px 10px 0px 20px;
 }
 
-.bandeau img[src="logo.png"]{
+.bandeau img[src="contenu_css/logo.png"]{
     width: 75px;
     margin-left: 85px;
     margin-top: 10px;
@@ -45,7 +45,7 @@ body {
     margin-bottom: 5px;
 }
 
-.bandeau img[src="icon_profil_gris.png"]{
+.bandeau img[src="contenu_css/icon_profil_gris.png"]{
     width: 37px;
     margin-right: 60px;
 }
@@ -65,8 +65,22 @@ a[href="page_inscription.html"]:hover {
     
 }
 
-.bandeau img[src="icon_profil_gris.png"]:hover {
-    content: url("icon_profil.png");
+.bandeau img[src="contenu_css/icon_profil_gris.png"]:hover {
+    content: url("contenu_css/icon_profil.png");
+}
+
+.bandeau img[src="contenu_css/recherche_gris.png"]{
+    width: 30px;
+    margin-right: 5px;
+}
+
+.bandeau a[href="page_recherche.html"]{
+    display: flex;
+    align-items: center;
+}
+
+.bandeau a[href="page_recherche.html"]:hover img[src="contenu_css/recherche_gris.png"] {
+    content: url("contenu_css/recherche_blanc.png");
 }
 
 a:hover {
@@ -103,11 +117,13 @@ span{
     margin-top: 365px;
     font-size: 60px;
     text-shadow: 0px 0px 3px var(--blanc);
+    transition: all 0.5s ease;
 }
 
 .bloc h1:hover{
-    font-size: 70px;
+    font-size: 80px;
     text-shadow: 0px 0px 7px var(--turquoise);
+    transition: all 0.5s ease;
 }
 
 .presentation{
