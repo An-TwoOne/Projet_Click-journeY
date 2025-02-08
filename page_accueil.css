@@ -166,12 +166,21 @@ span{
     color : var(--noir);
 }
 
-#bloc2 {
+
+#bloc2{
+    background-color:#141414;
+    margin-top: -25px;
+    padding-top: 120px;
+    padding-bottom: 30px;
+}
+
+#sousbloc2 {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
     flex-wrap: wrap;
-    margin : 150px 70px;
+    margin : 50px 70px;
+    background-color: #141414;
 }
 
 .zone1 {
@@ -200,17 +209,23 @@ span{
     font-size: 22px;
 }
 
-#bloc2:hover > .zone1:hover {
+#sousbloc2:hover > .zone1:hover {
     transform: scale(1.05);
     transition: all 1s ease;
     
 }
 
-#bloc2:hover > :not(:hover) {
+#sousbloc2:hover > :not(:hover) {
     transform: scale(0.9);
     transition: all 1s ease;
     filter: grayscale(65%);
     background: #413f3f8c;
+}
+
+.casque_vr {
+    margin-top: -100px;
+    margin-left: 600px;
+    width: 28%;      
 }
 
 
