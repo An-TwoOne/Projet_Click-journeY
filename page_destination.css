@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root{
+    --turquoise: #23f7dd;
+    --noir : #000000;
+    --or : #e2db8a;
+    --blanc : #ffffff;
+    --gris : #3f3d3d;
+    --police : montserrat;
+    --taille-police : 18px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--gris);
+}
+
+.bandeau {
+    display: flex;
+    background-color: var(--noir);
+    justify-content: space-between;
+    font-family: var(--police);
+    font-weight: bold;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    
+}
+.bandeau div {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.bandeau a {
+    text-decoration: none;
+    color: var(--gris);
+    margin: 0px 10px 0px 20px;
+}
+
+.bandeau img[src="contenu_css/logo.png"]{
+    width: 75px;
+    margin-left: 85px;
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 5px;
+}
+
+.bandeau img[src="contenu_css/icon_profil_gris.png"]{
+    width: 37px;
+    margin-right: 60px;
+}
+
+a[href="page_inscription.html"]{
+    border: var(--turquoise) 1.5px solid;
+    padding: 5px 12px;
+    border-radius: 5px;
+    color: var(--turquoise);
+}
+
+
+
+a[href="page_inscription.html"]:hover {
+    border-color: var(--turquoise);
+    color: #6dfdeb;
+    text-shadow: 0px 0px 15px var(--turquoise);
+    box-shadow: 0px 0px 7px var(--turquoise);
+}
+
+.bandeau img[src="contenu_css/icon_profil_gris.png"]:hover {
+    content: url("contenu_css/icon_profil.png");
+}
+
+.bandeau img[src="contenu_css/recherche_gris.png"]{
+    width: 30px;
+    margin-right: 5px;
+}
+
+.bandeau a[href="page_recherche.html"]{
+    display: flex;
+    align-items: center;
+}
+
+.bandeau a[href="page_recherche.html"]:hover img[src="contenu_css/recherche_gris.png"] {
+    content: url("contenu_css/recherche_blanc.png");
+}
+
+a:hover {
+    color: var(--blanc);
+}
+
+span{
+    color: var(--gris);
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+
+
+
