@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MultiversTrip_Destinations</title>
-    <link rel = "stylesheet" type = "text/css" href = "page_destination.css">
+    <title>MultiversTrip Destinations</title>
+    <link rel="stylesheet" type="text/css" href="page_destination.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
     <link href="contenu_css/icon.png" rel="icon">
 </head>
 <body>
+    
     <div class="bandeau">
         <div>
             <a href="page_accueil.html"><img src="contenu_css/logo.png" alt="logo"></a>
@@ -22,13 +25,55 @@
             <a href="page_profil.html"><img src="contenu_css/icon_profil_gris.png" alt="Profil"></a>
         </div>
     </div>
-    <form>
-        <div class = "recherche">
-            <img src="contenu_css/recherche.png" alt="recherche">
-            <input type="search" name ="recherche_rapide" placeholder="Rechercher">
+   
+    <div class="bloc_recherche">
+        <form>
+            <div class="recherche">
+                <span class="material-symbols-outlined">search</span>
+                <input class="recherche_rapide" type="search" name="recherche_rapide" placeholder="Rechercher...">
+            </div>
+        </form>
+    </div>
 
+    <div class="texte">
+        <h3>Nos meilleures ventes</h3>
+        <img src="contenu_css/tendance.png" alt="tendance">
+    </div>
+    <div id="conteneur">
+        <div class="contenu"> 
+            <img src="contenu_css/ville_futur.png" alt="ville_futur">
+            <p>Monde Futuriste</p>
+            <span>Voyagez en l’an 2130 et explorez un monde ultra-technologique.</span>
+            <div>à partir de 1875€</div>
         </div>
-    </form>
- 
+        <div class="contenu"> 
+            <img src="contenu_css/voyage_espace.png" alt="voyage_espace">
+            <p>Voyage Intergalactique</p>
+            <span>Partez à la découverte de l’univers, visitez des planètes inconnues et rencontrez des civilisations extraterrestres.</span>
+            <div>à partir de 2360€</div>
+        </div>
+        <div class="contenu"> 
+            <img src="contenu_css/voyage_medieval.png" alt="voyage_medieval">
+            <p>Aventure médiévale</p>
+            <span>Plongez dans l’univers des chevaliers et revivez l’épopée du Moyen Âge à travers châteaux, tournois et légendes fascinantes.</span>
+            <div>à partir de 1240€</div>
+        </div>
+        <div class="contenu">
+        </div>
+        <div class="contenu"> 
+            <img src="contenu_css/voyage_pirate.png" alt="voyage_pirate">
+            <p>Île des pirates</p>
+            <span>Naviguez sur les mers du XVIIe siècle, affrontez des corsaires et trouvez des trésors enfouis.</span>
+            <div>à partir de 2230€</div>
+        </div>
+        <div class="contenu"> 
+            <img src="contenu_css/farwest.png" alt="voyage_farwest">
+            <p>Expédition Far West</p>
+            <span>Partez à la conquête de l’Ouest sauvage, devenez un hors-la-loi ou un shérif et affrontez duels, braquages et chasseurs de primes !</span>
+            <div>à partir de 1750€</div>
+        </div>
+        <div class="contenu"> </div>
+    </div>
+
 </body>
 </html>
