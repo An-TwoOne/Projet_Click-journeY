@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MultiversTrip inscription</title>
+    <link rel = "stylesheet" type = "text/css" href = "page_inscription.css">
+    <link href="contenu_css/icon.png" rel="icon">
+</head>
+<body>
+
+    <div class="bandeau">
+        <div>
+            <a href="page_accueil.html"><img src="contenu_css/logo.png" alt="logo"></a>
+            <a href="page_accueil.html">Accueil</a>
+            <a href="page_destination.html">Destinations</a>
+            <a href="page_recherche.html"><img src="contenu_css/recherche_gris.png" alt="logo_recherche">Rechercher</a>
+        </div>   
+        <div>
+            <a href="page_connexion.html">connexion</a>
+            <span>|</span>
+            <a href="page_profil.html"><img src="contenu_css/icon_profil_gris.png" alt="Profil"></a>
+        </div>
+    </div>
+    <div class="bloc_inscription">
+    <div class="containere">
+        <form action="https://www.cafe-it.fr/cytech/post.php" method="post">
+        <fieldset>
+        <legend>
+            <b class="titre"> Créer un compte </b>
+        </legend>
+            <input type="text" id="name" name="name" placeholder="Nom" required/>
+            <input type="text" name="prenom" id="prenom" placeholder="Prenom" value="" required/>
+            <input type="number" name="age" min="18" max="100" value="" step="1" placeholder="Âge" required/>
+            <input type="search" name="email"placeholder="Adresse-Mail" required/>
+        <div class="pays">Selectionner votre pays</div>
+            <select name="country">
+            <optgroup label="Europe">
+            <option value="France">France</option>
+            <option value="Italie">Italie</option>
+            <option value="Angleterre">Angleterre</option>
+            <option value="Allemagne">Allemagne</option>
+            <option value="Espagne">Espagne</option>
+            <option value="Pologne">Pologne</option>
+            <option value="Croatie">Croatie</option>
+            <option value="Suisse">Suisse</option>
+            <option value="Finlande">Finlande</option>
+            <option value="Belgique">Belgique</option>
+        </optgroup>
+            <optgroup label ="Asie">
+            <option value="Chine">Chine</option>
+            <option value="Japon">Japon</option>
+            <option value="Coree">Coree du sud</option>
+            <option value="Inde">Inde</option>
+            <option value="France">Cambodge</option>
+            <option value="France">Indonesie</option>
+            <option value="France">Taïwan</option>
+        </optgroup>
+        <optgroup label="Amerique">
+            <option value="USA">Etats-Unis</option>
+            <option value="Mexique">Mexique</option>
+            <option value="Paragay">Paragay</option>
+            <option value="Argentine">Argentine</option>
+            <option value="Bresil">Bresil</option>
+            <option value="Uruguay">Uruguay</option>
+            <option value="Republique">Republique Dominicaine</option>
+            <option value="Haïti">Haïti</option>
+            <option value="Colombie">Colombie</option>
+            <option value="Canada">Canada</option>
+        </optgroup>
+            <optgroup label="Afrique">
+            <option value="Cameroun">Cameroun</option>
+            <option value="Congo-Brazzaville">Congo-Brazz</option>
+            <option value="Côte d'ivoire">Côte d'ivoire</option>
+            <option value="Madagascar">Madagascar</option>
+            <option value="Maroc">Maroc</option>
+            <option value="France">Algerie</option>
+            <option value="Turquie">Turquie</option>
+            <option value="Senegale">Senegale</option>
+            <option value="Cap-Vert">cap-vert</option>
+            <option value="Guinée">Guinee</option>
+            <option value="Gabon">Gabon</option>
+        </optgroup>
+        </select>  
+        <input type="password" name="Mot de passe" id="password" placeholder="Mot de passe" />
+        <input type="password" name="confirmation" id="password" placeholder="Confirmer mot de passe " required />
+        <input type="numero" id="telephone" name="mobile" placeholder=" N°mobile" />
+
+
+    </fieldset>
+    <button type="submit">s'inscrire</button>
+
+
+    </form>
+    </div> 
+    </div>
+</body>
+</html>

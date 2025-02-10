@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root{
+    --turquoise: #23f7dd;
+    --noir : #000000;
+    --or : #e2db8a;
+    --blanc : #ffffff;
+    --gris : #3f3d3d;
+    --police : montserrat;
+    --taille-police : 18px;
+}
+
+
+
+body {
+    font-family: var(--police);
+    background: var(--gris);
+    color: var(--turquoise);
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--gris);
+  
+}
+
+
+.bandeau {
+        display: flex;
+        background-color: var(--noir);
+        justify-content: space-between;
+        font-family: var(--police);
+        font-weight: bold;
+        position: fixed;
+        z-index: 100;
+        width: 100%;
+        box-sizing: border-box;
+        flex-wrap: wrap;
+        
+}
+.bandeau div {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        
+}
+.bandeau a {
+        text-decoration: none;
+        color: var(--gris);
+        margin: 0px 10px 0px 20px;
+}
+    
+.bandeau img[src="contenu_css/logo.png"]{
+        width: 75px;
+        margin-left: 85px;
+        margin-top: 10px;
+        margin-right: 20px;
+        margin-bottom: 5px;
+}
+
+a[href="page_inscription.html"]{
+    border: var(--turquoise) 1.5px solid;
+    padding: 5px 12px;
+    border-radius: 5px;
+    color: var(--turquoise);
+}
+
+
+
+a[href="page_inscription.html"]:hover {
+    border-color: var(--turquoise);
+    color: #6dfdeb;
+    text-shadow: 0px 0px 15px var(--turquoise);
+    box-shadow: 0px 0px 7px var(--turquoise);
+}
+    
+.bandeau img[src="contenu_css/icon_profil_gris.png"]{
+        width: 37px;
+        margin-right: 60px;
+}
+    
+
+.bandeau img[src="contenu_css/icon_profil_gris.png"]:hover {
+        content: url("contenu_css/icon_profil.png");
+}
+    
+.bandeau img[src="contenu_css/recherche_gris.png"]{
+        width: 30px;
+        margin-right: 5px;
+}
+    
+.bandeau a[href="page_recherche.html"]{
+        display: flex;
+        align-items: center;
+}
+    
+.bandeau a[href="page_recherche.html"]:hover img[src="contenu_css/recherche_gris.png"] {
+        content: url("contenu_css/recherche_blanc.png");
+}
+    
+a:hover {
+        color: var(--blanc);
+}
+    
+span{
+        color: var(--gris);
+        margin-left: 15px;
+        font-size: 20px;
+}
+
+
+.bloc_inscription{
+        position: absolute;
+        width: 100%;
+        top: 28%;
+}
+
+
+.containere {
+    background : var(--noir);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 50px auto;
+    width: 50%;
+    box-shadow: 0 0 7px var(--turquoise);
+}
+
+h1 {
+        font-size: 2.5em;
+        text-shadow: 0 0 3px var(--turquoise);
+
+}
+input, select, button {
+        width: 100%;
+        padding: 10px 0px 10px 5px;
+        margin: 10px 0px;
+        border: none;
+        border-radius: 5px;
+        font-size: 1em;
+}
+input, select {
+        background: rgba(255, 255, 255, 0.1);
+        color: #fff;
+}
+button {
+        background: linear-gradient(90deg, var(--turquoise),#01554b );
+        color: #000;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.5s;
+        font-family: var(--police);
+}
+button:hover {
+        background: linear-gradient(90deg, #01554b , var(--turquoise));
+        box-shadow: 0 0 10px var(--turquoise)  ;
+}
+
+
+.pays{
+        font-size: 15px;
+        color:var(--blanc)
+}
