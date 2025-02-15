@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MultiversTrip Profil</title>
+    <link rel="stylesheet" type="text/css" href="page_profil.css">
+    <link href="contenu_css/icon.png" rel="icon">
+</head>
+<body>
+
+    <div class="bandeau">
+        <div>
+            <a href="page_accueil.html"><img src="contenu_css/logo.png" alt="logo"></a>
+            <a href="page_accueil.html">Accueil</a>
+            <a href="page_destination.html">Destinations</a>
+            <a href="page_recherche.html"><img src="contenu_css/recherche_gris.png" alt="logo_recherche">Rechercher</a>
+        </div>   
+        <div>
+            <a href="page_connexion.html">connexion</a>
+            <a href="page_inscription.html">inscription</a> 
+        </div>
+    </div>
+
+
+    <form action="https://www.cafe-it.fr/cytech/post.php" method="post">
+        <div class="profile-container">
+            <h1>Votre Profil</h1>
+            <div class="profile-card">
+                <div class="banner">
+                    <img src="contenu_css/Gotham.png" alt="ville_futur" class="banner-img">
+                    <button class="edit-btn banner-edit"><img src="contenu_css/crayon_modifier.png" alt="Modifier" class="edit-icon"></button>
+                </div>
+                <div class="avatar-container">
+                    <img src="contenu_css/photo_profil.png" alt="shiruy" class="avatar">
+                    <button class="edit-btn avatar-edit"><img src="contenu_css/crayon_modifier.png" alt="Modifier" class="edit-icon"></button>
+                </div>
+                <div class="profile-info">
+                    <label>Nom du profil</label>
+                    <input type="text" value="Ngakoli" placeholder="Nom">
+                    <button  class="edit-btn"><img src="contenu_css/crayon_modifier.png" alt="Modifier" class="edit-icon"></button>
+                    <p class="description">Ceci se voit dans votre foyer, et peut être modifié à tout moment.</p>
+                   
+                    <label>Nom d'utilisateur <span> (facultatif) </span></label>
+                    <input type="text" placeholder="Choisissez un nom...">
+                    <p class="description">Créez un nom d'utilisateur pour être prêt pour tes futures expériences !</p>
+                   
+                    <label>Email</label>
+                    <input type="email" value="jasongakoli2002@gmail.com" placeholder="Entrez votre email" >
+                    <button class="edit-btn"><img src="contenu_css/crayon_modifier.png" alt="Modifier" class="edit-icon"></button>
+                    <label>Ancien mot de passe</label>
+                    <input type="password" value="MultiversTRIP" required>
+                    <button class="edit-btn"><img src="contenu_css/crayon_modifier.png" alt="Modifier" class="edit-icon"></button>
+                    <label>Nouveau mot de passe</label>
+                    <input type="password" placeholder="Nouveau mot de passe">
+                    <button class="edit-btn"><img src="contenu_css/crayon_modifier.png" alt="Modifier" class="edit-icon"></button>
+                    <label>Confirmation du mot de passe</label>
+                    <input type="password" placeholder="Confirmez le mot de passe">
+                    <button class="edit-btn"><img src="contenu_css/crayon_modifier.png" alt="Modifier" class="edit-icon"></button>
+                    <label>Mobile</label>
+                    <input type="number" value="0633909108" placeholder="Numéro de téléphone">
+                    <button class="edit-btn"><img src="contenu_css/crayon_modifier.png" alt="Modifier" class="edit-icon"></button>
+                </div>
+                <div class="buttons">
+                    <button type="submit" class="save">ENREGISTRER</button>
+                    <button type="reset" class="cancel">ANNULER</button>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    
+</body>
+</html>
