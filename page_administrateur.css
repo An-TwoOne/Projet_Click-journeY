@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --turquoise: #23f7dd;
+    --noir : #000000;
+    --or : #e2db8a;
+    --blanc : #ffffff;
+    --gris : #3f3d3d;
+    --police : montserrat;
+    --taille-police : 18px;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #474747
+}
+
+header{
+    background-color: var(--noir);
+    display: flex;
+    min-height: 10vh;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+div {
+    display: flex;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    margin-left: 150px;
+    font-family: var(--police);
+    font-weight: bold;
+    font-size: 22px;
+    padding: 15px;
+}
+
+.Multivers{
+    color: var(--blanc);
+
+}
+
+.Trip{
+    margin-left: 0px;
+    color: var(--turquoise);
+}
+
+.page_admin{
+    margin-right: 100px;
+    color: var(--blanc);
+    font-family: var(--police);
+    font-size: var(--taille-police);
+}
+
+table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-collapse: collapse; 
+    font-family: var(--police);
+    margin-bottom: 100px;
+}
+
+th, td {
+    border: 2px solid var(--noir);
+    padding: 8px 40px 8px 40px;
+    
+}
+
+.entete1{
+    background-color: #000000a1;
+    color: #ffffffe3;
+}
+
+.entete2{
+    font-size: 16px;
+    background-color: #3f3d3dd0;
+}   
+
+#contenu{
+    background-color: #f0ededda;
+}
+
+input[type="checkbox"]{
+    transform: scale(1.2); 
+    accent-color: var(--turquoise);
+}
+
+input[name="exclure"]{
+    margin-left: 22px;
+}
+
