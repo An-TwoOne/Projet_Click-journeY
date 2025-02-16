@@ -88,11 +88,9 @@
     <div id="filtres" class="filtres_conteneur">
         <form action =" https://www.cafe-it.fr/cytech/post.php" method="post">
             <h4 class="titre_filtres">Trouver votre voyage idéal</h4>
-
+            <hr/>
             <label for="date">Date:</label>
             <input type="date" id="date" name="date" >
-
-            <span></span>
 
             <label for="duree">Durée du voyage:</label>
             <select id="duree" name="duree" >
@@ -101,10 +99,8 @@
                 <option value="un_jour">un jour</option>
             </select>
 
-            <span></span>
-
-            <label for="prix">Votre Budget:</label>
-            <input type="range" id="prix" name="prix" min="800" max="5000" value="2500" step="100" >
+            <label for="prix">Votre Budget (max):</label> 800€
+            <input type="range" id="prix" name="prix" min="800" max="5000" value="2500" step="100"> 5000€
 
             <label for="experience">Expérience:</label>
             <input type="radio" id="experience" name="experience" value="solo" >Solo
@@ -141,7 +137,6 @@
             
             <input type="submit" value="Afficher Résultats">
             <a href="#" class="fermer-btn">Fermer</a>
-    
             
         </form>
     </div>

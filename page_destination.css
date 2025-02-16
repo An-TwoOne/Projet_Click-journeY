@@ -218,7 +218,7 @@ img[src="contenu_css/tendance.png"]{
 .filtres_conteneur {
     position: fixed;
     width: 54%;
-    top: 34%;
+    top: 29%;
     left:71%;
     transform: translate(-50%, -50%);
     background: #141414ee;
@@ -227,12 +227,13 @@ img[src="contenu_css/tendance.png"]{
     border-radius: 10px;
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
     color: var(--blanc);
     font-family: var(--police);
     font-size: 15px;
     accent-color: var(--turquoise);
     z-index: 102;
+    
 }
 
 
@@ -280,6 +281,7 @@ input[type="submit"]:hover {
     margin-top: 14px ;
    font-size: 16px;
    text-align: center;
+   margin-bottom: 15px;
 }
 
 
@@ -291,6 +293,25 @@ input[type="date"], select {
     margin-left: 10px;
 }
 
+
+.espace {
+    margin-left: 45px;
+}
+
+label {
+    margin-right: 5px;
+    background-color: var(--gris);
+    padding: 4px 8px;  
+    border-radius: 5px;
+}
+
+.filtres_conteneur label,
+.filtres_conteneur input, 
+.filtres_conteneur select {
+
+    margin : 12px 10px;
+    
+}
 
 
 
