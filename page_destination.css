@@ -16,6 +16,7 @@ body {
     padding: 0px;
     background-color: var(--gris);
     
+    
 }
 
 .bandeau {
@@ -81,12 +82,12 @@ a[href="page_inscription.html"]:hover {
     margin-right: 5px;
 }
 
-.bandeau a[href="page_recherche.html"]{
+.bandeau a[href="#filtres"]{
     display: flex;
     align-items: center;
 }
 
-.bandeau a[href="page_recherche.html"]:hover img[src="contenu_css/recherche_gris.png"] {
+.bandeau a[href="#filtres"]:hover img[src="contenu_css/recherche_gris.png"] {
     content: url("contenu_css/recherche_blanc.png");
 }
 
@@ -138,8 +139,8 @@ span{
 
 .texte{
     position: absolute; 
-    top: 28%;
-    left: 25%;
+    top: 32%;
+    left: 15%;
     color: var(--blanc);
     font-family: var(--police);
     display: flex;
@@ -153,7 +154,7 @@ img[src="contenu_css/tendance.png"]{
 
 #conteneur{
     position: absolute;
-    top: 35%;
+    top: 45%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -211,6 +212,83 @@ img[src="contenu_css/tendance.png"]{
     transition: all 1s ease;
     filter: grayscale(65%);
     background: #0f0f0fd8;
+}
+
+
+.filtres_conteneur {
+    position: fixed;
+    width: 54%;
+    top: 34%;
+    left:71%;
+    transform: translate(-50%, -50%);
+    background: #141414ee;
+    padding: 5px 20px;
+    box-shadow: 0px 4px 10px var(--noir);
+    border-radius: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    color: var(--blanc);
+    font-family: var(--police);
+    font-size: 15px;
+    accent-color: var(--turquoise);
+    z-index: 102;
+}
+
+
+#filtres:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+.fermer-btn {
+    padding: 8px 15px;
+    background: rgb(128, 128, 128);
+    text-decoration: none;
+    color: var(--blanc);
+    border-radius: 5px;
+}
+
+.fermer-btn:hover {
+    background: #3b3b3b;
+    box-shadow: 0px 0px 15px var(--noir);
+    transition: 0.1s;
+}
+
+input[type="submit"] {
+    font-family: var(--police);
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 8px 15px;
+    font-weight: bold;
+    margin-top: 10px;
+    box-shadow: 0px 0px 10px var(--noir);
+    background-color: var(--or);
+    border: none;
+    margin-bottom: 5px;
+}
+
+input[type="submit"]:hover {
+    background: #f5ea79f8;
+    font-weight: bold;
+    transition: 0.1s;
+    box-shadow: 0px 0px 3px #f5ea79f8;
+
+}
+
+.titre_filtres{
+    margin-top: 14px ;
+   font-size: 16px;
+   text-align: center;
+}
+
+
+input[type="date"], select {
+    background-color: #e0e0e0;
+    border: 1px solid #e0e0e0;
+    padding: 2px;
+    border-radius: 5px;
+    margin-left: 10px;
 }
 
 
