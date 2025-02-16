@@ -80,12 +80,12 @@ a[href="page_inscription.html"]:hover {
     margin-right: 5px;
 }
 
-.bandeau a[href="page_recherche.html"]{
+.bandeau a[href="page_destination.html#filtres"]{
     display: flex;
     align-items: center;
 }
 
-.bandeau a[href="page_recherche.html"]:hover img[src="contenu_css/recherche_gris.png"] {
+.bandeau a[href="page_destination.html#filtres"]:hover img[src="contenu_css/recherche_gris.png"] {
     content: url("contenu_css/recherche_blanc.png");
 }
 
