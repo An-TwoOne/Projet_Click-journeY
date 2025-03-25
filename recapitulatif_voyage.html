@@ -1,0 +1,71 @@
+<?php
+// Démarrage de la session pour accéder aux données de l'utilisateur
+session_start();
+
+// Vérification si la session est valide, sinon on l'initialise
+if (!isset($_SESSION['hebergement_futuriste'])) {
+    $_SESSION['error_message'] = "Les données du formulaire sont manquantes. Veuillez remplir le formulaire de personnalisation.";
+    // Si des données sont manquantes, on redirige à la page de personnalisation sans utiliser header()
+    echo "<script>alert('Veuillez personnaliser votre voyage d\'abord.'); window.location.href='personnalisation_voyage.php';</script>";
+    exit();
+}
+
+// Fonction pour sécuriser les données et éviter XSS
+function secureData($data) {
+    return htmlspecialchars($data, ENT_QUOTES, 'UTF-8');
+}
+?>
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Récapitulatif du Voyage</title>
+    <link rel="stylesheet" type="text/css" href="page_destination.css">
+</head>
+<body>
+    <div class="bandeau">
+        <div>
+            <a href="page_accueil.html"><img src="contenu_css/logo.png" alt="logo"></a>
+            <a href="page_accueil.html">Accueil</a>
+            <a href="page_destination.html">Destinations</a>
+            <a href="#filtres" class="btn"><img src="contenu_css/recherche_gris.png" alt="logo_recherche">Rechercher</a>
+        </div>
+        <div>
+            <a href="page_connexion.html">connexion</a>
+            <a href="page_inscription.html">inscription</a>
+            <span>|</span>
+            <a href="page_profil.html"><img src="contenu_css/icon_profil_gris.png" alt="Profil"></a>
+        </div>
+    </div>
+
+    <div class="contenu_recapitulatif">
+        <h2>Récapitulatif de votre voyage</h2>
+
+        <h3>Monde Futuriste</h3>
+        <p><strong>Hébergement:</strong> <?php echo secureData($_SESSION['hebergement_futuriste']); ?></p>
+        <p><strong>Restauration:</strong> <?php echo secureData($_SESSION['restauration_futuriste']); ?></p>
+        <p><strong>Activités:</strong> <?php echo secureData($_SESSION['activites_futuriste']); ?></p>
+        <p><strong>Transport:</strong> <?php echo secureData($_SESSION['transport_futuriste']); ?></p>
+        <p><strong>Nombre de personnes par activité:</strong> <?php echo secureData($_SESSION['personnes_futuriste']); ?></p>
+
+        <h3>Voyage Intergalactique</h3>
+        <p><strong>Hébergement:</strong> <?php echo secureData($_SESSION['hebergement_intergalactique']); ?></p>
+        <p><strong>Restauration:</strong> <?php echo secureData($_SESSION['restauration_intergalactique']); ?></p>
+        <p><strong>Activités:</strong> <?php echo secureData($_SESSION['activites_intergalactique']); ?></p>
+        <p><strong>Transport:</strong> <?php echo secureData($_SESSION['transport_intergalactique']); ?></p>
+        <p><strong>Nombre de personnes par activité:</strong> <?php echo secureData($_SESSION['personnes_intergalactique']); ?></p>
+
+        <h3>Aventure Médiévale</h3>
+        <p><strong>Hébergement:</strong> <?php echo secureData($_SESSION['hebergement_medievale']); ?></p>
+        <p><strong>Restauration:</strong> <?php echo secureData($_SESSION['restauration_medievale']); ?></p>
+        <p><strong>Activités:</strong> <?php echo secureData($_SESSION['activites_medievale']); ?></p>
+        <p><strong>Transport:</strong> <?php echo secureData($_SESSION['transport_medievale']); ?></p>
+        <p><strong>Nombre de personnes par activité:</strong> <?php echo secureData($_SESSION['personnes_medievale']); ?></p>
+
+        <br>
+        <button onclick="window.location.href='personnalisation_voyage.php'">Retour à la personnalisation</button>
+    </div>
+</body>
+</html>

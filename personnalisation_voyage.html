@@ -1,0 +1,159 @@
+<?php
+// Démarrage de la session pour stocker les choix
+session_start();
+
+// Si le formulaire est soumis, on enregistre les choix dans la session
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $_SESSION['hebergement_futuriste'] = $_POST['hebergement_futuriste'];
+    $_SESSION['restauration_futuriste'] = $_POST['restauration_futuriste'];
+    $_SESSION['activites_futuriste'] = $_POST['activites_futuriste'];
+    $_SESSION['transport_futuriste'] = $_POST['transport_futuriste'];
+    $_SESSION['personnes_futuriste'] = $_POST['personnes_futuriste'];
+
+    $_SESSION['hebergement_intergalactique'] = $_POST['hebergement_intergalactique'];
+    $_SESSION['restauration_intergalactique'] = $_POST['restauration_intergalactique'];
+    $_SESSION['activites_intergalactique'] = $_POST['activites_intergalactique'];
+    $_SESSION['transport_intergalactique'] = $_POST['transport_intergalactique'];
+    $_SESSION['personnes_intergalactique'] = $_POST['personnes_intergalactique'];
+
+    $_SESSION['hebergement_medievale'] = $_POST['hebergement_medievale'];
+    $_SESSION['restauration_medievale'] = $_POST['restauration_medievale'];
+    $_SESSION['activites_medievale'] = $_POST['activites_medievale'];
+    $_SESSION['transport_medievale'] = $_POST['transport_medievale'];
+    $_SESSION['personnes_medievale'] = $_POST['personnes_medievale'];
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personnalisation du Voyage</title>
+    <link rel="stylesheet" type="text/css" href="page_destination.css">
+</head>
+<body>
+    <div class="bandeau">
+        <div>
+            <a href="page_accueil.html"><img src="contenu_css/logo.png" alt="logo"></a>
+            <a href="page_accueil.html">Accueil</a>
+            <a href="page_destination.html">Destinations</a>
+            <a href="#filtres" class="btn"><img src="contenu_css/recherche_gris.png" alt="logo_recherche">Rechercher</a>
+        </div>
+        <div>
+            <a href="page_connexion.html">connexion</a>
+            <a href="page_inscription.html">inscription</a>
+            <span>|</span>
+            <a href="page_profil.html"><img src="contenu_css/icon_profil_gris.png" alt="Profil"></a>
+        </div>
+    </div>
+
+    <div class="contenu_personnalisation">
+        <h2>Personnalisez votre voyage</h2>
+        <form action="personnalisation_voyage.php" method="post">
+
+            <!-- Monde Futuriste -->
+            <h3>Monde Futuriste</h3>
+            <label for="hebergement_futuriste">Hébergement:</label>
+            <select id="hebergement_futuriste" name="hebergement_futuriste">
+                <option value="hotel_futuriste" <?php if ($_SESSION['hebergement_futuriste'] == 'hotel_futuriste') echo 'selected'; ?>>Hôtel Futuriste</option>
+                <option value="capsule_hotel" <?php if ($_SESSION['hebergement_futuriste'] == 'capsule_hotel') echo 'selected'; ?>>Capsule Hôtel</option>
+                <option value="smart_home" <?php if ($_SESSION['hebergement_futuriste'] == 'smart_home') echo 'selected'; ?>>Maison Intelligente</option>
+            </select>
+
+            <label for="restauration_futuriste">Restauration:</label>
+            <select id="restauration_futuriste" name="restauration_futuriste">
+                <option value="restaurant_robotique" <?php if ($_SESSION['restauration_futuriste'] == 'restaurant_robotique') echo 'selected'; ?>>Restaurant Robotique</option>
+                <option value="fast_food_futuriste" <?php if ($_SESSION['restauration_futuriste'] == 'fast_food_futuriste') echo 'selected'; ?>>Fast Food Futuriste</option>
+                <option value="self_catering_futuriste" <?php if ($_SESSION['restauration_futuriste'] == 'self_catering_futuriste') echo 'selected'; ?>>Self Catering Futuriste</option>
+            </select>
+
+            <label for="activites_futuriste">Activités:</label>
+            <select id="activites_futuriste" name="activites_futuriste">
+                <option value="tourisme_virtuel" <?php if ($_SESSION['activites_futuriste'] == 'tourisme_virtuel') echo 'selected'; ?>>Tourisme Virtuel</option>
+                <option value="sport_futuriste" <?php if ($_SESSION['activites_futuriste'] == 'sport_futuriste') echo 'selected'; ?>>Sport Futuriste</option>
+                <option value="culture_futuriste" <?php if ($_SESSION['activites_futuriste'] == 'culture_futuriste') echo 'selected'; ?>>Culture Futuriste</option>
+            </select>
+
+            <label for="transport_futuriste">Transport:</label>
+            <select id="transport_futuriste" name="transport_futuriste">
+                <option value="voiture_autonome" <?php if ($_SESSION['transport_futuriste'] == 'voiture_autonome') echo 'selected'; ?>>Voiture Autonome</option>
+                <option value="train_rapide" <?php if ($_SESSION['transport_futuriste'] == 'train_rapide') echo 'selected'; ?>>Train Rapide</option>
+                <option value="drone_taxi" <?php if ($_SESSION['transport_futuriste'] == 'drone_taxi') echo 'selected'; ?>>Drone Taxi</option>
+            </select>
+
+            <label for="personnes_futuriste">Nombre de personnes par activité:</label>
+            <input type="number" id="personnes_futuriste" name="personnes_futuriste" min="1" max="10" value="<?php echo $_SESSION['personnes_futuriste']; ?>">
+
+            <!-- Voyage Intergalactique -->
+            <h3>Voyage Intergalactique</h3>
+            <label for="hebergement_intergalactique">Hébergement:</label>
+            <select id="hebergement_intergalactique" name="hebergement_intergalactique">
+                <option value="station_spatiale" <?php if ($_SESSION['hebergement_intergalactique'] == 'station_spatiale') echo 'selected'; ?>>Station Spatiale</option>
+                <option value="vaisseau_spatial" <?php if ($_SESSION['hebergement_intergalactique'] == 'vaisseau_spatial') echo 'selected'; ?>>Vaisseau Spatial</option>
+                <option value="base_lunaire" <?php if ($_SESSION['hebergement_intergalactique'] == 'base_lunaire') echo 'selected'; ?>>Base Lunaire</option>
+            </select>
+
+            <label for="restauration_intergalactique">Restauration:</label>
+            <select id="restauration_intergalactique" name="restauration_intergalactique">
+                <option value="restaurant_spatial" <?php if ($_SESSION['restauration_intergalactique'] == 'restaurant_spatial') echo 'selected'; ?>>Restaurant Spatial</option>
+                <option value="fast_food_spatial" <?php if ($_SESSION['restauration_intergalactique'] == 'fast_food_spatial') echo 'selected'; ?>>Fast Food Spatial</option>
+                <option value="self_catering_spatial" <?php if ($_SESSION['restauration_intergalactique'] == 'self_catering_spatial') echo 'selected'; ?>>Self Catering Spatial</option>
+            </select>
+
+            <label for="activites_intergalactique">Activités:</label>
+            <select id="activites_intergalactique" name="activites_intergalactique">
+                <option value="exploration_planetaire" <?php if ($_SESSION['activites_intergalactique'] == 'exploration_planetaire') echo 'selected'; ?>>Exploration Planétaire</option>
+                <option value="sport_zero_gravite" <?php if ($_SESSION['activites_intergalactique'] == 'sport_zero_gravite') echo 'selected'; ?>>Sport en Zéro Gravité</option>
+                <option value="culture_extraterrestre" <?php if ($_SESSION['activites_intergalactique'] == 'culture_extraterrestre') echo 'selected'; ?>>Culture Extraterrestre</option>
+            </select>
+
+            <label for="transport_intergalactique">Transport:</label>
+            <select id="transport_intergalactique" name="transport_intergalactique">
+                <option value="navette_spatiale" <?php if ($_SESSION['transport_intergalactique'] == 'navette_spatiale') echo 'selected'; ?>>Navette Spatiale</option>
+                <option value="vaisseau_interstellaire" <?php if ($_SESSION['transport_intergalactique'] == 'vaisseau_interstellaire') echo 'selected'; ?>>Vaisseau Interstellaire</option>
+                <option value="teleportation" <?php if ($_SESSION['transport_intergalactique'] == 'teleportation') echo 'selected'; ?>>Téléportation</option>
+            </select>
+
+            <label for="personnes_intergalactique">Nombre de personnes par activité:</label>
+            <input type="number" id="personnes_intergalactique" name="personnes_intergalactique" min="1" max="10" value="<?php echo $_SESSION['personnes_intergalactique']; ?>">
+
+            <!-- Aventure Médiévale -->
+            <h3>Aventure Médiévale</h3>
+            <label for="hebergement_medievale">Hébergement:</label>
+            <select id="hebergement_medievale" name="hebergement_medievale">
+                <option value="chateau" <?php if ($_SESSION['hebergement_medievale'] == 'chateau') echo 'selected'; ?>>Château</option>
+                <option value="auberge_medievale" <?php if ($_SESSION['hebergement_medievale'] == 'auberge_medievale') echo 'selected'; ?>>Auberge Médiévale</option>
+                <option value="campement" <?php if ($_SESSION['hebergement_medievale'] == 'campement') echo 'selected'; ?>>Campement</option>
+            </select>
+
+            <label for="restauration_medievale">Restauration:</label>
+            <select id="restauration_medievale" name="restauration_medievale">
+                <option value="banquet" <?php if ($_SESSION['restauration_medievale'] == 'banquet') echo 'selected'; ?>>Banquet</option>
+                <option value="taverne" <?php if ($_SESSION['restauration_medievale'] == 'taverne') echo 'selected'; ?>>Taverne</option>
+                <option value="self_catering_medievale" <?php if ($_SESSION['restauration_medievale'] == 'self_catering_medievale') echo 'selected'; ?>>Self Catering Médiévale</option>
+            </select>
+
+            <label for="activites_medievale">Activités:</label>
+            <select id="activites_medievale" name="activites_medievale">
+                <option value="tournoi_chevalerie" <?php if ($_SESSION['activites_medievale'] == 'tournoi_chevalerie') echo 'selected'; ?>>Tournoi de Chevalerie</option>
+                <option value="chasse" <?php if ($_SESSION['activites_medievale'] == 'chasse') echo 'selected'; ?>>Chasse</option>
+                <option value="culture_medievale" <?php if ($_SESSION['activites_medievale'] == 'culture_medievale') echo 'selected'; ?>>Culture Médiévale</option>
+            </select>
+
+            <label for="transport_medievale">Transport:</label>
+            <select id="transport_medievale" name="transport_medievale">
+                <option value="cheval" <?php if ($_SESSION['transport_medievale'] == 'cheval') echo 'selected'; ?>>Cheval</option>
+                <option value="carrosse" <?php if ($_SESSION['transport_medievale'] == 'carrosse') echo 'selected'; ?>>Carrosse</option>
+                <option value="bateau" <?php if ($_SESSION['transport_medievale'] == 'bateau') echo 'selected'; ?>>Bateau</option>
+            </select>
+
+            <label for="personnes_medievale">Nombre de personnes par activité:</label>
+            <input type="number" id="personnes_medievale" name="personnes_medievale" min="1" max="10" value="<?php echo $_SESSION['personnes_medievale']; ?>">
+
+            <input type="submit" value="Voir le récapitulatif">
+        </form>
+        <button onclick="window.location.href='recapitulatif_voyage.php'">Voir le récapitulatif</button>
+    </div>
+</body>
+</html>
