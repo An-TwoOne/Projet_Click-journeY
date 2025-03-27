@@ -1,15 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
-
-:root{
-    --turquoise: #23f7dd;
-    --noir : #000000;
-    --or : #e2db8a;
-    --blanc : #ffffff;
-    --gris : #3f3d3d;
-    --police : montserrat;
-    --taille-police : 18px;
-}
+@import url('commun.css');
 
 body {
     margin: 0px;
