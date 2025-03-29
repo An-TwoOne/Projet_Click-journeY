@@ -1,11 +1,20 @@
 
 <?php
     session_start();
+
+    if (isset($_POST['deconnexion'])) {
+        session_destroy();
+        header("Location: page_connexion.php");
+        exit();
+    }
+
     if (!isset($_SESSION['Id'])) {
         header("Location: page_connexion.php");
         $_SESSION['message'] = "Connecter vous pour accéder à votre profil";
         exit();
     }
+
+    
 
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
@@ -38,14 +47,18 @@
                     } else if ($nouveau_mdp !== $confirmation_mdp) {
                         $erreur_mdp = "Les nouveaux mots de passe ne correspondent pas.";
                     } else {
-                        // Met à jour le mot de passe si tout est correct
                         $utilisateur['Mdp'] = password_hash($nouveau_mdp, PASSWORD_DEFAULT);
                     }
                 }
             }
         }
-        file_put_contents('données_json/utilisateurs.json', json_encode($utilisateurs));
-        $_SESSION['profil_modifier'] = "Profil mis à jour avec succès";
+        if (empty($erreur_mdp)) {
+            file_put_contents('données_json/utilisateurs.json', json_encode($utilisateurs));
+            $_SESSION['profil_modifier'] = "Profil mis à jour avec succès";
+            
+        }else{
+            $_SESSION['profil_modifier'] = $erreur_mdp;
+        }
         header("Location: page_profil.php");
         exit();
     }
@@ -61,23 +74,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MultiversTrip Profil</title>
     <link rel="stylesheet" type="text/css" href="page_profil.css">
+    <link rel = "stylesheet" type = "text/css" href = "header.css">
     <link href="contenu_css/icon.png" rel="icon">
 </head>
 <body>
 
-    <div class="bandeau">
-        <div>
-            <a href="page_accueil.php"><img src="contenu_css/logo.png" alt="logo"></a>
-            <a href="page_accueil.php">Accueil</a>
-            <a href="page_destination.html">Destinations</a>
-            <a href="page_destination.html#filtres"><img src="contenu_css/recherche_gris.png" alt="logo_recherche">Rechercher</a>
-        </div>   
-        <div>
-            <a href="page_connexion.php">connexion</a>
-            <a href="page_inscription.php">inscription</a> 
-        </div>
-    </div>
-
+    <?php include('header.php') ?>
 
     <form method="post">
         <div class="profile-container">
@@ -97,7 +99,7 @@
                     <button  class="edit-btn"><img src="contenu_css/crayon_modifier.png" alt="Modifier" class="edit-icon"></button>
                     <p class="description">Ceci se voit dans votre foyer, et peut être modifié à tout moment.</p>
                    
-                    <label>Nom d'utilisateur <span> (facultatif) </span></label>
+                    <label>Nom d'utilisateur <span class="indication"> (facultatif) </span></label>
                     <input type="text" name="username" value="<?php echo $_SESSION['UserName']; ?>" placeholder="Choisissez un nom d'utilisateur..." >
                     <button  class="edit-btn"><img src="contenu_css/crayon_modifier.png" alt="Modifier" class="edit-icon"></button>
                     <p class="description">Créez un nom d'utilisateur pour être prêt pour tes futures expériences !</p>
@@ -128,7 +130,7 @@
 
                 <div class="buttons">
                     <button type="submit" class="save">ENREGISTRER</button>
-                    <button type="reset" class="cancel">SE DECONNECTER</button>
+                    <button type="submit" name="deconnexion" class="cancel">SE DECONNECTER</button>
                 </div>
             </div>
         </div>

@@ -5,26 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MultiversTrip Destinations</title>
     <link rel="stylesheet" type="text/css" href="page_destination.css">
+    <link rel = "stylesheet" type = "text/css" href = "header.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
     <link href="contenu_css/icon.png" rel="icon">
 </head>
 <body>
-    
-    <div class="bandeau">
-        <div>
-            <a href="page_accueil.html"><img src="contenu_css/logo.png" alt="logo"></a>
-            <a href="page_accueil.html">Accueil</a>
-            <a href="page_destination.html">Destinations</a>
-            <a href="#filtres" class="btn" ><img src="contenu_css/recherche_gris.png" alt="logo_recherche">Rechercher</a>
-        </div>   
-        <div>
-            <a href="page_connexion.html">connexion</a>
-            <a href="page_inscription.html">inscription</a> 
-            <span>|</span>
-            <a href="page_profil.html"><img src="contenu_css/icon_profil_gris.png" alt="Profil"></a>
-        </div>
-    </div>
+    <?php include('header.php') ?>
    
     <div class="bloc_recherche">
         <form>

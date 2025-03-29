@@ -61,22 +61,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MultiversTrip connexion</title>
     <link rel = "stylesheet" type = "text/css" href = "page_connexion.css">
+    <link rel = "stylesheet" type = "text/css" href = "header.css">
     <link href="contenu_css/icon.png" rel="icon">
 </head>
 <body>
-    <div class="bandeau">
-        <div>
-            <a href="page_accueil.html"><img src="contenu_css/logo.png" alt="logo"></a>
-            <a href="page_accueil.html">Accueil</a>
-            <a href="page_destination.html">Destinations</a>
-            <a href="page_destination.html#filtres"><img src="contenu_css/recherche_gris.png" alt="logo_recherche">Rechercher</a>
-        </div>   
-        <div>
-            <a href="page_inscription.php">inscription</a> 
-            <span>|</span>
-            <a href="page_profil.php"><img src="contenu_css/icon_profil_gris.png" alt="Profil"></a>
-        </div>
-    </div>
+    <?php include('header.php') ?>
+    
     <div class="bloc_inscription">
     <div class="containere">
         <?php
