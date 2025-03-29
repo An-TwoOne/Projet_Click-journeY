@@ -150,4 +150,9 @@ select {
 }
 
 
+.erreur_message {
+        color:var(--or);
+}
+
+
 

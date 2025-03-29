@@ -1,3 +1,67 @@
+<?php
+    session_start();
+
+    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+        $_SESSION['Nom'] = $_POST['name'];
+        $_SESSION['Prenom'] = $_POST['prenom'];
+        $_SESSION['Age'] = $_POST['age'];
+        $_SESSION['Mail'] = $_POST['email'];
+        $_SESSION['Pays'] = $_POST['country'];
+        $_SESSION['Mdp'] = $_POST['Mot_de_passe'];
+        $_SESSION['Mobile'] = $_POST['mobile'];
+        $confirmation = $_POST['confirmation'];
+
+            
+        $json_donnees = file_get_contents('données_json/utilisateurs.json');
+        $utilisateurs = json_decode($json_donnees, true);
+        $id_existe = false;
+
+        do {
+            $_SESSION['Id'] = bin2hex(random_bytes(4)); 
+            $id_existe = false;
+            foreach ($utilisateurs as $utilisateur) {
+                if ($utilisateur['Mail'] == $_SESSION['Mail']) {
+                    $erreur_message = "Cet email a déjà un compte associé, veuillez vous connecter";
+                    break 2;
+                }
+                if ($utilisateur['Id'] == $_SESSION['Id']) {
+                    $id_existe = true;
+                    break;
+                }
+            }
+        } while ($id_existe); 
+
+        if ($_SESSION['Mdp'] !== $confirmation) {
+            $erreur_message = "Les mots de passe ne sont pas identiques ";
+        }
+            
+
+        if (!isset($erreur_message)) {
+
+            
+            $nouvel_utilisateur = array(
+                'Id' => $_SESSION['Id'],
+                'Mail' => $_SESSION['Mail'],
+                'Mdp' => password_hash($_SESSION['Mdp'], PASSWORD_DEFAULT),
+                'Nom' => $_SESSION['Nom'],
+                'Prenom' => $_SESSION['Prenom'],
+                'Age' => $_SESSION['Age'],
+                'Pays' => $_SESSION['Pays'],
+                'Mobile' => $_SESSION['Mobile'],
+                'Admin' => "Non",
+                'UserName' => null,
+                'Statut' => null,
+            );
+
+            array_push($utilisateurs, $nouvel_utilisateur);
+            file_put_contents('données_json/utilisateurs.json', json_encode($utilisateurs));
+            header("Location: page_accueil.html");
+            exit();
+        }
+    }
+    
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,20 +75,20 @@
 
     <div class="bandeau">
         <div>
-            <a href="page_accueil.html"><img src="contenu_css/logo.png" alt="logo"></a>
-            <a href="page_accueil.html">Accueil</a>
+            <a href="page_accueil.php"><img src="contenu_css/logo.png" alt="logo"></a>
+            <a href="page_accueil.php">Accueil</a>
             <a href="page_destination.html">Destinations</a>
             <a href="page_destination.html#filtres"><img src="contenu_css/recherche_gris.png" alt="logo_recherche">Rechercher</a>
         </div>   
         <div>
-            <a href="page_connexion.html">connexion</a>
+            <a href="page_connexion.php">connexion</a>
             <span>|</span>
-            <a href="page_profil.html"><img src="contenu_css/icon_profil_gris.png" alt="Profil"></a>
+            <a href="page_profil.php"><img src="contenu_css/icon_profil_gris.png" alt="Profil"></a>
         </div>
     </div>
     <div class="bloc_inscription">
     <div class="containere">
-        <form action="https://www.cafe-it.fr/cytech/post.php" method="post">
+        <form method="post">
         <fieldset>
         <legend>
             <b class="titre"> Créer un compte </b>
@@ -82,10 +146,14 @@
             <option value="Gabon">Gabon</option>
         </optgroup>
         </select>  
-        <input type="password" name="Mot de passe" id="password" placeholder="Mot de passe" />
+        <input type="password" name="Mot_de_passe" id="password" placeholder="Mot de passe" required minlength="8" />
         <input type="password" name="confirmation" id="password" placeholder="Confirmer mot de passe " required />
-        <input type="numero" id="telephone" name="mobile" placeholder=" N°mobile" />
-
+        <input type="tel" id="telephone" name="mobile" placeholder=" N°mobile" required pattern="[0-9]+" title="Veuillez entrer numero valide" minlength="10"/>
+        <?php
+        if (isset($erreur_message)) {
+            echo "<p class='erreur_message'>$erreur_message</p>";
+        }
+        ?>
 
     </fieldset>
     <button type="submit">s'inscrire</button>

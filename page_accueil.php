@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,10 +21,10 @@
             <a href="page_destination.html#filtres"><img src="contenu_css/recherche_gris.png" alt="logo_recherche">Rechercher</a>
         </div>   
         <div>
-            <a href="page_connexion.html">connexion</a>
-            <a href="page_inscription.html">inscription</a> 
+            <a href="page_connexion.php">connexion</a>
+            <a href="page_inscription.php">inscription</a> 
             <span>|</span>
-            <a href="page_profil.html"><img src="contenu_css/icon_profil_gris.png" alt="Profil"></a>
+            <a href="page_profil.php"><img src="contenu_css/icon_profil_gris.png" alt="Profil"></a>
         </div>
     </div>
     <div class="bloc">

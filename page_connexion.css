@@ -160,3 +160,14 @@ button:hover {
         font-size: 15px;
         color: var(--blanc)
 }
+
+.erreur_message {
+        color: var(--or);
+}
+
+.connecter {
+        color: var(--blanc);
+        margin-bottom: 20px;
+        margin-top: 10px;
+        
+}

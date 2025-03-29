@@ -232,3 +232,8 @@ span{
     color: var(--blanc);
 }
 
+.profil_modifier{
+    color: var(--or);
+    margin-bottom: -18px;
+}
+
