@@ -81,7 +81,7 @@
         
     </form>
 
-    <div class="pagination">
+    <div class="pages">
         <?php for ($i = 1; $i <= $total_pages; $i++): ?>
             <a href="?page=<?= $i ?>" class="<?= $i == $page ? 'active' : '' ?>"> <?= $i ?> </a>
         <?php endfor; ?>

@@ -1,0 +1,258 @@
+{
+    "Monde futuriste": [
+        {
+    "Etape1": [
+        {
+    "hebergement": [
+        {  "option": "Megabuilding", "image": "images/megabuilding.png", "Prix":"250$" },
+        {   "option": "Hôtel Holo", "image": "images/hotel_holo.png", "Prix":"150$"},
+        { "option": "Capsule Futuriste autonome",  "image": "images/capsule.png",  "Prix":"100$"}
+    ],
+    "restauration": [
+        {  "option": "Restaurant Hacker",  "image": "images/restaurant_hacker.png","Prix":"200$" },
+        { "option": "Bar Lumineux", "image": "images/bar_lumineux.png", "Prix":"175$"},
+        {  "option": "Repas Nano Synthétisé",   "image": "images/Nano.png",  "Prix":"50$" }
+    ],
+    "activites": [
+        {  "option": "Hackathon Spatial", "image": "images/hackathon_spatial.png",   "Prix":"300$" },
+        { "option": "Chasse à la Prime intergalactique", "image": "images/chasse_bounty.png",  "Prix":"400$"},
+        { "option": "visite de l'arbre Monde", "image": "images/réalité.png",   "Prix":"500$" }
+    ],
+    "transport": [
+        {   "option": "Voiture autonome volée", "image": "images/voiture_autonome.png",   "Prix":"100$"},
+        { "option": "Moto Hover",  "image": "images/moto_hover.png", "Prix":"150$"},
+        { "option": "Drone-taxi",   "image": "images/Drone.png",   "Prix":"200$" }
+    ]
+}
+    ],
+    "Etape2":[
+        {
+            "hebergement": [
+                { "option": "Château médiéval", "image": "images/hotel.png", "Prix":"300$"   },
+                { "option": "Auberge médiévale", "image": "images/ver.png",       "Prix":"150$"   }
+            ],
+            "restauration": [
+                { "option": "Banquet médiéval", "image": "images/italie.png", "Prix":"200$"   },
+                { "option": "Taverne médiévale", "image": "images/Plato.png", "Prix":"175$" }
+            ],
+            "activites": [
+                { "option": "Tournoi de chevalerie",   "image": "images/sous.png", "Prix":"300$" }
+                
+            ]
+                
+        }
+    ],
+    "Etape3":[
+        {
+            "hebergement": [
+                { "option": "Hôtel extraterrestre",  "image": "images/France.png",  "Prix":"500$"  }
+            ],
+            "restauration": [
+                {  "option": "Cuisine extraterrestre", "image": "images/fol.png",  "Prix":"300$"  },
+                {  "option": "Repas intergalactique", "image": "images/imersif.png",  "Prix":"200$" }
+            ],
+            "activites": [
+                { "option": "Exploration de la planète", "image": "images/eau.png",   "Prix":"400$"  }
+                
+            ]
+                
+        }
+
+    ]
+        }
+    ],
+    "voyage intergalactique": [
+    {
+      "Etape1": [
+        {
+          "hebergement": [
+            {
+              "option": "Station Orbitale",
+              "image": "images/station_orbitale.png",
+              "Prix": "500$"
+            },
+            {
+              "option": "Vaisseau Spatial de Luxe",
+              "image": "images/vaisseau_spatial.png",
+              "Prix": "700$"
+            },
+            {
+              "option": "Base Lunaire sur Mars",
+              "image": "images/base_mars.png",
+              "Prix": "600$"
+            }
+          ],
+          "restauration": [
+            {
+              "option": "Restaurant 5 étoiles sur une planète lointaine",
+              "image": "images/restaurant_etoile.png",
+              "Prix": "300$"
+            },
+            {
+              "option": "Fast Food dans l'espace",
+              "image": "images/fast_food_spatial.png",
+              "Prix": "50$"
+            },
+            {
+              "option": "Self Catering Interstellaire",
+              "image": "images/self_catering_spatial.png",
+              "Prix": "100$"
+            }
+          ],
+          "activites": [
+            {
+              "option": "Exploration d'Astéroïdes",
+              "image": "images/exploration_asteroide.png",
+              "Prix": "400$"
+            },
+            {
+              "option": "Sport en Zéro Gravité",
+              "image": "images/sport_zero_gravite.png",
+              "Prix": "200$"
+            },
+            {
+              "option": "Traversée de l'hyperespace",
+              "image": "images/traverse_hyperespace.png",
+              "Prix": "500$"
+            }
+          ]
+        }
+      ],
+      "Etape2": [
+        {
+          "hebergement": [
+            {
+              "option": "Colonies sur une Exoplanète",
+              "image": "images/exoplanete.png",
+              "Prix": "700$"
+            },
+            {
+              "option": "Base Souterraine sur Titan",
+              "image": "images/lune.png",
+              "Prix": "600$"
+            }
+          ],
+          "restauration": [
+            {
+              "option": "Repas Synthétiques à la Starship",
+              "image": "images/espace.png",
+              "Prix": "200$"
+            },
+            {
+              "option": "Dîner dans un Restaurant Spatial Orbitant autour d'un Soleil Lointain",
+              "image": "images/blond.png",
+              "Prix": "350$"
+            }
+          ],
+          "activites": [
+            {
+              "option": "Exploration des Canyons Extraterrestres",
+              "image": "images/marge.png",
+              "Prix": "400$"
+            },
+            {
+              "option": "Safari Extraterrestre sur une Planète Sauvage",
+              "image": "images/plante.png",
+              "Prix": "500$"
+            }
+          ]
+        }
+      ],
+      "Etape3": [
+        {
+          "hebergement": [
+            {
+              "option": "Station Orbitale à la Frontière de l'Hyperspace",
+              "image": "images/station_orbitale_hyperespace.png",
+              "Prix": "750$"
+            },
+            {
+              "option": "Vaisseau Colonie en Voyage Interstellaire",
+              "image": "images/vaisseau_colonie.png",
+              "Prix": "800$"
+            }
+          ],
+          "restauration": [
+            {
+              "option": "Cuisine Intergalactique au Cœur d'un Trou Noir",
+              "image": "images/cuisine_trou_noir.png",
+              "Prix": "400$"
+            }
+          ],
+          "activites": [
+            {
+              "option": "Lancer dans un Trou de Ver",
+              "image": "images/lancer_trou_verb.png",
+              "Prix": "500$"
+            },
+            {
+              "option": "visite du stade des gladiateurs intergalactiques",
+              "image": "images/stade.png",
+              "Prix": "350$"
+            }
+          ]
+        }
+      ]
+    }
+    ],
+    "voyage médiéval": [
+        {
+            "Etape1": [
+                {
+                    "hebergement": [
+                        { "option": "Château médiéval", "image": "images/hotel.png", "Prix":"300$"   },
+                        { "option": "Auberge médiévale", "image": "images/ver.png",       "Prix":"150$"   }
+                    ],
+                    "restauration": [
+                        { "option": "Banquet médiéval", "image": "images/italie.png", "Prix":"200$"   },
+                        { "option": "Taverne médiévale", "image": "images/Plato.png", "Prix":"175$" }
+                    ],
+                    "activites": [
+                        { "option": "visite du chateau",   "image": "images/sous.png",  "Prix":"300$"  }
+                        
+                    ]
+                        
+                }
+            ],
+            "Etape2":[
+                {
+                    "hebergement": [
+                        { "option": "Château médiéval", "image": "images/hotel.png", "Prix":"300$"   },
+                        { "option": "Auberge médiévale", "image": "images/ver.png",       "Prix":"150$"   }
+                    ],
+                    "restauration": [
+                        { "option": "Banquet au sommet du mont dragon", "image": "images/italie.png", "Prix":"200$"   },
+                        { "option": "Taverne du roi arthur", "image": "images/Plato.png",  "Prix":"175$" }
+                    ],
+                    "activites": [
+                        {  "option": "bataille navale",   "image": "images/sous.png",  "Prix":"300$"  }
+                        
+                    ]
+                        
+                }
+              ],
+            "Etape3":[
+                {
+                    "hebergement": [
+                        { "option": "Auberge médiévale",  "image": "images/France.png",  "Prix":"5$"  }
+                    ],
+                    "restauration": [
+                        {  "option": "Repas médiéval", "image": "images/fol.png",  "Prix":"300$"  },
+                        {  "option": "Repas du roi arthur", "image": "images/imersif.png",  "Prix":"200$" }
+                    ],
+                    "activites": [
+                        {  "option": "Exploration de la foret enchantée",   "image": "images/eau.png",   "Prix":"400$"  }
+                        
+                    ]
+                  }
+                  ]
+                        
+                }
+              ]
+
+            
+
+        }
+      
+
+    

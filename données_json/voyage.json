@@ -1,0 +1,254 @@
+[
+    {
+        "voyage_id": "1",
+        "voyage_name": "Monde futuriste",
+        "date_depart": "2025-04-01",
+        "date_retour": "2025-04-10",
+        "nb_participants": 2,
+        "final_price": 1000,
+        "steps_details": {
+            "Etape1": {
+                "hebergement": [
+                    {
+                        "name": "Capsule Futuriste autonome",
+                        "price": 100
+                    }
+                ],
+                "restauration": [
+                    {
+                        "name": "Repas Nano Synth\u00e9tis\u00e9",
+                        "price": 50
+                    }
+                ],
+                "activites": [
+                    {
+                        "name": "visite de l'arbre Monde",
+                        "price": 500
+                    }
+                ],
+                "transport": [
+                    {
+                        "name": "Voiture autonome vol\u00e9e",
+                        "price": 100
+                    }
+                ]
+            },
+            "Etape2": {
+                "hebergement": [
+                    {
+                        "name": "Auberge futuriste",
+                        "price": 150
+                    }
+                ],
+                "restauration": [
+                    {
+                        "name": "Bar Lumineux",
+                        "price": 175
+                    }
+                ],
+                "activites": [
+                    {
+                        "name": "Hackathon Spatial",
+                        "price": 300
+                    }
+                ],
+                "transport": [
+                    {
+                        "name": "Moto Hover",
+                        "price": 150
+                    }
+                ]
+            },
+            "Etape3": {
+                "hebergement": [
+                    {
+                        "name": "H\u00f4tel futuriste",
+                        "price": 200
+                    }
+                ],
+                "restauration": [
+                    {
+                        "name": "Restaurant Hacker",
+                        "price": 200
+                    }
+                ],
+                "activites": [
+                    {
+                        "name": "Chasse \u00e0 la Prime intergalactique",
+                        "price": 400
+                    }
+                ],
+                "transport": [
+                    {
+                        "name": "Drone-taxi",
+                        "price": 200
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "voyage_id": "2",
+        "voyage_name": "Monde m\u00e9di\u00e9val",
+        "date_depart": "2025-05-01",
+        "date_retour": "2025-05-10",
+        "nb_participants": 3,
+        "final_price": 1500,
+        "steps_details": {
+            "Etape1": {
+                "hebergement": [
+                    {
+                        "name": "Ch\u00e2teau m\u00e9di\u00e9val",
+                        "price": 300
+                    }
+                ],
+                "restauration": [
+                    {
+                        "name": "Banquet m\u00e9di\u00e9val",
+                        "price": 200
+                    }
+                ],
+                "activites": [
+                    {
+                        "name": "Visite du ch\u00e2teau",
+                        "price": 100
+                    }
+                ],
+                "transport": [
+                    {
+                        "name": "Cheval",
+                        "price": 50
+                    }
+                ]
+            },
+            "Etape2": {
+                "hebergement": [
+                    {
+                        "name": "Auberge m\u00e9di\u00e9vale",
+                        "price": 150
+                    }
+                ],
+                "restauration": [
+                    {
+                        "name": "Taverne m\u00e9di\u00e9vale",
+                        "price": 175
+                    }
+                ],
+                "activites": [
+                    {
+                        "name": "Bataille navale",
+                        "price": 300
+                    }
+                ],
+                "transport": [
+                    {
+                        "name": "Carrosse",
+                        "price": 100
+                    }
+                ]
+            },
+            "Etape3": {
+                "hebergement": [
+                    {
+                        "name": "Auberge m\u00e9di\u00e9vale",
+                        "price": 5
+                    }
+                ],
+                "restauration": [
+                    {
+                        "name": "Repas m\u00e9di\u00e9val",
+                        "price": 3
+                    }
+                ],
+                "activites": [
+                    {
+                        "name": "Visite de la for\u00eat enchant\u00e9e",
+                        "price": 20
+                    }
+                ],
+                "transport": [
+                    {
+                        "name": "Carrosse royal",
+                        "price": 250
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "voyage_id": "3",
+        "voyage_name": "Voyage intergalactique",
+        "date_depart": "2025-06-01",
+        "date_retour": "2025-06-10",
+        "nb_participants": 1,
+        "final_price": 2000,
+        "steps_details": {
+            "Etape1": {
+                "hebergement": [
+                    {
+                        "name": "H\u00f4tel spatial",
+                        "price": 200
+                    }
+                ],
+                "restauration": [
+                    {
+                        "name": "Repas intergalactique",
+                        "price": 100
+                    }
+                ],
+                "activites": [
+                    {
+                        "name": "Visite de la station spatiale",
+                        "price": 300
+                    }
+                ],
+                "transport": [
+                    {
+                        "name": "Vaisseau spatial",
+                        "price": 1000
+                    }
+                ]
+            },
+            "Etape2": {
+                "hebergement": [
+                    {
+                        "name": "Colonies sur une Exoplan\u00e8te",
+                        "price": 700
+                    }
+                ],
+                "restauration": [
+                    {
+                        "name": "D\u00eener dans un Restaurant Spatial Orbitant autour d'un Soleil Lointain",
+                        "price": 350
+                    }
+                ],
+                "activites": [
+                    {
+                        "name": " Safari Extraterrestre sur une Plan\u00e8te Sauvage ",
+                        "price": 500
+                    }
+                ]
+            },
+            "Etape3": {
+                "hebergement": [
+                    {
+                        "name": "Station Orbitale \u00e0 la Fronti\u00e8re de l'Hyperspace",
+                        "price": 750
+                    }
+                ],
+                "restauration": [
+                    {
+                        "name": "Cuisine Intergalactique au C\u0153ur d'un Trou Noir",
+                        "price": 500
+                    }
+                ],
+                "activites": [
+                    {
+                        "name": "visite du stade des gladiateurs intergalactiques",
+                        "price": 350
+                    }
+                ]
+            }
+        }
+    }
+]

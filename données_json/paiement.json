@@ -1,0 +1,202 @@
+[
+    {
+        "status": "accepted",
+        "montant": "3500",
+        "transaction": "abc123",
+        "vendeur": "MEF-2_H",
+        "control": "d41d8cd98f00b204e9800998ecf8427e",
+        "user": "user1"
+    },
+    {
+        "status": "denied",
+        "montant": "2200",
+        "transaction": "xyz789",
+        "vendeur": "MEF-2_H",
+        "control": "e99a18c428cb38d5f260853678922e03",
+        "user": "user2"
+    },
+    {
+        "status": "pending",
+        "montant": "2400",
+        "transaction": "def456",
+        "vendeur": "MEF-2_H",
+        "control": "098f6bcd4621d373cade4e832627b4f6",
+        "user": "user3"
+    },
+    {
+        "status": "accepted",
+        "montant": "1750",
+        "transaction": "ghi789",
+        "vendeur": "MEF-2_H",
+        "control": "5d41402abc4b2a76b9719d911017c592",
+        "user": "user4"
+    },
+    {
+        "status": "denied",
+        "montant": "5150",
+        "transaction": "jkl012",
+        "vendeur": "MEF-2_H",
+        "control": "7c6a180b36896a0a8c02787eeafb0e4c",
+        "user": "user5"
+    },
+    {
+        "status": "pending",
+        "montant": "4800",
+        "transaction": "mno345",
+        "vendeur": "MEF-2_H",
+        "control": "9d5ed678fe57bcca610140957afab571",
+        "user": "user6"
+    },
+    {
+        "status": null,
+        "montant": null,
+        "transaction": null,
+        "vendeur": "MEF-2_H",
+        "control": null,
+        "user": null
+    },
+    {
+        "status": null,
+        "montant": null,
+        "transaction": null,
+        "vendeur": "MEF-2_H",
+        "control": null,
+        "user": null
+    },
+    {
+        "status": null,
+        "montant": null,
+        "transaction": null,
+        "vendeur": "MEF-2_H",
+        "control": null,
+        "user": null
+    },
+    {
+        "status": null,
+        "montant": null,
+        "transaction": null,
+        "vendeur": "MEF-2_H",
+        "control": null,
+        "user": null
+    },
+    {
+        "status": null,
+        "montant": null,
+        "transaction": null,
+        "vendeur": "MEF-2_H",
+        "control": null,
+        "user": null
+    },
+    {
+        "status": null,
+        "montant": null,
+        "transaction": null,
+        "vendeur": "MEF-2_H",
+        "control": null,
+        "user": null
+    },
+    {
+        "status": null,
+        "montant": "900",
+        "transaction": null,
+        "vendeur": "MEF-2_H",
+        "control": null,
+        "user": null
+    },
+    {
+        "status": null,
+        "montant": null,
+        "transaction": null,
+        "vendeur": "MEF-2_H",
+        "control": null,
+        "user": null
+    },
+    {
+        "status": null,
+        "montant": null,
+        "transaction": null,
+        "vendeur": "MEF-2_H",
+        "control": null,
+        "user": null
+    },
+    {
+        "status": null,
+        "montant": "900",
+        "transaction": null,
+        "vendeur": "MEF-2_H",
+        "control": null,
+        "user": null
+    },
+    {
+        "status": null,
+        "montant": "900",
+        "transaction": null,
+        "vendeur": "MEF-2_H",
+        "control": null,
+        "user": null
+    },
+    {
+        "status": null,
+        "montant": null,
+        "transaction": null,
+        "vendeur": "MEF-2_H",
+        "control": null,
+        "user": null
+    },
+    {
+        "status": null,
+        "montant": null,
+        "transaction": null,
+        "vendeur": "MEF-2_H",
+        "control": null,
+        "user": null
+    },
+    {
+        "status": null,
+        "montant": "900",
+        "transaction": null,
+        "vendeur": "MEF-2_H",
+        "control": null,
+        "user": null
+    },
+    {
+        "status": null,
+        "montant": null,
+        "transaction": null,
+        "vendeur": "MEF-2_H",
+        "control": null,
+        "user": null
+    },
+    {
+        "status": null,
+        "montant": null,
+        "transaction": null,
+        "vendeur": "MEF-2_H",
+        "control": null,
+        "user": null
+    },
+    {
+        "status": null,
+        "montant": null,
+        "transaction": null,
+        "vendeur": "MEF-2_H",
+        "control": null,
+        "user": null
+    },
+    {
+        "status": null,
+        "montant": null,
+        "transaction": null,
+        "vendeur": "MEF-2_H",
+        "control": null,
+        "user": null
+    },
+    {
+        "status": null,
+        "montant": "850",
+        "transaction": null,
+        "vendeur": "MEF-2_H",
+        "control": null,
+        "user": null
+    }
+]

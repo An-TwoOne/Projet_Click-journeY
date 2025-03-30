@@ -1,0 +1,195 @@
+@import url('commun.css');
+
+body {
+    font-family: var(--police);
+    background: linear-gradient(135deg, rgba(143, 143, 143, 0.9), rgba(144, 204, 255, 0.9)), url('/mnt/data/image.png');
+    background-size: cover;
+    background-position: center center;
+    color: var(--noir);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+    padding-top: 80px; 
+}
+
+.bandeau {
+    background-color: var(--noir);
+    color: var(--blanc);
+    padding: var(--padding);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.bandeau a {
+    color: var(--blanc);
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.bandeau a:hover {
+    color: var(--turquoise);
+}
+
+.contenu_personnalisation {
+    padding: var(--marge);
+    text-align: center;
+    max-width: 1200px;
+    width: 100%;
+    margin-top: 100px; /* Espace pour éviter le bandeau */
+}
+
+h2 {
+    font-size: var(--taille-titre);
+    margin-bottom: var(--marge);
+    color: var(--noir);
+}
+
+.section-title {
+    font-size: 1.5em;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: var(--gris);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.option-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px; /* Espacement plus grand entre les cartes */
+    justify-items: center;
+    align-items: center; /* Centrer les éléments dans chaque carte */
+    margin-top: 40px;
+    padding: 0 20px;
+}
+
+.option-card {
+    background-color: var(--blanc);
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrer verticalement le contenu */
+    align-items: center; /* Centrer horizontalement */
+    max-width: 350px;
+    width: 100%;
+}
+
+.option-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: opacity 0.3s ease;
+}
+
+.option-card img:hover {
+    opacity: 0.9;
+}
+
+.option-card label {
+    display: block;
+    margin-top: 20px;
+    font-weight: bold;
+    color: var(--gris);
+}
+
+.option-card input[type="radio"],
+.option-card input[type="checkbox"] {
+    margin-top: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.option-card input[type="radio"]:hover,
+.option-card input[type="checkbox"]:hover {
+    transform: scale(1.1);
+}
+
+.option-card input[type="number"] {
+    margin-top: 10px;
+    padding: 8px;
+    width: 60px;
+    text-align: center;
+    border: 1px solid var(--gris);
+    border-radius: 4px;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--turquoise);
+    color: var(--noir);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    margin-top: 40px;
+}
+
+.submit-button:hover {
+    background-color: #1c9d96;
+}
+
+.submit-button:focus {
+    outline: none;
+    box-shadow: 0 0 5px 2px var(--turquoise);
+}
+.voyage-image-container {
+    width: 100%;
+    height: 350px; /* Tu peux ajuster la hauteur selon tes préférences */
+    overflow: hidden;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.voyage-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* L'image couvre l'espace disponible sans déformation */
+    border-radius: 10px; /* Optionnel : pour donner un effet arrondi aux bords */
+    box-shadow: 0 4px 6px rgba(122, 66, 66, 0.2); /* Ajout d'une légère ombre pour la mise en valeur */
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .option-card {
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .option-container {
+        grid-template-columns: 1fr; /* Les options prennent toute la largeur de l'écran */
+    }
+
+    .bandeau {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bandeau a {
+        margin: 10px 0;
+    }
+}
+

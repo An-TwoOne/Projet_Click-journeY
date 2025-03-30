@@ -11,8 +11,9 @@
     <link href="contenu_css/icon.png" rel="icon">
 </head>
 <body>
+
     <?php include('header.php') ?>
-   
+    
     <div class="bloc_recherche">
         <form>
             <div class="recherche">
@@ -31,43 +32,49 @@
             <img src="contenu_css/ville_futur.png" alt="ville_futur">
             <p>Monde Futuriste</p>
             <span>Voyagez en l’an 2130 et explorez un monde ultra-technologique.</span>
-            <div>à partir de 1875€</div>
+            <div> <a class="voir_plus" href="voyage.php?nom=Monde futuriste">Voir+</a> à partir de 1875€</div>
+        
         </div>
         <div class="contenu"> 
             <img src="contenu_css/voyage_espace.png" alt="voyage_espace">
             <p>Voyage Intergalactique</p>
             <span>Partez à la découverte de l’univers, visitez des planètes inconnues et rencontrez des civilisations extraterrestres.</span>
-            <div>à partir de 2360€</div>
+            <div><a class="voir_plus" href="voyage.php?nom=Monde futuriste">Voir+</a>à partir de 2360€</div>
         </div>
         <div class="contenu"> 
             <img src="contenu_css/voyage_medieval.png" alt="voyage_medieval">
             <p>Aventure Médiévale</p>
             <span>Plongez dans l’univers des chevaliers et revivez l’épopée du Moyen Âge à travers châteaux, tournois et légendes fascinantes.</span>
             <div>à partir de 1240€</div>
+            <a class="voir_plus" href="voyage.php?nom=voyage médiéval">Voir+</a>
         </div>
         <div class="contenu">
             <img src="contenu_css/jurrasique.png" alt="voyage_dinosaure">
             <p>Épopée Jurassique</p>
             <span>Remontez à l’ère des dinosaures, explorez une jungle primitive et croisez des créatures titanesques.</span>
             <div>à partir de 2530€</div>
+            <a  class="voir_plus" href="voyage.php?nom=Épopée Jurassique">Voir+</a>
         </div>
         <div class="contenu"> 
             <img src="contenu_css/voyage_pirate.png" alt="voyage_pirate">
             <p>Île des pirates</p>
             <span>Naviguez sur les mers du XVIIe siècle, affrontez des corsaires et trouvez des trésors enfouis.</span>
             <div>à partir de 2230€</div>
+            <a class="voir_plus" href="voyage.php?nom=Île des pirates">Voir+</a>
         </div>
         <div class="contenu"> 
             <img src="contenu_css/farwest.png" alt="voyage_farwest">
             <p>Expédition Far West</p>
             <span>Partez à la conquête de l’Ouest sauvage, devenez un hors-la-loi ou un shérif et affrontez duels, braquages et chasseurs de primes !</span>
             <div>à partir de 1750€</div>
+            <a  class="voir_plus" href="voyage.php?nom=Expédition Far West">Voir+</a>
         </div>
         <div class="contenu"> 
             <img src="contenu_css/Gotham.png" alt="voyage_gothamcity">
             <p>Gotham City</p>
             <span>Voyagez à travers Gotham, une ville pleine de mystères, en proie à la criminalité et aux super-vilains, où chaque coin de rue révèle une nouvelle intrigue.</span>
             <div>à partir de 1300€</div>
+            <a class="voir_plus" href="voyage.php?nom=Gotham City">Voir+</a>
         </div>
     </div>
 

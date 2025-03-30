@@ -101,23 +101,24 @@ input[name="exclure"]{
 
 }
 
-.pagination {
+.pages {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 100px;
 }
 
-.pagination a {
+.pages a {
     margin: 0 5px;
-    padding: 10px;
-    background-color: var(--noir);
+    padding: 9px;
+    background-color: #11111171;
     color: var(--blanc);
     text-decoration: none;
     border-radius: 5px;
+    font-size: 18px;
 }
 
-.pagination a.active {
-    background-color: var(--turquoise);
+.pages a.active {
+    background-color: var(--noir);
 }
 
 

@@ -221,6 +221,15 @@ label {
     
 }
 
+.voir_plus {
+    text-decoration: none;
+    color: var(--turquoise);
+    font-family: var(--police);
+    font-weight: bold;
+    margin-right: 180px;
+    font-size: 19px;
+}
+
 
 
 
