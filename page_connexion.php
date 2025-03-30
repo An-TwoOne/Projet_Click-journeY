@@ -28,6 +28,7 @@
                             $_SESSION["Nom"] = $utilisateur["Nom"];
                             $_SESSION["Mobile"] = $utilisateur["Mobile"];
                             $_SESSION["Username"] = $utilisateur["Username"];
+                            $_SESSION["Admin"] = $utilisateur["Admin"];
 
                         }
                         break; 

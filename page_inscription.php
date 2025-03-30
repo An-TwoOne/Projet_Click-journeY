@@ -1,3 +1,4 @@
+
 <?php
     session_start();
 
@@ -55,7 +56,7 @@
 
             array_push($utilisateurs, $nouvel_utilisateur);
             file_put_contents('données_json/utilisateurs.json', json_encode($utilisateurs));
-            header("Location: page_accueil.html");
+            header("Location: page_accueil.php");
             exit();
         }
     }

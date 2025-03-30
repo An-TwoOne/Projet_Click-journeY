@@ -21,13 +21,17 @@ session_start();
                 }
             }
             ?>
+            <?php
+                if ( isset($_SESSION["Id"]) && $_SESSION["Admin"] === "oui") {
+                    echo '<a href="page_administrateur.php">Administrateur</a>';
+                }
+            ?>
             <span>|</span>
             <?php
-        
-            if (isset($_SESSION["Id"])) {
-               echo '<a href="page_profil.php"><img src="contenu_css/icon_profil_connecte.png" alt="Profil"></a>';
-            } else {
-               echo '<a href="page_profil.php"><img src="contenu_css/icon_profil_gris.png" alt="Profil"></a>';
+                if (isset($_SESSION["Id"])) {
+                    echo '<a href="page_profil.php"><img src="contenu_css/icon_profil_connecte.png" alt="Profil"></a>';
+                } else {
+                    echo '<a href="page_profil.php"><img src="contenu_css/icon_profil_gris.png" alt="Profil"></a>';
             }
             ?>
         </div>

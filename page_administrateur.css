@@ -83,3 +83,41 @@ input[name="exclure"]{
     margin-left: 22px;
 }
 
+.enregistrer{
+    margin-right: 0;
+    padding: 10px 20px;
+    background-color: var(--noir);
+    font-family: var(--police);
+    color: var(--blanc);
+    border: none;
+    font-weight: bold;
+    border: none;
+}
+
+.enregistrer:hover{
+    background-color: #111111a1;
+    color: var(--noir);
+    
+
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination a {
+    margin: 0 5px;
+    padding: 10px;
+    background-color: var(--noir);
+    color: var(--blanc);
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.pagination a.active {
+    background-color: var(--turquoise);
+}
+
+
