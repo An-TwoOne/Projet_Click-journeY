@@ -73,9 +73,12 @@
     <meta charset="UTF-8">
     <title>MultiversTrip Personnalisation du Voyage</title>
     <link rel="stylesheet" href="voyage.css">
+    <link rel = "stylesheet" type = "text/css" href = "header.css">
     <link href="contenu_css/icon.png" rel="icon">
 </head>
 <body>
+    <?php include('header.php') ?>
+    <div class="container">
     <h2>Personnalisez votre voyage: <?php echo $voyage_nom; ?></h2>
 
     <form action="voyage.php?nom=<?php echo urlencode($voyage_nom); ?>" method="post">
@@ -101,7 +104,8 @@
         }
         ?>
 
-        <button type="submit">Réservation</button>
+        <button  class ="reservation" type="submit">Réservation</button>
     </form>
+    </div>
 </body>
 </html>

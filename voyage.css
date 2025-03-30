@@ -2,7 +2,7 @@
 
 body {
     font-family: var(--police);
-    background: linear-gradient(135deg, rgba(143, 143, 143, 0.9), rgba(144, 204, 255, 0.9)), url('/mnt/data/image.png');
+    background: linear-gradient(135deg, rgba(71, 71, 71, 0.9), #161616), url('/mnt/data/image.png');
     background-size: cover;
     background-position: center center;
     color: var(--noir);
@@ -14,33 +14,7 @@ body {
     align-items: center;
     min-height: 100vh;
     overflow-x: hidden;
-    padding-top: 80px; 
-}
-
-.bandeau {
-    background-color: var(--noir);
-    color: var(--blanc);
-    padding: var(--padding);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.bandeau a {
-    color: var(--blanc);
-    text-decoration: none;
-    margin: 0 10px;
-    font-weight: bold;
-}
-
-.bandeau a:hover {
-    color: var(--turquoise);
+    
 }
 
 .contenu_personnalisation {
@@ -48,10 +22,11 @@ body {
     text-align: center;
     max-width: 1200px;
     width: 100%;
-    margin-top: 100px; /* Espace pour éviter le bandeau */
+    margin-top: 100px; 
 }
 
 h2 {
+    margin-top: 150px;
     font-size: var(--taille-titre);
     margin-bottom: var(--marge);
     color: var(--noir);
@@ -61,7 +36,7 @@ h2 {
     font-size: 1.5em;
     margin-top: 40px;
     margin-bottom: 20px;
-    color: var(--gris);
+    color: var(--blanc);
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -69,9 +44,9 @@ h2 {
 .option-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 30px; /* Espacement plus grand entre les cartes */
+    gap: 30px; 
     justify-items: center;
-    align-items: center; /* Centrer les éléments dans chaque carte */
+    align-items: center; 
     margin-top: 40px;
     padding: 0 20px;
 }
@@ -87,8 +62,8 @@ h2 {
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centrer verticalement le contenu */
-    align-items: center; /* Centrer horizontalement */
+    justify-content: center; 
+    align-items: center; 
     max-width: 350px;
     width: 100%;
 }
@@ -156,7 +131,7 @@ h2 {
 }
 .voyage-image-container {
     width: 100%;
-    height: 350px; /* Tu peux ajuster la hauteur selon tes préférences */
+    height: 350px; 
     overflow: hidden;
     margin-bottom: 20px;
     position: relative;
@@ -165,13 +140,12 @@ h2 {
 .voyage-image {
     width: 100%;
     height: auto;
-    object-fit: cover; /* L'image couvre l'espace disponible sans déformation */
-    border-radius: 10px; /* Optionnel : pour donner un effet arrondi aux bords */
-    box-shadow: 0 4px 6px rgba(122, 66, 66, 0.2); /* Ajout d'une légère ombre pour la mise en valeur */
+    object-fit: cover; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(122, 66, 66, 0.2); 
 }
 
 
-/* Responsive Design */
 @media screen and (max-width: 768px) {
     .option-card {
         max-width: 90%;
@@ -180,16 +154,21 @@ h2 {
 
 @media screen and (max-width: 480px) {
     .option-container {
-        grid-template-columns: 1fr; /* Les options prennent toute la largeur de l'écran */
+        grid-template-columns: 1fr; 
     }
 
-    .bandeau {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .bandeau a {
-        margin: 10px 0;
-    }
 }
 
+.reservation{
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: var(--police);
+    font-weight: bold;
+    margin-bottom: 50px;
+    background-color: var(--turquoise);
+}
+
+.reservation:hover{
+    background-color: var(--blanc);
+}

@@ -14,7 +14,7 @@ $total_price = 0; // Initialisation du prix total
 <head>
     <meta charset="UTF-8">
     <title>Récapitulatif du Voyage</title>
-    <link rel="stylesheet" href="style_personnalisation.css">
+    <link rel="stylesheet" href="recapitulatif_voyage.css">
 </head>
 <body>
     <div class="contenu_recap">
