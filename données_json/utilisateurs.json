@@ -1,20 +1,7 @@
 [
     {
-        "Id": "2c72e65f",
-        "Mail": "super@gmail.com",
-        "Mdp": "$2b$12$f33Pihg9N.L5s8CLPcZHNuH4z1vojcfC1Hs.n2tzrSOD.9ODJmFmu",
-        "Nom": "Test2",
-        "Prenom": "Testeur",
-        "Age": "20",
-        "Pays": "France",
-        "Mobile": "11111111111111111",
-        "Admin": "oui",
-        "UserName": "Test",
-        "Statut": null
-    },
-    {
         "Id": "9df624e8",
-        "Mail": "projet@gmail.com",
+        "Mail": "tony@gmail.com",
         "Mdp": "$2b$12$3fQyD8OVlzXg00llBe\/.FeEfG6XjICVTD5A2KO96Jj7rD4b1.TmPO",
         "Nom": "Stark",
         "Prenom": "Tony",
@@ -22,19 +9,6 @@
         "Pays": "USA",
         "Mobile": "202 585 4851",
         "Admin": "oui",
-        "UserName": null,
-        "Statut": null
-    },
-    {
-        "Id": "b671fea1",
-        "Mail": "picsou@gmail.fr",
-        "Mdp": "$2b$12$dPbnX2DWTMpcDBP9sH4vXed2HXLzLb3qvnR2DuvagIgFCwX\/uOlc6",
-        "Nom": "Dubl\u00e9",
-        "Prenom": "Picsou",
-        "Age": "75",
-        "Pays": "Finlande",
-        "Mobile": "041 123 4567",
-        "Admin": "non",
         "UserName": null,
         "Statut": null
     },
@@ -49,19 +23,6 @@
         "Mobile": "555 123 4967",
         "Admin": "non",
         "UserName": "batman",
-        "Statut": null
-    },
-    {
-        "Id": "6429add4",
-        "Mail": "dark.vador@gmail.com",
-        "Mdp": "$2b$12$.\/7vQQ7foTF7s65sIH5PeuXnDe1hKm9.DL5tVaX\/Y9s8BIFiyU2ke",
-        "Nom": "Skywalker",
-        "Prenom": "Anakin",
-        "Age": "38",
-        "Pays": "USA",
-        "Mobile": "555 123 4117",
-        "Admin": "non",
-        "UserName": "DarkVador",
         "Statut": null
     },
     {
@@ -127,7 +88,7 @@
         "Mobile": "555 654 3210",
         "Admin": "non",
         "UserName": "blackwidow",
-        "Statut": "VIP"
+        "Statut": null
     },
     {
         "Id": "8k9l0m1n",
@@ -167,5 +128,44 @@
         "Admin": "oui",
         "UserName": "coucou",
         "Statut": null
+    },
+    {
+        "Id": "e4cb894c",
+        "Mail": "projet@gmail.com",
+        "Mdp": "$2y$10$j87P8JSHTSgGkPRd6haLreUDF5oPKeFFtt8osrOt4zRCBIYm.1MTC",
+        "Nom": "Test",
+        "Prenom": "Admin",
+        "Age": "22",
+        "Pays": "France",
+        "Mobile": "892161267329",
+        "Admin": "oui",
+        "UserName": null,
+        "Statut": null
+    },
+    {
+        "Id": "4744c1d0",
+        "Mail": "picsou@gmail.com",
+        "Mdp": "$2y$10$OmfjEctBtGKZ0fe659kLku9ekQpMv9DaKWsGjuxi13zEr0lZVpc6K",
+        "Nom": "Dubl\u00e9",
+        "Prenom": "Picsou",
+        "Age": "70",
+        "Pays": "France",
+        "Mobile": "9909999099",
+        "Admin": "Non",
+        "UserName": null,
+        "Statut": "VIP"
+    },
+    {
+        "Id": "7a3f8645",
+        "Mail": "dark.vador@gmail.com",
+        "Mdp": "$2y$10$bPsl3BnRb20yACeytd6vWe617nS\/i\/.bdHrnYRDwhJxjDNvhtLmoG",
+        "Nom": "Skywalker",
+        "Prenom": "Anakin",
+        "Age": "35",
+        "Pays": "USA",
+        "Mobile": "66732362343",
+        "Admin": "Non",
+        "UserName": null,
+        "Statut": "Exclu"
     }
 ]

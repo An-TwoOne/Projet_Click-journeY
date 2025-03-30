@@ -1,25 +1,30 @@
 <?php
 session_start();
 
-if (!isset($_SESSION['selected_options'])) {
-    die('Aucune option sélectionnée.');
-}
+    if (!isset($_SESSION['selected_options'])) {
+        die('Aucune option sélectionnée.');
+    }
 
-$selected_options = $_SESSION['selected_options'];
-$total_price = 0; // Initialisation du prix total
+    $selected_options = $_SESSION['selected_options'];
+    $total_price = 0; 
 ?>
 
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Récapitulatif du Voyage</title>
+    <title>MultiversTrip Récapitulatif du Voyage</title>
     <link rel="stylesheet" href="recapitulatif_voyage.css">
+    <link rel = "stylesheet" type = "text/css" href = "header.css">
+    <link href="contenu_css/icon.png" rel="icon">
 </head>
 <body>
+
+    <?php include('header.php') ?>
+
     <div class="contenu_recap">
         <h2>Récapitulatif de votre voyage</h2>
-        <table border="1">
+        <table>
             <thead>
                 <tr>
                     <th>Étape</th>
@@ -33,12 +38,12 @@ $total_price = 0; // Initialisation du prix total
             <tbody>
                 <?php foreach ($selected_options as $option): ?>
                     <?php
-                    // Calcul du sous-total pour chaque option
+                    
                     $price = (int) filter_var($option['price'], FILTER_SANITIZE_NUMBER_INT);
                     $quantity = (int) $option['quantity'];
                     $subtotal = $price * $quantity;
 
-                    // Ajouter le sous-total au prix total
+                    
                     $total_price += $subtotal;
                     ?>
                     <tr>
@@ -58,9 +63,9 @@ $total_price = 0; // Initialisation du prix total
         </div>
 
         <div class="boutons">
-            <!-- Bouton pour revenir à la page de personnalisation -->
+            
             <a href="voyage.php?nom=<?= urlencode($_SESSION['voyage']) ?>" class="btn">🔧 Modifier le voyage</a>
-            <!-- Bouton pour passer au paiement -->
+           
             <a href="paiement.php?montant=<?= $total_price ?>" class="btn">💳 Passer au paiement</a>
         </div>
     </div>

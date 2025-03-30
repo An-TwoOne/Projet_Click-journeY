@@ -170,5 +170,6 @@ h2 {
 }
 
 .reservation:hover{
-    background-color: var(--blanc);
+    color: #ffffff;
+    box-shadow: 0px 0px 3px var(--turquoise);
 }

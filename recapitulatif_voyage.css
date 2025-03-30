@@ -1,23 +1,38 @@
+@import url('commun.css');
+
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    padding: 20px;
+    font-family: var(--police);
+    background-color: #141414f1;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-image: var(--topographique);
+    
 }
 
 .contenu_recap {
     max-width: 800px;
     margin: auto;
-    background: white;
+    margin-top: 160px;
+    background: rgb(240, 239, 239);
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  
+    
 }
 
 h2, h3 {
     text-align: center;
+    
 }
 
 .recap-option {
+    
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 10px;
@@ -45,7 +60,7 @@ h2, h3 {
 }
 
 .btn {
-    background-color: #008CBA;
+    background-color: #027c94;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -57,7 +72,7 @@ h2, h3 {
     background-color: #005f73;
 }
 
-/* Styles pour les cartes d'options */
+
 .option-card {
     display: inline-block;
     width: 200px;
@@ -99,4 +114,17 @@ h3, h4 {
     text-align: center;
     margin-top: 20px;
     color: #333;
+}
+
+table {
+    border-collapse: collapse;
+    
+}
+
+th, td {
+    border:  solid var(--noir);
+    border-width: 1.5px;
+    padding: 8px;
+    
+    
 }
