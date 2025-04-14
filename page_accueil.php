@@ -22,7 +22,7 @@
         <h1>Voyager sans limite !</h1>
     </div>
     <div class = "presentation">
-        <a href="page_destination.html" class="destinations"> Découvrir les destinations <img src="contenu_css/flèche.png" alt="flèche"></a>
+        <a href="page_destination.php" class="destinations"> Découvrir les destinations <img src="contenu_css/flèche.png" alt="flèche"></a>
         <p>
             Plongez dans une autre dimension et explorer divers univers grâce à nos offres de voyages en réalité augmentée.<br/> <br/>
             Que vous rêviez de parcourir un endroit futuriste, de vivre dans un monde médiéval fantastique ou d'explorer des galaxies lointaines,

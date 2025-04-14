@@ -55,7 +55,7 @@
         </div>
         <div class="contenu"> 
             <img src="contenu_css/voyage_pirate.png" alt="voyage_pirate">
-            <p>Île des pirates</p>
+            <p>Île des Pirates</p>
             <span>Naviguez sur les mers du XVIIe siècle, affrontez des corsaires et trouvez des trésors enfouis.</span>
             <div><a class="voir_plus" href="voyage.php?nom=Île des pirates">Voir+</a>à partir de 2230€</div>
         </div>
@@ -71,6 +71,64 @@
             <span>Voyagez à travers Gotham, une ville pleine de mystères, en proie à la criminalité et aux super-vilains, où chaque coin de rue révèle une nouvelle intrigue.</span>
             <div><a class="voir_plus" href="voyage.php?nom=Gotham City">Voir+</a>à partir de 1300€</div>
         </div>
+        <div class="contenu"> 
+            <img src="contenu_css/voyage_japon.png" alt="japon_feodal">
+            <p>Japon Féodal</p>
+            <span>Revivez l’époque des samouraïs et des shoguns, entre temples sacrés, katanas affûtés et code de l’honneur.</span>
+            <div><a class="voir_plus" href="voyage.php?nom=Japon Féodal">Voir+</a>à partir de 1620€</div>
+        </div>
+        <div class="contenu"> 
+            <img src="contenu_css/voyage_sorcier.png" alt="academie_sorcellerie">
+            <p>Académie de Sorcellerie</p>
+            <span>Apprenez la magie, fabriquez des potions et affrontez des créatures mythiques dans une école pleine de mystères et de sorts.</span>
+            <div><a class="voir_plus" href="voyage.php?nom=Académie de Sorcellerie">Voir+</a>à partir de 1950€</div>
+
+        </div>
+        <div class="contenu"> 
+            <img src="contenu_css/voyage_atlantide.png" alt="atlantide">
+            <p>Atlantide Perdu</p>
+            <span>Explorez les vestiges d’une civilisation sous-marine oubliée, entre merveilles architecturales et créatures abyssales.</span>
+            <div><a class="voir_plus" href="voyage.php?nom=Atlantide Engloutie">Voir+</a>à partir de 990€</div>
+        </div>
+        <div class="contenu"> 
+            <img src="contenu_css/voyage_pixel.png" alt="pixel_world">
+            <p>Pixel World</p>
+            <span>Plongez dans un univers rétro où chaque niveau est un défi rempli de pièges, de boss et de bonus cachés.</span>
+            <div><a class="voir_plus" href="voyage.php?nom=Pixel World">Voir+</a>à partir de 1210€</div>
+        </div>
+        <div class="contenu"> 
+            <img src="contenu_css/voyage_grece.png" alt="voyage_grece_antique">
+            <p>Odyssée Antique</p>
+            <span>Revivez l'âge d'or de la Grèce antique : arpentez les temples d’Athènes, combattez aux côtés des Spartiates et croisez dieux et créatures mythologiques.</span>
+            <div><a class="voir_plus" href="voyage.php?nom=Odyssée Antique">Voir+</a>à partir de 1980€</div>
+        </div>
+        <div class="contenu"> 
+            <img src="contenu_css/voyage_egypte.png" alt="voyage_egypte_antique">
+            <p>Voyage en Égypte</p>
+            <span>Explorez les rives du Nil, pénétrez dans les pyramides interdites et assistez aux rituels des pharaons sous le regard des dieux égyptiens.</span>
+            <div><a class="voir_plus" href="voyage.php?nom=Mystères d'Égypte">Voir+</a>à partir de 1030€</div>
+        </div>
+        <div class="contenu"> 
+            <img src="contenu_css/voyage_viking.png" alt="voyage_nordique">
+            <p>Expédition Nordique</p>
+            <span>Parcourez les terres des Vikings, croisez Odin, Thor et Loki, et préparez-vous au Ragnarök dans un monde où mythes et réalité ne font qu’un.</span>
+            <div><a class="voir_plus" href="voyage.php?nom=Légendes Nordiques">Voir+</a>à partir de 1990€</div>
+        </div>
+        <div class="contenu"> 
+            <img src="contenu_css/voyage_apocalypse.png" alt="voyage_post_apocalyptique">
+            <p>Terres Dévastées</p>
+            <span>Survivez dans un monde où la loi du plus fort règne. Enchaînez les courses-poursuites dans le désert et défiez les clans pour votre survie.</span>
+            <div><a class="voir_plus" href="voyage.php?nom=Terres Dévastées">Voir+</a>à partir de 1190€</div>
+        </div>
+        <div class="contenu"> 
+            <img src="contenu_css/voyage_steampunk.png" alt="voyage_steampunk">
+            <p>Monde SteamPunk</p>
+            <span>Découvrez une ville rétro-futuriste où rouages, dirigeables et inventions folles donnent vie à un univers victorien fantastique.</span>
+            <div><a class="voir_plus" href="voyage.php?nom=Cité à Vapeur">Voir+</a>à partir de 1720€</div>
+        </div>
+
+        
+
     </div>
 
 

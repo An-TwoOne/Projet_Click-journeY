@@ -107,6 +107,7 @@ img[src="contenu_css/tendance.png"]{
 .contenu img{
     width: 100%;
     height: 50%;
+    border-radius: 6px;
 }
 
 #conteneur:hover > .contenu:hover {
