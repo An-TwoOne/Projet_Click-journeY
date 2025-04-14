@@ -1,6 +1,11 @@
 [
-    {
+    {   "titre":"Monde Futuriste",
+        "description":"Voyagez en l’an 2130 et explorez un monde ultra-technologique.",
+        "image":"contenu_css/ville_futur.png",
+        "lien":"voyage.php?nom=Monde futuriste",
+        "prix":"1875€",
         "voyage_id": "1",
+        "tags": ["technologie", "futur","robot", "science-fiction","ville"],
         "voyage_name": "Monde futuriste",
         "date_depart": "2025-04-01",
         "date_retour": "2025-04-10",
@@ -88,7 +93,13 @@
         }
     },
     {
+        "titre":"Voyage Intergalactique",
+        "description":"Partez à la découverte de l’univers, visitez des planètes inconnues et rencontrez des civilisations extraterrestres.",
+        "image":"contenu_css/voyage_espace.png",
+        "lien":"voyage.php?nom=voyage intergalactique",
+        "prix": "2360€",
         "voyage_id": "2",
+        "tags": ["technologie", "futur","robot", "science-fiction","espace","planète","galaxie"],
         "voyage_name": "Monde m\u00e9di\u00e9val",
         "date_depart": "2025-05-01",
         "date_retour": "2025-05-10",
@@ -175,8 +186,14 @@
             }
         }
     },
-    {
+    {   
+        "titre":"Aventure Médiévale",
+        "description": "Plongez dans l’univers des chevaliers et revivez l’épopée du Moyen Âge à travers châteaux, tournois et légendes fascinantes.",
+        "image": "contenu_css/voyage_medieval.png",
+        "lien": "voyage.php?nom=voyage médiéval",
+        "prix": "1240€",
         "voyage_id": "3",
+        "tags": ["histoire", "moyen-age","chevalier", "chateau","légende","combat","passé"],
         "voyage_name": "Voyage intergalactique",
         "date_depart": "2025-06-01",
         "date_retour": "2025-06-10",
@@ -250,5 +267,122 @@
                 ]
             }
         }
+    },
+    {
+        "titre": "Épopée Jurassique",
+        "description": "Remontez à l’ère des dinosaures, explorez une jungle primitive et croisez des créatures titanesques.",
+        "image": "contenu_css/jurrasique.png",
+        "lien": "voyage.php?nom=Épopée Jurassique",
+        "prix": "2530€",
+        "voyage_id": "4",
+        "tags": ["préhistoire","jungle","dinosaure", "nature","animal","passé"]
+    },{
+        "titre": "Île des Pirates",
+        "description": "Naviguez sur les mers du XVIIe siècle, affrontez des corsaires et trouvez des trésors enfouis.",
+        "image": "contenu_css/voyage_pirate.png",
+        "lien": "voyage.php?nom=Île des pirates",
+        "prix": "2230€",
+        "voyage_id": "5",
+        "tags": ["pirates","mer", "bateau","passé"]
+    },
+    {
+        "titre": "Expédition Far West",
+        "description": "Partez à la conquête de l’Ouest sauvage, devenez un hors-la-loi ou un shérif et affrontez duels, braquages et chasseurs de primes !",
+        "image": "contenu_css/farwest.png",
+        "lien": "voyage.php?nom=Expédition Far West",
+        "prix": "1750€",
+        "voyage_id": "6",
+        "tags": ["cowboys","western", "désert","passé"]
+    },
+    {
+        "titre": "Gotham City",
+        "description": "Voyagez à travers Gotham, une ville pleine de mystères, en proie à la criminalité et aux super-vilains, où chaque coin de rue révèle une nouvelle intrigue.",
+        "image": "contenu_css/Gotham.png",
+        "lien": "voyage.php?nom=Gotham City",
+        "prix": "1300€",
+        "voyage_id": "7",
+        "tags": ["super-héros","crime", "nuit","batman"]
+    },
+    {
+        "titre": "Japon Féodal",
+        "description": "Revivez l’époque des samouraïs et des shoguns, entre temples sacrés, katanas affûtés et code de l’honneur.",
+        "image": "contenu_css/voyage_japon.png",
+        "lien": "voyage.php?nom=Japon Féodal",
+        "prix": "1620€",
+        "voyage_id": "8",
+        "tags": ["samourai","japon", "passé","histoire"]
+    },
+    {
+        "titre": "Académie de Sorcellerie",
+        "description": "Apprenez la magie, fabriquez des potions et affrontez des créatures mythiques dans une école pleine de mystères et de sorts.",
+        "image": "contenu_css/voyage_sorcier.png",
+        "lien": "voyage.php?nom=Académie de Sorcellerie",
+        "prix": "1950€",
+        "voyage_id": "9",
+        "tags": ["sorcier","fantastique","cinéma"]
+    },
+    {
+        "titre": "Atlantide Perdu",
+        "description": "Explorez les vestiges d’une civilisation sous-marine oubliée, entre merveilles architecturales et créatures abyssales.",
+        "image": "contenu_css/voyage_atlantide.png",
+        "lien": "voyage.php?nom=Atlantide Engloutie",
+        "prix": "990€",
+        "voyage_id": "10",
+        "tags": ["océan","mer","passé","abysse","ruines"]
+    },
+    {
+        "titre": "Pixel World",
+        "description": "Plongez dans un univers rétro où chaque niveau est un défi rempli de pièges, de boss et de bonus cachés.",
+        "image": "contenu_css/voyage_pixel.png",
+        "lien": "voyage.php?nom=Pixel World",
+        "prix": "1210€",
+        "voyage_id": "11",
+        "tags": ["jeu vidéo","arcade"]
+    },
+    {
+        "titre": "Odyssée Antique",
+        "description": "Revivez l'âge d'or de la Grèce antique : arpentez les temples d’Athènes, combattez aux côtés des Spartiates et croisez dieux et créatures mythologiques.",
+        "image": "contenu_css/voyage_grece.png",
+        "lien": "voyage.php?nom=Odyssée Antique",
+        "prix": "1980€",
+        "voyage_id": "12",
+        "tags": ["mer","passé","histoire","mythologie","grece"]
+    },
+    {
+        "titre": "Voyage en Égypte",
+        "description": "Explorez les rives du Nil, pénétrez dans les pyramides interdites et assistez aux rituels des pharaons sous le regard des dieux égyptiens.",
+        "image": "contenu_css/voyage_egypte.png",
+        "lien": "voyage.php?nom=Mystères d'Égypte",
+        "prix": "1030€",
+        "voyage_id": "13",
+        "tags": ["histoire","passé","pharaon","sphinx"]
+    },
+    {
+        "titre": "Expédition Nordique",
+        "description": "Parcourez les terres des Vikings, croisez Odin, Thor et Loki, et préparez-vous au Ragnarök dans un monde où mythes et réalité ne font qu’un.",
+        "image": "contenu_css/voyage_viking.png",
+        "lien": "voyage.php?nom=Légendes Nordiques",
+        "prix": "1990€",
+        "voyage_id": "14",
+        "tags": ["viking", "nordique", "mythologie","histoire","passé"]
+    },
+    {
+        "titre": "Terres Dévastées",
+        "description": "Survivez dans un monde où la loi du plus fort règne. Enchaînez les courses-poursuites dans le désert et défiez les clans pour votre survie.",
+        "image": "contenu_css/voyage_apocalypse.png",
+        "lien": "voyage.php?nom=Terres Dévastées",
+        "prix": "1190€",
+        "voyage_id": "15",
+        "tags": ["apocalypse", "post-apocalyptique", "survie", "film"]
+    },
+    {
+        "titre": "Monde SteamPunk",
+        "description": "Découvrez une ville rétro-futuriste où rouages, dirigeables et inventions folles donnent vie à un univers victorien fantastique.",
+        "image": "contenu_css/voyage_steampunk.png",
+        "lien": "voyage.php?nom=Cité à Vapeur",
+        "prix": "1720€",
+        "voyage_id": "16",
+        "mots_cles": ["steampunk","invention", "rétro-futur", "passé"]
     }
+
 ]
