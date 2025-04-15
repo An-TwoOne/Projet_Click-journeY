@@ -6,6 +6,7 @@
         "prix":"1875€",
         "voyage_id": "1",
         "tags": ["technologie", "futur","robot", "science-fiction","ville"],
+        "categorie": ["tendance"],
         "voyage_name": "Monde futuriste",
         "date_depart": "2025-04-01",
         "date_retour": "2025-04-10",
@@ -100,6 +101,7 @@
         "prix": "2360€",
         "voyage_id": "2",
         "tags": ["technologie", "futur","robot", "science-fiction","espace","planète","galaxie"],
+        "categorie": ["tendance","notes"],
         "voyage_name": "Monde m\u00e9di\u00e9val",
         "date_depart": "2025-05-01",
         "date_retour": "2025-05-10",
@@ -275,7 +277,8 @@
         "lien": "voyage.php?nom=Épopée Jurassique",
         "prix": "2530€",
         "voyage_id": "4",
-        "tags": ["préhistoire","jungle","dinosaure", "nature","animal","passé"]
+        "tags": ["préhistoire","jungle","dinosaure", "nature","animal","passé"],
+        "categorie": ["tendance","notes"]
     },{
         "titre": "Île des Pirates",
         "description": "Naviguez sur les mers du XVIIe siècle, affrontez des corsaires et trouvez des trésors enfouis.",
@@ -283,7 +286,8 @@
         "lien": "voyage.php?nom=Île des pirates",
         "prix": "2230€",
         "voyage_id": "5",
-        "tags": ["pirates","mer", "bateau","passé"]
+        "tags": ["pirates","mer", "bateau","passé"],
+        "categorie": ["tendance"]
     },
     {
         "titre": "Expédition Far West",
@@ -292,7 +296,8 @@
         "lien": "voyage.php?nom=Expédition Far West",
         "prix": "1750€",
         "voyage_id": "6",
-        "tags": ["cowboys","western", "désert","passé"]
+        "tags": ["cowboys","western", "désert","passé"],
+        "categorie": ["notes"]
     },
     {
         "titre": "Gotham City",
@@ -301,7 +306,8 @@
         "lien": "voyage.php?nom=Gotham City",
         "prix": "1300€",
         "voyage_id": "7",
-        "tags": ["super-héros","crime", "nuit","batman"]
+        "tags": ["super-héros","crime", "nuit","batman"],
+        "categorie": ["tendance"]
     },
     {
         "titre": "Japon Féodal",
@@ -310,7 +316,8 @@
         "lien": "voyage.php?nom=Japon Féodal",
         "prix": "1620€",
         "voyage_id": "8",
-        "tags": ["samourai","japon", "passé","histoire"]
+        "tags": ["samourai","japon", "passé","histoire"],
+        "categorie": ["tendance"]
     },
     {
         "titre": "Académie de Sorcellerie",
@@ -319,7 +326,8 @@
         "lien": "voyage.php?nom=Académie de Sorcellerie",
         "prix": "1950€",
         "voyage_id": "9",
-        "tags": ["sorcier","fantastique","cinéma"]
+        "tags": ["sorcier","fantastique","cinéma"],
+        "categorie": ["notes"]
     },
     {
         "titre": "Atlantide Perdu",
@@ -328,7 +336,8 @@
         "lien": "voyage.php?nom=Atlantide Engloutie",
         "prix": "990€",
         "voyage_id": "10",
-        "tags": ["océan","mer","passé","abysse","ruines"]
+        "tags": ["océan","mer","passé","abysse","ruines"],
+        "categorie": ["tendance"]
     },
     {
         "titre": "Pixel World",
@@ -337,7 +346,8 @@
         "lien": "voyage.php?nom=Pixel World",
         "prix": "1210€",
         "voyage_id": "11",
-        "tags": ["jeu vidéo","arcade"]
+        "tags": ["jeu vidéo","arcade"],
+        "categorie": ["tendance"]
     },
     {
         "titre": "Odyssée Antique",
@@ -346,7 +356,8 @@
         "lien": "voyage.php?nom=Odyssée Antique",
         "prix": "1980€",
         "voyage_id": "12",
-        "tags": ["mer","passé","histoire","mythologie","grece"]
+        "tags": ["mer","passé","histoire","mythologie","grece"],
+        "categorie": ["tendance","notes"]
     },
     {
         "titre": "Voyage en Égypte",
@@ -355,7 +366,8 @@
         "lien": "voyage.php?nom=Mystères d'Égypte",
         "prix": "1030€",
         "voyage_id": "13",
-        "tags": ["histoire","passé","pharaon","sphinx"]
+        "tags": ["histoire","passé","pharaon","sphinx"],
+        "categorie": ["tendance"]
     },
     {
         "titre": "Expédition Nordique",
@@ -364,7 +376,8 @@
         "lien": "voyage.php?nom=Légendes Nordiques",
         "prix": "1990€",
         "voyage_id": "14",
-        "tags": ["viking", "nordique", "mythologie","histoire","passé"]
+        "tags": ["viking", "nordique", "mythologie","histoire","passé"],
+        "categorie": ["notes"]
     },
     {
         "titre": "Terres Dévastées",
@@ -373,7 +386,8 @@
         "lien": "voyage.php?nom=Terres Dévastées",
         "prix": "1190€",
         "voyage_id": "15",
-        "tags": ["apocalypse", "post-apocalyptique", "survie", "film"]
+        "tags": ["apocalypse", "post-apocalyptique", "survie", "film"],
+        "categorie": ["notes","tendance","recent"]
     },
     {
         "titre": "Monde SteamPunk",
@@ -382,7 +396,8 @@
         "lien": "voyage.php?nom=Cité à Vapeur",
         "prix": "1720€",
         "voyage_id": "16",
-        "mots_cles": ["steampunk","invention", "rétro-futur", "passé"]
+        "mots_cles": ["steampunk","invention", "rétro-futur", "passé"],
+        "categorie": ["recent"]
     }
 
 ]

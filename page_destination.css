@@ -44,20 +44,37 @@ body {
     width: 190px;
 }
 
+.onglets{
+    display:flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 33%;
 
-.texte{
-    position: absolute; 
-    top: 32%;
-    left: 15%;
-    color: var(--blanc);
-    font-family: var(--police);
+    
+}
+.onglets > li {
+    list-style: none;
     display: flex;
     align-items: center;
+    font-family: var(--police);
+    color: var(--blanc);
+    font-size : var(--taille-police);
+    border: 1px solid black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
 }
 
-img[src="contenu_css/tendance.png"]{
+
+
+li > img {
     margin-left: 15px;
-    width: 15%;
+    margin-right: 15px;
+    width: 10%;
 }
 
 #conteneur{

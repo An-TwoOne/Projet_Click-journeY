@@ -2,8 +2,14 @@
     session_start();
     $voyages = json_decode(file_get_contents('données_json/voyage.json'), true);
     $mot_cle = '';
+
+    $filtre = 'tous';    
+
     if (isset($_GET['recherche_rapide'])) {
             $mot_cle = strtolower(trim($_GET['recherche_rapide']));
+    }
+    if (isset($_GET['filtre'])) {
+        $filtre = strtolower($_GET['filtre']); 
     }
 ?>
 
@@ -34,10 +40,24 @@
         </form>
     </div>
 
-    <div class="texte">
-        <h3>Nos meilleures ventes</h3>
-        <img src="contenu_css/tendance.png" alt="tendance">
-    </div>
+    <ul class="onglets">
+        <li><a href="?filtre=tous">
+            <img src="contenu_css/menu_icon.png" alt="tous">
+            Tous nos voyages
+        </a></li>
+        <li><a href="?filtre=tendance">
+            <img src="contenu_css/tendance.png" alt="tendance">
+            Nos meilleures ventes
+        </a></li>
+        <li><a href="?filtre=notes">
+            <img src="contenu_css/etoile_icon.png" alt="etoile">
+            Les mieux notés
+        </a></li>
+        <li><a href="?filtre=recent">
+            <img src="contenu_css/recent_icon.png" alt="horloge">
+            Les plus récents
+        </a></li>
+    </ul>
     <div id="conteneur">
         <?php foreach ($voyages as $voyage):
         $titre = $voyage['titre'];
@@ -46,14 +66,16 @@
         $lien = $voyage['lien'];
         $prix = $voyage['prix'];
         $tags = array_map('strtolower', $voyage['tags'] ?? []);
-
+        $categories = array_map('strtolower', $voyage['categorie'] ?? []);
 
         $match = empty($mot_cle) || 
                 strpos(strtolower($titre), $mot_cle) !== false || 
                 strpos(strtolower($description), $mot_cle) !== false ||
                 in_array($mot_cle, $tags);
+        
+        $categorie_filtre = $filtre === 'tous' || in_array($filtre, $categories);
 
-        if ($match): ?>
+        if ($match && $categorie_filtre): ?>
             <div class="contenu"> 
                 <img src="<?= htmlspecialchars($image) ?>" alt="<?= htmlspecialchars($titre) ?>">
                 <p><?= htmlspecialchars($titre) ?></p>
