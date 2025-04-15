@@ -39,25 +39,34 @@
             </div>
         </form>
     </div>
-
+    <?php $active_class = ($filtre === 'tous') ? 'active' : ''; ?>
     <ul class="onglets">
-        <li><a href="?filtre=tous">
-            <img src="contenu_css/menu_icon.png" alt="tous">
-            Tous nos voyages
-        </a></li>
-        <li><a href="?filtre=tendance">
-            <img src="contenu_css/tendance.png" alt="tendance">
-            Nos meilleures ventes
-        </a></li>
-        <li><a href="?filtre=notes">
-            <img src="contenu_css/etoile_icon.png" alt="etoile">
-            Les mieux notés
-        </a></li>
-        <li><a href="?filtre=recent">
-            <img src="contenu_css/recent_icon.png" alt="horloge">
-            Les plus récents
-        </a></li>
+        <li class="<?= $filtre === 'tous' ? 'active' : '' ?>">
+            <a href="?filtre=tous">
+                <img src="contenu_css/menu_icon.png" alt="tous">
+                Tous nos voyages
+            </a>
+        </li>
+        <li class="<?= $filtre === 'tendance' ? 'active' : '' ?>">
+            <a href="?filtre=tendance">
+                <img src="contenu_css/tendance_icon.png" alt="tendance">
+                Nos meilleures ventes
+            </a>
+        </li>
+        <li class="<?= $filtre === 'notes' ? 'active' : '' ?>">
+            <a href="?filtre=notes">
+                <img src="contenu_css/etoile_icon.png" alt="etoile">
+                Les mieux notés
+            </a>
+        </li>
+        <li class="<?= $filtre === 'recent' ? 'active' : '' ?>">
+            <a href="?filtre=recent">
+                <img src="contenu_css/recent_icon.png" alt="horloge">
+                Les plus récents
+            </a>
+        </li>
     </ul>
+
     <div id="conteneur">
         <?php foreach ($voyages as $voyage):
         $titre = $voyage['titre'];
@@ -143,9 +152,6 @@
             
         </form>
     </div>
-
-
-
 
 </body>
 </html>
