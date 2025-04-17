@@ -15,7 +15,7 @@ body {
     margin: 50px auto;
     width: 500px;
     position: absolute;
-    top: 93%;
+    top: 88%;
     left: 50%;
     transform: translate(-50%, -50%);
 
@@ -55,8 +55,10 @@ body {
     border: 3px solid white;
 }
 
+.edit-icon {
+    width: 20px;
+    height: 20px;
 
-.edit-btn {
     position: absolute;
     background: none;
     border: none;
@@ -64,16 +66,11 @@ body {
     cursor: pointer;
 }
 
-.edit-btn:hover {
+.edit-icon:hover {
     transform: scale(1.25);
     transition: all 0.5s ease;
 }
 
-
-.edit-icon {
-    width: 20px;
-    height: 20px;
-}
 
 
 .profile-info {
@@ -88,12 +85,23 @@ body {
 }
 
 
-.profile-info input {
+.profile-info input[readonly] {
     width: calc(100% - 40px);
     padding: 8px;
     margin-top: 5px;
     border: none;
     border-radius: 5px;
+    background-color: rgb(207, 206, 206);
+    
+}
+
+.profile-info input:not([readonly]) {
+    width: calc(100% - 40px);
+    padding: 8px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    
 }
 
 
@@ -157,4 +165,26 @@ h1{
     color: var(--or);
     margin-bottom: -18px;
 }
+
+
+.btn-valider,
+.btn-annuler {
+    background: none;
+    border: none;
+    font-size: 17px;
+    margin-left: 5px;
+    cursor: pointer;
+    color: var(--or);
+    font-weight: bold;
+    margin-top: 3px;
+}
+
+.btn-valider:hover {
+    color: rgb(96, 210, 96);
+}
+
+.btn-annuler:hover {
+    color: red;
+}
+
 

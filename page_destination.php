@@ -39,8 +39,10 @@
             </div>
         </form>
     </div>
+
+
     <?php $active_class = ($filtre === 'tous') ? 'active' : ''; ?>
-    <ul class="onglets">
+    <ul class="onglets" >
         <li class="<?= $filtre === 'tous' ? 'active' : '' ?>">
             <a href="?filtre=tous">
                 <img src="contenu_css/menu_icon.png" alt="tous">
@@ -66,6 +68,9 @@
             </a>
         </li>
     </ul>
+    
+    
+    
 
     <div id="conteneur">
         <?php foreach ($voyages as $voyage):

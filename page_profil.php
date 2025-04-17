@@ -76,6 +76,7 @@
     <link rel="stylesheet" type="text/css" href="page_profil.css">
     <link rel = "stylesheet" type = "text/css" href = "header.css">
     <link href="contenu_css/icon.png" rel="icon">
+    <script type='text/javascript' src="JS/page_profil.js"></script>
 </head>
 <body>
 
@@ -86,39 +87,39 @@
             <h1>Votre Profil</h1>
             <div class="profile-card">
                 <div class="banner">
-                    <img src="contenu_css/Gotham.png" alt="ville_futur" class="banner-img">
-                    <button class="edit-btn banner-edit"><img src="contenu_css/crayon_modifier.png" alt="Modifier" class="edit-icon"></button>
+                    <img src="contenu_css/banniere.png" alt="banniere" class="banner-img">
                 </div>
                 <div class="avatar-container">
                     <img src="contenu_css/photo_profil.png" alt="shiruy" class="avatar">
-                    <button class="edit-btn avatar-edit"><img src="contenu_css/crayon_modifier.png" alt="Modifier" class="edit-icon"></button>
+                    <img src="contenu_css/crayon_modifier.png" alt="Modifier" class="edit-icon">
                 </div>
                 <div class="profile-info">
                     <label>Nom du profil</label>
-                    <input type="text" name="name" value="<?php echo $_SESSION['Nom']; ?>" placeholder="Nom" >
-                    <button  class="edit-btn"><img src="contenu_css/crayon_modifier.png" alt="Modifier" class="edit-icon"></button>
+                    <input type="text" name="name" value="<?php echo $_SESSION['Nom']; ?>" placeholder="Nom" readonly >
+                    <img src="contenu_css/crayon_modifier.png" alt="Modifier" class="edit-icon">
                     <p class="description">Ceci se voit dans votre foyer, et peut être modifié à tout moment.</p>
                    
                     <label>Nom d'utilisateur <span class="indication"> (facultatif) </span></label>
-                    <input type="text" name="username" value="<?php echo $_SESSION['UserName']; ?>" placeholder="Choisissez un nom d'utilisateur..." >
-                    <button  class="edit-btn"><img src="contenu_css/crayon_modifier.png" alt="Modifier" class="edit-icon"></button>
+                    <input type="text" name="username" value="<?php echo $_SESSION['UserName']; ?>" placeholder="Choisissez un nom d'utilisateur..." readonly> 
+                    <img src="contenu_css/crayon_modifier.png" alt="Modifier" class="edit-icon">
                     <p class="description">Créez un nom d'utilisateur pour être prêt pour tes futures expériences !</p>
                    
                     <label>Email</label>
-                    <input type="email" name="email" value="<?php echo $_SESSION['Mail']; ?>" placeholder="Entrez votre email" required>
-                    <button class="edit-btn"><img src="contenu_css/crayon_modifier.png" alt="Modifier" class="edit-icon"></button>
+                    <input type="email" name="email" value="<?php echo $_SESSION['Mail']; ?>" placeholder="Entrez votre email" required readonly>
+                    <img src="contenu_css/crayon_modifier.png" alt="Modifier" class="edit-icon">
                     <label>Ancien mot de passe</label>
-                    <input type="password" name="ancien_mdp" value="ancien_mdp">
+                    <input type="password" name="ancien_mdp" value="ancien_mdp" readonly>
+                    <img src="contenu_css/crayon_modifier.png" alt="Modifier" class="edit-icon">
             
                     <label>Nouveau mot de passe</label>
-                    <input type="password" name="nouveau_mdp" placeholder="Nouveau mot de passe">
-                    <button class="edit-btn"><img src="contenu_css/crayon_modifier.png" alt="Modifier" class="edit-icon"></button>
+                    <input type="password" name="nouveau_mdp" placeholder="Nouveau mot de passe" readonly>
+                    <img src="contenu_css/crayon_modifier.png" alt="Modifier" class="edit-icon">
                     <label>Confirmation du mot de passe</label>
-                    <input type="password" name="confirmation_mdp" placeholder="Confirmez le mot de passe">
-                    <button class="edit-btn"><img src="contenu_css/crayon_modifier.png" alt="Modifier" class="edit-icon"></button>
+                    <input type="password" name="confirmation_mdp" placeholder="Confirmez le mot de passe" readonly>
+                    <img src="contenu_css/crayon_modifier.png" alt="Modifier" class="edit-icon">
                     <label>Mobile</label>
-                    <input type="tel"  name="mobile" value="<?php echo $_SESSION['Mobile']; ?>" placeholder="Numéro de téléphone" required pattern="[0-9]+" minlength="10" >
-                    <button class="edit-btn"><img src="contenu_css/crayon_modifier.png" alt="Modifier" class="edit-icon"></button>
+                    <input type="tel"  name="mobile" value="<?php echo $_SESSION['Mobile']; ?>" placeholder="Numéro de téléphone" required pattern="[0-9]+" minlength="10" readonly >
+                    <img src="contenu_css/crayon_modifier.png" alt="Modifier" class="edit-icon">
                 </div>
 
             <?php
