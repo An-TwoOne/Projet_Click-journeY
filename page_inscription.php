@@ -71,6 +71,7 @@
     <title>MultiversTrip inscription</title>
     <link rel = "stylesheet" type = "text/css" href = "page_inscription.css">
     <link rel = "stylesheet" type = "text/css" href = "header.css">
+    <script type='text/javascript' src="JS/page_inscription.js"></script>
     <link href="contenu_css/icon.png" rel="icon">
 </head>
 <body>
@@ -136,8 +137,15 @@
             <option value="Gabon">Gabon</option>
         </optgroup>
         </select>  
-        <input type="password" name="Mot_de_passe" id="password" placeholder="Mot de passe" required minlength="8" />
-        <input type="password" name="confirmation" id="password" placeholder="Confirmer mot de passe " required />
+        <div class="mdp-conteneur">
+            <input id="nouveau_mdp" type="password" name="Mot_de_passe" id="password" placeholder="Mot de passe" required minlength="8" />
+            <img src="contenu_css/oeil_icon_blanc.png" class="aff-mdp" alt="Afficher/Masquer">
+        </div>
+
+        <div class="mdp-conteneur">
+            <input type="password" name="confirmation" id="password" placeholder="Confirmer mot de passe " required />
+            <img src="contenu_css/oeil_icon_blanc.png" class="aff-mdp" alt="Afficher/Masquer">
+        </div>
         <input type="tel" id="telephone" name="mobile" placeholder=" N°mobile" required pattern="[0-9]+" title="Veuillez entrer numero valide" minlength="10"/>
         <?php
         if (isset($erreur_message)) {

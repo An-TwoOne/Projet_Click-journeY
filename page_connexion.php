@@ -62,6 +62,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MultiversTrip connexion</title>
     <link rel = "stylesheet" type = "text/css" href = "page_connexion.css">
+    <script type='text/javascript' src="JS/page_connexion.js"></script>
     <link rel = "stylesheet" type = "text/css" href = "header.css">
     <link href="contenu_css/icon.png" rel="icon">
 </head>
@@ -69,30 +70,37 @@
     <?php include('header.php') ?>
     
     <div class="bloc_inscription">
-    <div class="containere">
+        <div class="containere">
         <?php
         if (isset($_SESSION["message"])) {
             echo "<p class ='connecter'>" . $_SESSION["message"] . "</p>";
         }
         ?>
         <form method="post">
-        <fieldset>
-        <legend>
-            <b class="titre"> Connexion </b>
-        </legend>
-            <input type="search" name="email"placeholder="Adresse-Mail" required/>
-        <input type="password" name="Mot_de_passe" id="password" placeholder="Mot de passe" />
+            <fieldset>
+            <legend>
+                <b class="titre"> Connexion </b>
+            </legend>
+                <input type="search" name="email"placeholder="Adresse-Mail" required/>
+                <div class="mdp-conteneur">
+                    <input type="password" name="Mot_de_passe" id="password" placeholder="Mot de passe" />
+                    <img src="contenu_css/oeil_icon_blanc.png" class="aff-mdp" alt="Afficher/Masquer">
+                </div>
         
-        <?php
-        if (isset($erreur_message)) {
-            echo "<p class='erreur_message'>$erreur_message</p>";
-        }
-        ?>
+            <?php
+                if (isset($erreur_message)) {
+                echo "<p class='erreur_message'>$erreur_message</p>";
+                }
+            ?>
         </fieldset>
         
-        <button type="submit">se connecter</button>
-    </form>
-    </div> 
+            <button type="submit">se connecter</button>
+        </form>
+
+            <span class="message_inscription">Vous n’avez pas encore de compte ?</span>
+            <a  id="inscription" class="message_inscription" href="page_inscription.php">Inscription</a>
+        </div>  
+        
     </div>
 
 </body>

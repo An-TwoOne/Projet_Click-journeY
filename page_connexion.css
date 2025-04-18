@@ -83,5 +83,39 @@ button:hover {
         color: var(--blanc);
         margin-bottom: 20px;
         margin-top: 10px;
+
+}
+
+.message_inscription {
+        color: rgb(235, 235, 235);
+        font-size: 12px;
+}
+
+#inscription {
+        text-decoration: none;
+        border: none;
+        box-shadow: none;
+        text-shadow: none;
+        margin-left: -12px;
+}
+
+#inscription:hover {
+        color: var(--turquoise);
+        text-decoration: underline;
+}
+
+
+.mdp-conteneur {
+        position: relative;
+
+}
+
+
+.aff-mdp {
+        position: absolute;
+        right: 10px;
+        width: 20px;
+        top: 20px;
+        cursor: pointer;
         
 }
