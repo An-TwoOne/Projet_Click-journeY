@@ -98,7 +98,7 @@
                     <input type="text" name="name" value="<?php echo $_SESSION['Nom']; ?>" placeholder="Nom" readonly >
                     <img src="contenu_css/crayon_modifier.png" alt="Modifier" class="edit-icon">
                     <p class="description">Ceci se voit dans votre foyer, et peut être modifié à tout moment.</p>
-                   
+                    
                     <label>Nom d'utilisateur <span class="indication"> (facultatif) </span></label>
                     <input type="text" name="username" value="<?php echo $_SESSION['UserName']; ?>" placeholder="Choisissez un nom d'utilisateur..." readonly> 
                     <img src="contenu_css/crayon_modifier.png" alt="Modifier" class="edit-icon">
@@ -107,16 +107,30 @@
                     <label>Email</label>
                     <input type="email" name="email" value="<?php echo $_SESSION['Mail']; ?>" placeholder="Entrez votre email" required readonly>
                     <img src="contenu_css/crayon_modifier.png" alt="Modifier" class="edit-icon">
+
                     <label>Ancien mot de passe</label>
-                    <input type="password" name="ancien_mdp" value="ancien_mdp" readonly>
-                    <img src="contenu_css/crayon_modifier.png" alt="Modifier" class="edit-icon">
-            
+                    <div class="mdp-conteneur">
+                        <input type="password" name="ancien_mdp" value="ancien_mdp" readonly>
+                        <img src="contenu_css/crayon_modifier.png" alt="Modifier" class="edit-icon">
+                        <img src="contenu_css/oeil_icon.png" class="aff-mdp" alt="Afficher/Masquer">
+                    </div> 
+                    
                     <label>Nouveau mot de passe</label>
-                    <input type="password" name="nouveau_mdp" placeholder="Nouveau mot de passe" readonly>
-                    <img src="contenu_css/crayon_modifier.png" alt="Modifier" class="edit-icon">
+                    <div class="mdp-conteneur">
+                        <input  id="nouveau_mdp" type="password" name="nouveau_mdp" placeholder="Nouveau mot de passe" readonly minlength="8">
+                        <img src="contenu_css/crayon_modifier.png" alt="Modifier" class="edit-icon">
+                        <img src="contenu_css/oeil_icon.png" class="aff-mdp" alt="Afficher/Masquer">    
+                    </div> 
+                    <span id="mdp-compteur"></span>
+
+                   
                     <label>Confirmation du mot de passe</label>
-                    <input type="password" name="confirmation_mdp" placeholder="Confirmez le mot de passe" readonly>
-                    <img src="contenu_css/crayon_modifier.png" alt="Modifier" class="edit-icon">
+                    <div class="mdp-conteneur">
+                        <input type="password" name="confirmation_mdp" placeholder="Confirmez le mot de passe" readonly>
+                        <img src="contenu_css/crayon_modifier.png" alt="Modifier" class="edit-icon">
+                        <img src="contenu_css/oeil_icon.png" class="aff-mdp" alt="Afficher/Masquer">
+                    </div> 
+                    
                     <label>Mobile</label>
                     <input type="tel"  name="mobile" value="<?php echo $_SESSION['Mobile']; ?>" placeholder="Numéro de téléphone" required pattern="[0-9]+" minlength="10" readonly >
                     <img src="contenu_css/crayon_modifier.png" alt="Modifier" class="edit-icon">

@@ -78,6 +78,10 @@ body {
         display: flex;
         margin-right: 25px;
     }
+
+    .bloc h1 {
+        margin-top: 260px;
+    }
 }
     
 
