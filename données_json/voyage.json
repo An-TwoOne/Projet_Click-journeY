@@ -1,12 +1,21 @@
 [
-    {   "titre":"Monde Futuriste",
-        "description":"Voyagez en l’an 2130 et explorez un monde ultra-technologique.",
-        "image":"contenu_css/ville_futur.png",
-        "lien":"voyage.php?nom=Monde futuriste",
-        "prix":"1875€",
+    {
+        "titre": "Monde Futuriste",
+        "description": "Voyagez en l\u2019an 2130 et explorez un monde ultra-technologique.",
+        "image": "contenu_css\/ville_futur.png",
+        "lien": "voyage.php?nom=Monde futuriste",
+        "prix": "1875\u20ac",
         "voyage_id": "1",
-        "tags": ["technologie", "futur","robot", "science-fiction","ville"],
-        "categorie": ["tendance"],
+        "tags": [
+            "technologie",
+            "futur",
+            "robot",
+            "science-fiction",
+            "ville"
+        ],
+        "categorie": [
+            "tendance"
+        ],
         "voyage_name": "Monde futuriste",
         "date_depart": "2025-04-01",
         "date_retour": "2025-04-10",
@@ -94,14 +103,25 @@
         }
     },
     {
-        "titre":"Voyage Intergalactique",
-        "description":"Partez à la découverte de l’univers, visitez des planètes inconnues et rencontrez des civilisations extraterrestres.",
-        "image":"contenu_css/voyage_espace.png",
-        "lien":"voyage.php?nom=voyage intergalactique",
-        "prix": "2360€",
+        "titre": "Voyage Intergalactique",
+        "description": "Partez \u00e0 la d\u00e9couverte de l\u2019univers, visitez des plan\u00e8tes inconnues et rencontrez des civilisations extraterrestres.",
+        "image": "contenu_css\/voyage_espace.png",
+        "lien": "voyage.php?nom=voyage intergalactique",
+        "prix": "2360\u20ac",
         "voyage_id": "2",
-        "tags": ["technologie", "futur","robot", "science-fiction","espace","planète","galaxie"],
-        "categorie": ["tendance","notes"],
+        "tags": [
+            "technologie",
+            "futur",
+            "robot",
+            "science-fiction",
+            "espace",
+            "plan\u00e8te",
+            "galaxie"
+        ],
+        "categorie": [
+            "tendance",
+            "notes"
+        ],
         "voyage_name": "Monde m\u00e9di\u00e9val",
         "date_depart": "2025-05-01",
         "date_retour": "2025-05-10",
@@ -188,14 +208,22 @@
             }
         }
     },
-    {   
-        "titre":"Aventure Médiévale",
-        "description": "Plongez dans l’univers des chevaliers et revivez l’épopée du Moyen Âge à travers châteaux, tournois et légendes fascinantes.",
-        "image": "contenu_css/voyage_medieval.png",
-        "lien": "voyage.php?nom=voyage médiéval",
-        "prix": "1240€",
+    {
+        "titre": "Aventure M\u00e9di\u00e9vale",
+        "description": "Plongez dans l\u2019univers des chevaliers et revivez l\u2019\u00e9pop\u00e9e du Moyen \u00c2ge \u00e0 travers ch\u00e2teaux, tournois et l\u00e9gendes fascinantes.",
+        "image": "contenu_css\/voyage_medieval.png",
+        "lien": "voyage.php?nom=voyage m\u00e9di\u00e9val",
+        "prix": "1240\u20ac",
         "voyage_id": "3",
-        "tags": ["histoire", "moyen-age","chevalier", "chateau","légende","combat","passé"],
+        "tags": [
+            "histoire",
+            "moyen-age",
+            "chevalier",
+            "chateau",
+            "l\u00e9gende",
+            "combat",
+            "pass\u00e9"
+        ],
         "voyage_name": "Voyage intergalactique",
         "date_depart": "2025-06-01",
         "date_retour": "2025-06-10",
@@ -271,133 +299,230 @@
         }
     },
     {
-        "titre": "Épopée Jurassique",
-        "description": "Remontez à l’ère des dinosaures, explorez une jungle primitive et croisez des créatures titanesques.",
-        "image": "contenu_css/jurrasique.png",
-        "lien": "voyage.php?nom=Épopée Jurassique",
-        "prix": "2530€",
+        "titre": "\u00c9pop\u00e9e Jurassique",
+        "description": "Remontez \u00e0 l\u2019\u00e8re des dinosaures, explorez une jungle primitive et croisez des cr\u00e9atures titanesques.",
+        "image": "contenu_css\/jurrasique.png",
+        "lien": "voyage.php?nom=\u00c9pop\u00e9e Jurassique",
+        "prix": "2530\u20ac",
         "voyage_id": "4",
-        "tags": ["préhistoire","jungle","dinosaure", "nature","animal","passé"],
-        "categorie": ["tendance","notes"]
-    },{
-        "titre": "Île des Pirates",
-        "description": "Naviguez sur les mers du XVIIe siècle, affrontez des corsaires et trouvez des trésors enfouis.",
-        "image": "contenu_css/voyage_pirate.png",
-        "lien": "voyage.php?nom=Île des pirates",
-        "prix": "2230€",
-        "voyage_id": "5",
-        "tags": ["pirates","mer", "bateau","passé"],
-        "categorie": ["tendance"]
+        "tags": [
+            "pr\u00e9histoire",
+            "jungle",
+            "dinosaure",
+            "nature",
+            "animal",
+            "pass\u00e9"
+        ],
+        "categorie": [
+            "tendance",
+            "notes"
+        ]
     },
     {
-        "titre": "Expédition Far West",
-        "description": "Partez à la conquête de l’Ouest sauvage, devenez un hors-la-loi ou un shérif et affrontez duels, braquages et chasseurs de primes !",
-        "image": "contenu_css/farwest.png",
-        "lien": "voyage.php?nom=Expédition Far West",
-        "prix": "1750€",
+        "titre": "\u00cele des Pirates",
+        "description": "Naviguez sur les mers du XVIIe si\u00e8cle, affrontez des corsaires et trouvez des tr\u00e9sors enfouis.",
+        "image": "contenu_css\/voyage_pirate.png",
+        "lien": "voyage.php?nom=\u00cele des pirates",
+        "prix": "2230\u20ac",
+        "voyage_id": "5",
+        "tags": [
+            "pirates",
+            "mer",
+            "bateau",
+            "pass\u00e9"
+        ],
+        "categorie": [
+            "tendance"
+        ]
+    },
+    {
+        "titre": "Exp\u00e9dition Far West",
+        "description": "Partez \u00e0 la conqu\u00eate de l\u2019Ouest sauvage, devenez un hors-la-loi ou un sh\u00e9rif et affrontez duels, braquages et chasseurs de primes !",
+        "image": "contenu_css\/farwest.png",
+        "lien": "voyage.php?nom=Exp\u00e9dition Far West",
+        "prix": "1750\u20ac",
         "voyage_id": "6",
-        "tags": ["cowboys","western", "désert","passé"],
-        "categorie": ["notes"]
+        "tags": [
+            "cowboys",
+            "western",
+            "d\u00e9sert",
+            "pass\u00e9"
+        ],
+        "categorie": [
+            "notes"
+        ]
     },
     {
         "titre": "Gotham City",
-        "description": "Voyagez à travers Gotham, une ville pleine de mystères, en proie à la criminalité et aux super-vilains, où chaque coin de rue révèle une nouvelle intrigue.",
-        "image": "contenu_css/Gotham.png",
+        "description": "Voyagez \u00e0 travers Gotham, une ville pleine de myst\u00e8res, en proie \u00e0 la criminalit\u00e9 et aux super-vilains, o\u00f9 chaque coin de rue r\u00e9v\u00e8le une nouvelle intrigue.",
+        "image": "contenu_css\/Gotham.png",
         "lien": "voyage.php?nom=Gotham City",
-        "prix": "1300€",
+        "prix": "1300\u20ac",
         "voyage_id": "7",
-        "tags": ["super-héros","crime", "nuit","batman"],
-        "categorie": ["tendance"]
+        "tags": [
+            "super-h\u00e9ros",
+            "crime",
+            "nuit",
+            "batman"
+        ],
+        "categorie": [
+            "tendance"
+        ]
     },
     {
-        "titre": "Japon Féodal",
-        "description": "Revivez l’époque des samouraïs et des shoguns, entre temples sacrés, katanas affûtés et code de l’honneur.",
-        "image": "contenu_css/voyage_japon.png",
-        "lien": "voyage.php?nom=Japon Féodal",
-        "prix": "1620€",
+        "titre": "Japon F\u00e9odal",
+        "description": "Revivez l\u2019\u00e9poque des samoura\u00efs et des shoguns, entre temples sacr\u00e9s, katanas aff\u00fbt\u00e9s et code de l\u2019honneur.",
+        "image": "contenu_css\/voyage_japon.png",
+        "lien": "voyage.php?nom=Japon F\u00e9odal",
+        "prix": "1620\u20ac",
         "voyage_id": "8",
-        "tags": ["samourai","japon", "passé","histoire"],
-        "categorie": ["tendance"]
+        "tags": [
+            "samourai",
+            "japon",
+            "pass\u00e9",
+            "histoire"
+        ],
+        "categorie": [
+            "tendance"
+        ]
     },
     {
-        "titre": "Académie de Sorcellerie",
-        "description": "Apprenez la magie, fabriquez des potions et affrontez des créatures mythiques dans une école pleine de mystères et de sorts.",
-        "image": "contenu_css/voyage_sorcier.png",
-        "lien": "voyage.php?nom=Académie de Sorcellerie",
-        "prix": "1950€",
+        "titre": "Acad\u00e9mie de Sorcellerie",
+        "description": "Apprenez la magie, fabriquez des potions et affrontez des cr\u00e9atures mythiques dans une \u00e9cole pleine de myst\u00e8res et de sorts.",
+        "image": "contenu_css\/voyage_sorcier.png",
+        "lien": "voyage.php?nom=Acad\u00e9mie de Sorcellerie",
+        "prix": "1950\u20ac",
         "voyage_id": "9",
-        "tags": ["sorcier","fantastique","cinéma"],
-        "categorie": ["notes"]
+        "tags": [
+            "sorcier",
+            "fantastique",
+            "cin\u00e9ma"
+        ],
+        "categorie": [
+            "notes"
+        ]
     },
     {
         "titre": "Atlantide Perdu",
-        "description": "Explorez les vestiges d’une civilisation sous-marine oubliée, entre merveilles architecturales et créatures abyssales.",
-        "image": "contenu_css/voyage_atlantide.png",
+        "description": "Explorez les vestiges d\u2019une civilisation sous-marine oubli\u00e9e, entre merveilles architecturales et cr\u00e9atures abyssales.",
+        "image": "contenu_css\/voyage_atlantide.png",
         "lien": "voyage.php?nom=Atlantide Engloutie",
-        "prix": "990€",
+        "prix": "990\u20ac",
         "voyage_id": "10",
-        "tags": ["océan","mer","passé","abysse","ruines"],
-        "categorie": ["tendance"]
+        "tags": [
+            "oc\u00e9an",
+            "mer",
+            "pass\u00e9",
+            "abysse",
+            "ruines"
+        ],
+        "categorie": [
+            "tendance"
+        ]
     },
     {
         "titre": "Pixel World",
-        "description": "Plongez dans un univers rétro où chaque niveau est un défi rempli de pièges, de boss et de bonus cachés.",
-        "image": "contenu_css/voyage_pixel.png",
+        "description": "Plongez dans un univers r\u00e9tro o\u00f9 chaque niveau est un d\u00e9fi rempli de pi\u00e8ges, de boss et de bonus cach\u00e9s.",
+        "image": "contenu_css\/voyage_pixel.png",
         "lien": "voyage.php?nom=Pixel World",
-        "prix": "1210€",
+        "prix": "1210\u20ac",
         "voyage_id": "11",
-        "tags": ["jeu vidéo","arcade"],
-        "categorie": ["tendance"]
+        "tags": [
+            "jeu vid\u00e9o",
+            "arcade"
+        ],
+        "categorie": [
+            "tendance"
+        ]
     },
     {
-        "titre": "Odyssée Antique",
-        "description": "Revivez l'âge d'or de la Grèce antique : arpentez les temples d’Athènes, combattez aux côtés des Spartiates et croisez dieux et créatures mythologiques.",
-        "image": "contenu_css/voyage_grece.png",
-        "lien": "voyage.php?nom=Odyssée Antique",
-        "prix": "1980€",
+        "titre": "Odyss\u00e9e Antique",
+        "description": "Revivez l'\u00e2ge d'or de la Gr\u00e8ce antique : arpentez les temples d\u2019Ath\u00e8nes, combattez aux c\u00f4t\u00e9s des Spartiates et croisez dieux et cr\u00e9atures mythologiques.",
+        "image": "contenu_css\/voyage_grece.png",
+        "lien": "voyage.php?nom=Odyss\u00e9e Antique",
+        "prix": "1980\u20ac",
         "voyage_id": "12",
-        "tags": ["mer","passé","histoire","mythologie","grece"],
-        "categorie": ["tendance","notes"]
+        "tags": [
+            "mer",
+            "pass\u00e9",
+            "histoire",
+            "mythologie",
+            "grece"
+        ],
+        "categorie": [
+            "tendance",
+            "notes"
+        ]
     },
     {
-        "titre": "Voyage en Égypte",
-        "description": "Explorez les rives du Nil, pénétrez dans les pyramides interdites et assistez aux rituels des pharaons sous le regard des dieux égyptiens.",
-        "image": "contenu_css/voyage_egypte.png",
-        "lien": "voyage.php?nom=Mystères d'Égypte",
-        "prix": "1030€",
+        "titre": "Voyage en \u00c9gypte",
+        "description": "Explorez les rives du Nil, p\u00e9n\u00e9trez dans les pyramides interdites et assistez aux rituels des pharaons sous le regard des dieux \u00e9gyptiens.",
+        "image": "contenu_css\/voyage_egypte.png",
+        "lien": "voyage.php?nom=Myst\u00e8res d'\u00c9gypte",
+        "prix": "1030\u20ac",
         "voyage_id": "13",
-        "tags": ["histoire","passé","pharaon","sphinx"],
-        "categorie": ["tendance"]
+        "tags": [
+            "histoire",
+            "pass\u00e9",
+            "pharaon",
+            "sphinx"
+        ],
+        "categorie": [
+            "tendance"
+        ]
     },
     {
-        "titre": "Expédition Nordique",
-        "description": "Parcourez les terres des Vikings, croisez Odin, Thor et Loki, et préparez-vous au Ragnarök dans un monde où mythes et réalité ne font qu’un.",
-        "image": "contenu_css/voyage_viking.png",
-        "lien": "voyage.php?nom=Légendes Nordiques",
-        "prix": "1990€",
+        "titre": "Exp\u00e9dition Nordique",
+        "description": "Parcourez les terres des Vikings, croisez Odin, Thor et Loki, et pr\u00e9parez-vous au Ragnar\u00f6k dans un monde o\u00f9 mythes et r\u00e9alit\u00e9 ne font qu\u2019un.",
+        "image": "contenu_css\/voyage_viking.png",
+        "lien": "voyage.php?nom=L\u00e9gendes Nordiques",
+        "prix": "1990\u20ac",
         "voyage_id": "14",
-        "tags": ["viking", "nordique", "mythologie","histoire","passé"],
-        "categorie": ["notes"]
+        "tags": [
+            "viking",
+            "nordique",
+            "mythologie",
+            "histoire",
+            "pass\u00e9"
+        ],
+        "categorie": [
+            "notes"
+        ]
     },
     {
-        "titre": "Terres Dévastées",
-        "description": "Survivez dans un monde où la loi du plus fort règne. Enchaînez les courses-poursuites dans le désert et défiez les clans pour votre survie.",
-        "image": "contenu_css/voyage_apocalypse.png",
-        "lien": "voyage.php?nom=Terres Dévastées",
-        "prix": "1190€",
+        "titre": "Terres D\u00e9vast\u00e9es",
+        "description": "Survivez dans un monde o\u00f9 la loi du plus fort r\u00e8gne. Encha\u00eenez les courses-poursuites dans le d\u00e9sert et d\u00e9fiez les clans pour votre survie.",
+        "image": "contenu_css\/voyage_apocalypse.png",
+        "lien": "voyage.php?nom=Terres D\u00e9vast\u00e9es",
+        "prix": "1190\u20ac",
         "voyage_id": "15",
-        "tags": ["apocalypse", "post-apocalyptique", "survie", "film"],
-        "categorie": ["notes","tendance","recent"]
+        "tags": [
+            "apocalypse",
+            "post-apocalyptique",
+            "survie",
+            "film"
+        ],
+        "categorie": [
+            "notes",
+            "tendance",
+            "recent"
+        ]
     },
     {
         "titre": "Monde SteamPunk",
-        "description": "Découvrez une ville rétro-futuriste où rouages, dirigeables et inventions folles donnent vie à un univers victorien fantastique.",
-        "image": "contenu_css/voyage_steampunk.png",
-        "lien": "voyage.php?nom=Cité à Vapeur",
-        "prix": "1720€",
+        "description": "D\u00e9couvrez une ville r\u00e9tro-futuriste o\u00f9 rouages, dirigeables et inventions folles donnent vie \u00e0 un univers victorien fantastique.",
+        "image": "contenu_css\/voyage_steampunk.png",
+        "lien": "voyage.php?nom=Cit\u00e9 \u00e0 Vapeur",
+        "prix": "1720\u20ac",
         "voyage_id": "16",
-        "mots_cles": ["steampunk","invention", "rétro-futur", "passé"],
-        "categorie": ["recent"]
+        "mots_cles": [
+            "steampunk",
+            "invention",
+            "r\u00e9tro-futur",
+            "pass\u00e9"
+        ],
+        "categorie": [
+            "recent"
+        ]
     }
-
 ]

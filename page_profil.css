@@ -45,6 +45,7 @@ body {
 .avatar-container {
     position: relative;
     margin-top: -40px;
+    
 }
 
 
@@ -206,4 +207,12 @@ h1{
     font-size: 12px;
     display: flex;
     align-items: center;
+}
+
+.logo_vip{
+    width: 15%;
+    position: absolute;
+    z-index: 100;
+    left:235px;
+    top: 45px;
 }

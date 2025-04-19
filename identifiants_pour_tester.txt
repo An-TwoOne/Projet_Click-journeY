@@ -1,7 +1,7 @@
 - Administrateur: Mail = projet@gmail.com
                   Mot de passe = admin123
 
-- Utilisateur   : Mail = picsou@gmail.com
+- Utilisateur (VIP)   : Mail = picsou@gmail.com
                     Mot de passe = Money$$$
 
 - Utilisateur Exclu : Mail = dark.vador@gmail.com

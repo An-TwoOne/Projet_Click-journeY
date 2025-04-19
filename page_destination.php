@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
     <link href="contenu_css/icon.png" rel="icon">
+    <script type='text/javascript' src="JS/page_destination.js"></script>
 </head>
 <body>
 
@@ -90,12 +91,12 @@
         $categorie_filtre = $filtre === 'tous' || in_array($filtre, $categories);
 
         if ($match && $categorie_filtre): ?>
-            <div class="contenu"> 
+            <a class="contenu" href="<?= htmlspecialchars($lien) ?>"> 
                 <img src="<?= htmlspecialchars($image) ?>" alt="<?= htmlspecialchars($titre) ?>">
                 <p><?= htmlspecialchars($titre) ?></p>
                 <span><?= htmlspecialchars($description) ?></span>
-                <div><a class="voir_plus" href="<?= htmlspecialchars($lien) ?>">Voir+</a> à partir de <?= htmlspecialchars($prix) ?></div>
-            </div>
+                <div>à partir de <?= htmlspecialchars($prix) ?></div>
+            </a>
         <?php endif; ?>
         <?php endforeach; ?>
 

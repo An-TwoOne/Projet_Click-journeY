@@ -1,0 +1,10 @@
+@import url('commun.css');
+
+
+body {
+    background-color: var(--gris);
+    color: var(--blanc);
+    font-family: var(--police);
+    margin: 0px;
+    padding: 0px;
+}

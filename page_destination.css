@@ -114,6 +114,7 @@ li > a > img {
     padding: 10px;
     margin: 20px;
     font-family: var(--police);
+    text-decoration: none;
 }
 
 .contenu p{

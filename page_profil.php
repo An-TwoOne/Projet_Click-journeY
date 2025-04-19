@@ -91,6 +91,11 @@
                 </div>
                 <div class="avatar-container">
                     <img src="contenu_css/photo_profil.png" alt="shiruy" class="avatar">
+                    <?php
+                        if (isset($_SESSION['Statut']) && $_SESSION['Statut'] === "VIP") {
+                            echo '<img src="contenu_css/logo_VIP.png" alt="logo_vip" class="logo_vip">';
+                        }
+                    ?>
                     <img src="contenu_css/crayon_modifier.png" alt="Modifier" class="edit-icon">
                 </div>
                 <div class="profile-info">

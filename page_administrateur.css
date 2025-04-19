@@ -96,15 +96,15 @@ input[name="exclure"]{
 
 .enregistrer:hover{
     background-color: #111111a1;
-    color: var(--noir);
-    
-
+    color: #f2f0f0a1;
+    cursor: pointer;
 }
 
 .pages {
     display: flex;
     justify-content: center;
     margin-top: 100px;
+    margin-bottom: 20px;
 }
 
 .pages a {

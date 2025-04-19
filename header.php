@@ -25,6 +25,10 @@ session_start();
                 if ( isset($_SESSION["Id"]) && $_SESSION["Admin"] === "oui") {
                     echo '<a href="page_administrateur.php">Administrateur</a>';
                 }
+
+                if (isset($_SESSION["Id"])){
+                    echo '<a href="page_panier.php"><img src="contenu_css/panier_icon.png" alt="icon_panier"></a>';
+                }
             ?>
             <span>|</span>
             <?php

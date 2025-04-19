@@ -27,8 +27,9 @@
                             $_SESSION["Prenom"] = $utilisateur["Prenom"];
                             $_SESSION["Nom"] = $utilisateur["Nom"];
                             $_SESSION["Mobile"] = $utilisateur["Mobile"];
-                            $_SESSION["Username"] = $utilisateur["Username"];
+                            $_SESSION["UserName"] = $utilisateur["UserName"];
                             $_SESSION["Admin"] = $utilisateur["Admin"];
+                            $_SESSION["Statut"] = $utilisateur["Statut"];
 
                         }
                         break; 
@@ -47,9 +48,16 @@
                 header("Location: page_accueil.php");
                 exit();
             }else if ($succes_connex && isset($_SESSION['message'])) {
-                unset($_SESSION["message"]);
-                header("Location: page_profil.php");
-                exit();
+                if($_SESSION['message'] === "Connecter vous pour accéder aux voyages"){
+                    unset($_SESSION["message"]);
+                    header("Location: page_destination.php");
+                    exit();
+
+                }else{
+                    unset($_SESSION["message"]);
+                    header("Location: page_profil.php");
+                    exit();
+                }
             }
         }
     }

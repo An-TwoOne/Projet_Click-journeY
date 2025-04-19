@@ -39,10 +39,16 @@
     margin-right: 60px;
 }
 
+
 .bandeau img[src="contenu_css/icon_profil_connecte.png"]{
     width: 37px;
     margin-right: 60px;
 }
+
+.bandeau img[src="contenu_css/panier_icon.png"]{
+    width: 35px;
+}
+
 
 a[href="page_inscription.php"]{
     border: var(--turquoise) 1.5px solid;
@@ -66,6 +72,10 @@ a[href="page_inscription.php"]:hover {
 
 .bandeau img[src="contenu_css/icon_profil_connecte.png"]:hover {
     content: url("contenu_css/icon_profil.png");
+}
+
+.bandeau img[src="contenu_css/panier_icon.png"]:hover {
+    content: url("contenu_css/panier_icon_blanc.png");
 }
 
 .bandeau img[src="contenu_css/recherche_gris.png"]{
