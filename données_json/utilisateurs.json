@@ -180,5 +180,18 @@
         "Admin": "Non",
         "UserName": "",
         "Statut": null
+    },
+    {
+        "Id": "62034bda",
+        "Mail": "josiane@gmail.com",
+        "Mdp": "$2y$10$haD\/gK7SjjaZ29YdKDr2g.hpW\/8unoI8oTKx42dZBVp9fviei1wf.",
+        "Nom": "MoM",
+        "Prenom": "And",
+        "Age": "50",
+        "Pays": "France",
+        "Mobile": "0634567756",
+        "Admin": "Non",
+        "UserName": "Josiane",
+        "Statut": "Exclu"
     }
 ]

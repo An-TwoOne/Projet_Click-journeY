@@ -73,8 +73,8 @@
                 <td><?= htmlspecialchars($utilisateur['Nom']) ?></td>
                 <td><?= htmlspecialchars($utilisateur['Prenom']) ?></td>
                 <td><?= htmlspecialchars($utilisateur['Mail']) ?></td>
-                <td><input type="checkbox" name="vip[]" value="<?= $utilisateur['Id'] ?>" <?= $utilisateur['Statut'] === "VIP" ? 'checked' : '' ?>></td>
-                <td><input type="checkbox" name="exclure[]" value="<?= $utilisateur['Id'] ?>" <?= $utilisateur['Statut'] === "Exclu" ? 'checked' : '' ?>></td>
+                <td><input type="checkbox" name="vip[]" class="check_vip" value="<?= $utilisateur['Id'] ?>" <?= $utilisateur['Statut'] === "VIP" ? 'checked' : '' ?>></td>
+                <td><input type="checkbox" name="exclure[]" class="check_exclu" value="<?= $utilisateur['Id'] ?>" <?= $utilisateur['Statut'] === "Exclu" ? 'checked' : '' ?>></td>
             </tr>
         <?php endforeach; ?>
 
