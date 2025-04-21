@@ -10,7 +10,7 @@
     $utilisateurs_affiches = array_slice($utilisateurs, $debut, $utilisateurs_par_page);
 
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        foreach ($utilisateurs as &$utilisateur) {
+        foreach ($utilisateurs_affiches as &$utilisateur) {
              
             if (isset($_POST['vip']) && in_array($utilisateur['Id'], $_POST['vip'])) {
                 $utilisateur['Statut'] = "VIP";
@@ -22,6 +22,14 @@
             
             else {
                 $utilisateur['Statut'] = null;
+            }
+
+
+            foreach ($utilisateurs as &$util) {
+                if ($util['Id'] === $utilisateur['Id']) {
+                    $util['Statut'] = $utilisateur['Statut'];
+                    break;
+                }
             }
         }
     

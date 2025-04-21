@@ -10,7 +10,7 @@
         "Mobile": "202 585 4851",
         "Admin": "oui",
         "UserName": null,
-        "Statut": null
+        "Statut": "VIP"
     },
     {
         "Id": "2aca4995",
@@ -36,7 +36,7 @@
         "Mobile": "0909090909",
         "Admin": "non",
         "UserName": "",
-        "Statut": null
+        "Statut": "VIP"
     },
     {
         "Id": "4a7b8c9d",
@@ -62,7 +62,7 @@
         "Mobile": "555 123 7890",
         "Admin": "non",
         "UserName": "wonderwoman",
-        "Statut": null
+        "Statut": "Exclu"
     },
     {
         "Id": "6h7i8j9k",
@@ -192,6 +192,6 @@
         "Mobile": "0634567756",
         "Admin": "Non",
         "UserName": "Josiane",
-        "Statut": "Exclu"
+        "Statut": null
     }
 ]
