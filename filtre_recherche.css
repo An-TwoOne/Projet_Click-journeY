@@ -97,3 +97,13 @@ label {
     margin : 12px 10px;
     
 }
+
+
+#aff_prix{
+    margin-left: 0px;
+    color: var(--blanc);
+    font-family: var(--police);
+    font-size: 16px;
+}
+
+

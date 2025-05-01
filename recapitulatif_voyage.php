@@ -52,7 +52,17 @@ session_start();
                         <td><?= htmlspecialchars($option['name']) ?></td>
                         <td><?= htmlspecialchars($option['price']) ?></td>
                         <td><?= htmlspecialchars($option['quantity']) ?></td>
-                        <td><?= $subtotal ?> $</td>
+                        <td>
+                            <input 
+                                type="number" 
+                                class="quantity-input" 
+                                data-price="<?= $price ?>" 
+                                data-name="<?= htmlspecialchars($option['name']) ?>" 
+                                value="<?= $quantity ?>" 
+                                min="1"
+                            >
+                        </td>
+                        <td class="subtotal"><?= $subtotal ?> $</td>
                     </tr>
                 <?php endforeach; ?>
             </tbody>
@@ -69,5 +79,6 @@ session_start();
             <a href="paiement.php?montant=<?= $total_price ?>" class="btn">💳 Passer au paiement</a>
         </div>
     </div>
+    <script src="gestion_options_voyage.js"></script>
 </body>
 </html>

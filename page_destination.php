@@ -91,8 +91,52 @@
         
         $categorie_filtre = $filtre === 'tous' || in_array($filtre, $categories);
 
+        $duree = '';
+        if (!empty($voyage['duree'])) {
+            $duree = implode(',', $voyage['duree']);
+        }
+
+        $experience = '';
+        if (!empty($voyage['experience'])) {
+            $experience = implode(',', $voyage['experience']);
+        }
+
+        $periode = '';
+        if (!empty($voyage['periode'])) {
+            $periode = $voyage['periode'];
+        }
+
+        $promotion = '';
+        if (!empty($voyage['promotion'])) {
+            $promotion = $voyage['promotion'];
+        }
+
+        $equipement = '';
+        if (!empty($voyage['equipement'])) {
+            $equipement = implode(',', $voyage['equipement']);
+        }
+
+        $type = '';
+        if (!empty($voyage['type_experience'])) {
+            $type = implode(',', $voyage['type_experience']);
+        }
+
+        $univers = '';
+        if (!empty($voyage['univers'])) {
+            $univers = implode(',', $voyage['univers']);
+        }
+
         if ($match && $categorie_filtre): ?>
-            <a class="contenu" href="<?= htmlspecialchars($lien) ?>"> 
+            <a class="contenu" href="<?= htmlspecialchars($lien) ?>"
+                    data-duree="<?= htmlspecialchars($duree) ?>"
+                    data-prix="<?= htmlspecialchars($prix) ?>"
+                    data-experience="<?= htmlspecialchars($experience) ?>"
+                    data-periode="<?= htmlspecialchars($periode) ?>"
+                    data-promotion="<?= htmlspecialchars($promotion) ?>"
+                    data-equipement="<?= htmlspecialchars($equipement) ?>"
+                    data-type="<?= htmlspecialchars($type) ?>"
+                    data-univers="<?= htmlspecialchars($univers) ?>"> 
+                    
                 <img src="<?= htmlspecialchars($image) ?>" alt="<?= htmlspecialchars($titre) ?>">
                 <p><?= htmlspecialchars($titre) ?></p>
                 <span><?= htmlspecialchars($description) ?></span>
