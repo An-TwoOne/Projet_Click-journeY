@@ -77,12 +77,14 @@
     <link rel = "stylesheet" type = "text/css" href = "header.css">
     <link href="contenu_css/icon.png" rel="icon">
     <script type='text/javascript' src="JS/page_profil.js"></script>
+    <link id="theme" rel="stylesheet" href="commun.css">
+    <script type='text/javascript' src="JS/theme_couleur.js"></script>
 </head>
 <body>
 
     <?php include('header.php') ?>
 
-    <form method="post">
+    <form method="post" >
         <div class="profile-container">
             <h1>Votre Profil</h1>
             <div class="profile-card">
@@ -100,7 +102,7 @@
                 </div>
                 <div class="profile-info">
                     <label>Nom du profil</label>
-                    <input type="text" name="name" value="<?php echo $_SESSION['Nom']; ?>" placeholder="Nom" readonly >
+                    <input type="text" id="nom" name="name" value="<?php echo $_SESSION['Nom']; ?>" placeholder="Nom" readonly >
                     <img src="contenu_css/crayon_modifier.png" alt="Modifier" class="edit-icon">
                     <p class="description">Ceci se voit dans votre foyer, et peut être modifié à tout moment.</p>
                     
@@ -110,7 +112,7 @@
                     <p class="description">Créez un nom d'utilisateur pour être prêt pour tes futures expériences !</p>
                    
                     <label>Email</label>
-                    <input type="email" name="email" value="<?php echo $_SESSION['Mail']; ?>" placeholder="Entrez votre email" required readonly>
+                    <input type="email" id="email" name="email" value="<?php echo $_SESSION['Mail']; ?>" placeholder="Entrez votre email" required readonly>
                     <img src="contenu_css/crayon_modifier.png" alt="Modifier" class="edit-icon">
 
                     <label>Ancien mot de passe</label>
@@ -131,16 +133,16 @@
                    
                     <label>Confirmation du mot de passe</label>
                     <div class="mdp-conteneur">
-                        <input type="password" name="confirmation_mdp" placeholder="Confirmez le mot de passe" readonly>
+                        <input type="password" id="confirmation" name="confirmation_mdp" placeholder="Confirmez le mot de passe" readonly>
                         <img src="contenu_css/crayon_modifier.png" alt="Modifier" class="edit-icon">
                         <img src="contenu_css/oeil_icon.png" class="aff-mdp" alt="Afficher/Masquer">
                     </div> 
                     
                     <label>Mobile</label>
-                    <input type="tel"  name="mobile" value="<?php echo $_SESSION['Mobile']; ?>" placeholder="Numéro de téléphone" required pattern="[0-9]+" minlength="10" readonly >
+                    <input type="tel" id="telephone"  name="mobile" value="<?php echo $_SESSION['Mobile']; ?>" placeholder="Numéro de téléphone" required pattern="[0-9]+" minlength="10" readonly >
                     <img src="contenu_css/crayon_modifier.png" alt="Modifier" class="edit-icon">
                 </div>
-
+            <div id="message-erreur"></div>     
             <?php
                 if (isset($_SESSION['profil_modifier'])) {
                 echo "<p class = 'profil_modifier' >". $_SESSION['profil_modifier'] ."</p>";

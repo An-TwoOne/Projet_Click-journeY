@@ -216,3 +216,10 @@ h1{
     left:235px;
     top: 45px;
 }
+
+
+#message-erreur{
+    font-size: 15px;
+    padding-top: 30px;
+    color: var(--or);
+}

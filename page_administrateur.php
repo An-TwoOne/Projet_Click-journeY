@@ -48,6 +48,8 @@
     <title>MultiversTrip Administrateur</title>
     <link rel = "stylesheet" type = "text/css" href = "page_administrateur.css">
     <script type='text/javascript' src="JS/page_administrateur.js"></script>
+    <link id="theme" rel="stylesheet" href="commun.css">
+    <script type='text/javascript' src="JS/theme_couleur.js"></script>
     <link href="contenu_css/icon.png" rel="icon">
 </head>
 <body>

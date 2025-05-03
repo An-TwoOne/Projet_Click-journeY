@@ -16,11 +16,23 @@
         "categorie": [
             "tendance"
         ],
-        "duree":["quelque_heures","un_jour"],
-        "experience":["solo","en_groupe"],
+        "duree": [
+            "quelque_heures",
+            "un_jour"
+        ],
+        "experience": [
+            "solo",
+            "en_groupe"
+        ],
         "periode": "Futuriste",
-        "equipement":["Standard","Premium","Luxe"],
-        "type_experience":["Aventure"],
+        "equipement": [
+            "Standard",
+            "Premium",
+            "Luxe"
+        ],
+        "type_experience": [
+            "Aventure"
+        ],
         "voyage_name": "Monde futuriste",
         "date_depart": "2025-04-01",
         "date_retour": "2025-04-10",
@@ -127,11 +139,23 @@
             "tendance",
             "notes"
         ],
-        "duree":["un_jour","plusieurs_jours"],
-        "experience":["solo","en_groupe"],
+        "duree": [
+            "un_jour",
+            "plusieurs_jours"
+        ],
+        "experience": [
+            "solo",
+            "en_groupe"
+        ],
         "periode": "Futuriste",
-        "equipement":["Standard","Premium","Luxe"],
-        "type_experience":["Aventure"],
+        "equipement": [
+            "Standard",
+            "Premium",
+            "Luxe"
+        ],
+        "type_experience": [
+            "Aventure"
+        ],
         "voyage_name": "Monde m\u00e9di\u00e9val",
         "date_depart": "2025-05-01",
         "date_retour": "2025-05-10",
@@ -234,12 +258,26 @@
             "combat",
             "pass\u00e9"
         ],
-        "duree":["quelque_heures","un_jour","plusieurs_jours"],
-        "experience":["solo","en_groupe"],
-        "periode": "Passé",
-        "equipement":["Premium","Luxe"],
-        "type_experience":["Aventure"],
-        "univers":["Epoque_histo"],
+        "duree": [
+            "quelque_heures",
+            "un_jour",
+            "plusieurs_jours"
+        ],
+        "experience": [
+            "solo",
+            "en_groupe"
+        ],
+        "periode": "Pass\u00e9",
+        "equipement": [
+            "Premium",
+            "Luxe"
+        ],
+        "type_experience": [
+            "Aventure"
+        ],
+        "univers": [
+            "Epoque_histo"
+        ],
         "voyage_name": "Voyage intergalactique",
         "date_depart": "2025-06-01",
         "date_retour": "2025-06-10",
@@ -333,13 +371,25 @@
             "tendance",
             "notes"
         ],
-        "duree":["quelque_heures","plusieurs_jours"],
-        "experience":["solo"],
-        "periode": "Passé",
-        "equipement":["Premium","Luxe"],
-        "type_experience":["Aventure","Sensationnel"],
-        "univers":["Epoque_histo"]
-
+        "duree": [
+            "quelque_heures",
+            "plusieurs_jours"
+        ],
+        "experience": [
+            "solo"
+        ],
+        "periode": "Pass\u00e9",
+        "equipement": [
+            "Premium",
+            "Luxe"
+        ],
+        "type_experience": [
+            "Aventure",
+            "Sensationnel"
+        ],
+        "univers": [
+            "Epoque_histo"
+        ]
     },
     {
         "titre": "\u00cele des Pirates",
@@ -357,12 +407,26 @@
         "categorie": [
             "tendance"
         ],
-        "duree":["un_jour","plusieurs_jours"],
-        "experience":["solo","en_groupe"],
-        "periode": "Passé",
-        "equipement":["Premium","Luxe"],
-        "type_experience":["Aventure","Sensationnel"],
-        "univers":["Epoque_histo"]
+        "duree": [
+            "un_jour",
+            "plusieurs_jours"
+        ],
+        "experience": [
+            "solo",
+            "en_groupe"
+        ],
+        "periode": "Pass\u00e9",
+        "equipement": [
+            "Premium",
+            "Luxe"
+        ],
+        "type_experience": [
+            "Aventure",
+            "Sensationnel"
+        ],
+        "univers": [
+            "Epoque_histo"
+        ]
     },
     {
         "titre": "Exp\u00e9dition Far West",
@@ -380,12 +444,27 @@
         "categorie": [
             "notes"
         ],
-        "duree":["quelque_heures","un_jour","plusieurs_jours"],
-        "experience":["solo","en_groupe"],
-        "periode": "Passé",
-        "equipement":["Standard","Premium"],
-        "type_experience":["Aventure","Sensationnel"],
-        "univers":["Epoque_histo"]
+        "duree": [
+            "quelque_heures",
+            "un_jour",
+            "plusieurs_jours"
+        ],
+        "experience": [
+            "solo",
+            "en_groupe"
+        ],
+        "periode": "Pass\u00e9",
+        "equipement": [
+            "Standard",
+            "Premium"
+        ],
+        "type_experience": [
+            "Aventure",
+            "Sensationnel"
+        ],
+        "univers": [
+            "Epoque_histo"
+        ]
     },
     {
         "titre": "Gotham City",
@@ -403,12 +482,25 @@
         "categorie": [
             "tendance"
         ],
-        "duree":["quelque_heures","plusieurs_jours"],
-        "experience":["en_groupe"],
-        "periode": "Monde_réel",
-        "equipement":["Standard","Premium"],
-        "type_experience":["Aventure","Sensationnel"],
-        "univers":["Film"]
+        "duree": [
+            "quelque_heures",
+            "plusieurs_jours"
+        ],
+        "experience": [
+            "en_groupe"
+        ],
+        "periode": "Monde_r\u00e9el",
+        "equipement": [
+            "Standard",
+            "Premium"
+        ],
+        "type_experience": [
+            "Aventure",
+            "Sensationnel"
+        ],
+        "univers": [
+            "Film"
+        ]
     },
     {
         "titre": "Japon F\u00e9odal",
@@ -426,13 +518,26 @@
         "categorie": [
             "tendance"
         ],
-        "duree":["quelque_heures","un_jour"],
-        "experience":["solo"],
-        "periode": "Passé",
-        "promotion":"oui",
-        "equipement":["Standard","Premium"],
-        "type_experience":["Aventure","Détente"],
-        "univers":["Epoque_histo"]
+        "duree": [
+            "quelque_heures",
+            "un_jour"
+        ],
+        "experience": [
+            "solo"
+        ],
+        "periode": "Pass\u00e9",
+        "promotion": "oui",
+        "equipement": [
+            "Standard",
+            "Premium"
+        ],
+        "type_experience": [
+            "Aventure",
+            "D\u00e9tente"
+        ],
+        "univers": [
+            "Epoque_histo"
+        ]
     },
     {
         "titre": "Acad\u00e9mie de Sorcellerie",
@@ -449,11 +554,29 @@
         "categorie": [
             "notes"
         ],
-        "duree":["un_jour","plusieurs_jours"],
-        "experience":["solo","en_groupe"],
-        "equipement":["Standard","Premium","Luxe"],
-        "type_experience":["Aventure","Détente","Sensationnel"],
-        "univers":["Film","Livres","Mythologie"]
+        "duree": [
+            "un_jour",
+            "plusieurs_jours"
+        ],
+        "experience": [
+            "solo",
+            "en_groupe"
+        ],
+        "equipement": [
+            "Standard",
+            "Premium",
+            "Luxe"
+        ],
+        "type_experience": [
+            "Aventure",
+            "D\u00e9tente",
+            "Sensationnel"
+        ],
+        "univers": [
+            "Film",
+            "Livres",
+            "Mythologie"
+        ]
     },
     {
         "titre": "Atlantide Perdu",
@@ -472,12 +595,23 @@
         "categorie": [
             "tendance"
         ],
-        "duree":["quelque_heures"],
-        "experience":["en_groupe"],
-        "periode": "Passé",
-        "equipement":["Standard","Premium"],
-        "type_experience":["Détente"],
-        "univers":["Mythologie"]
+        "duree": [
+            "quelque_heures"
+        ],
+        "experience": [
+            "en_groupe"
+        ],
+        "periode": "Pass\u00e9",
+        "equipement": [
+            "Standard",
+            "Premium"
+        ],
+        "type_experience": [
+            "D\u00e9tente"
+        ],
+        "univers": [
+            "Mythologie"
+        ]
     },
     {
         "titre": "Pixel World",
@@ -493,13 +627,26 @@
         "categorie": [
             "tendance"
         ],
-        "duree":["quelque_heures","un_jour"],
-        "experience":["solo","en_groupe"],
+        "duree": [
+            "quelque_heures",
+            "un_jour"
+        ],
+        "experience": [
+            "solo",
+            "en_groupe"
+        ],
         "periode": "Futuriste",
-        "promotion":"oui",
-        "equipement":["Premium","Luxe"],
-        "type_experience":["Sensationnel"],
-        "univers":["Jeux_Vidéo"]
+        "promotion": "oui",
+        "equipement": [
+            "Premium",
+            "Luxe"
+        ],
+        "type_experience": [
+            "Sensationnel"
+        ],
+        "univers": [
+            "Jeux_Vid\u00e9o"
+        ]
     },
     {
         "titre": "Odyss\u00e9e Antique",
@@ -519,12 +666,29 @@
             "tendance",
             "notes"
         ],
-        "duree":["quelque_heures","un_jour","plusieurs_jours"],
-        "experience":["solo","en_groupe"],
-        "periode": "Passé",
-        "equipement":["Premium","Luxe"],
-        "type_experience":["Aventure","Sensationnel"],
-        "univers":["Mythologie","Livres","Epoque_histo"]
+        "duree": [
+            "quelque_heures",
+            "un_jour",
+            "plusieurs_jours"
+        ],
+        "experience": [
+            "solo",
+            "en_groupe"
+        ],
+        "periode": "Pass\u00e9",
+        "equipement": [
+            "Premium",
+            "Luxe"
+        ],
+        "type_experience": [
+            "Aventure",
+            "Sensationnel"
+        ],
+        "univers": [
+            "Mythologie",
+            "Livres",
+            "Epoque_histo"
+        ]
     },
     {
         "titre": "Voyage en \u00c9gypte",
@@ -542,12 +706,28 @@
         "categorie": [
             "tendance"
         ],
-        "duree":["quelque_heures","un_jour","plusieurs_jours"],
-        "experience":["solo"],
-        "periode": "Passé",
-        "equipement":["Standard","Premium","Luxe"],
-        "type_experience":["Aventure","Détente"],
-        "univers":["Mythologie","Epoque_histo"]
+        "duree": [
+            "quelque_heures",
+            "un_jour",
+            "plusieurs_jours"
+        ],
+        "experience": [
+            "solo"
+        ],
+        "periode": "Pass\u00e9",
+        "equipement": [
+            "Standard",
+            "Premium",
+            "Luxe"
+        ],
+        "type_experience": [
+            "Aventure",
+            "D\u00e9tente"
+        ],
+        "univers": [
+            "Mythologie",
+            "Epoque_histo"
+        ]
     },
     {
         "titre": "Exp\u00e9dition Nordique",
@@ -566,12 +746,30 @@
         "categorie": [
             "notes"
         ],
-        "duree":["quelque_heures","un_jour","plusieurs_jours"],
-        "experience":["solo","en_groupe"],
-        "periode": "Passé",
-        "equipement":["Standard","Premium","Luxe"],
-        "type_experience":["Aventure","Détente","Sensationnel"],
-        "univers":["Mythologie","Epoque_histo"]
+        "duree": [
+            "quelque_heures",
+            "un_jour",
+            "plusieurs_jours"
+        ],
+        "experience": [
+            "solo",
+            "en_groupe"
+        ],
+        "periode": "Pass\u00e9",
+        "equipement": [
+            "Standard",
+            "Premium",
+            "Luxe"
+        ],
+        "type_experience": [
+            "Aventure",
+            "D\u00e9tente",
+            "Sensationnel"
+        ],
+        "univers": [
+            "Mythologie",
+            "Epoque_histo"
+        ]
     },
     {
         "titre": "Terres D\u00e9vast\u00e9es",
@@ -591,12 +789,26 @@
             "tendance",
             "recent"
         ],
-        "duree":["un_jour","plusieurs_jours"],
-        "experience":["solo"],
+        "duree": [
+            "un_jour",
+            "plusieurs_jours"
+        ],
+        "experience": [
+            "solo"
+        ],
         "periode": "Futuriste",
-        "equipement":["Standard","Premium","Luxe"],
-        "type_experience":["Aventure","Sensationnel"],
-        "univers":["Film"]
+        "equipement": [
+            "Standard",
+            "Premium",
+            "Luxe"
+        ],
+        "type_experience": [
+            "Aventure",
+            "Sensationnel"
+        ],
+        "univers": [
+            "Film"
+        ]
     },
     {
         "titre": "Monde SteamPunk",
@@ -614,11 +826,26 @@
         "categorie": [
             "recent"
         ],
-        "duree":["quelque_heures","un_jour","plusieurs_jours"],
-        "experience":["solo","en_groupe"],
-        "periode": "Passé",
-        "equipement":["Standard","Premium"],
-        "type_experience":["Aventure","Détente"],
-        "univers":["Livres"]
+        "duree": [
+            "quelque_heures",
+            "un_jour",
+            "plusieurs_jours"
+        ],
+        "experience": [
+            "solo",
+            "en_groupe"
+        ],
+        "periode": "Pass\u00e9",
+        "equipement": [
+            "Standard",
+            "Premium"
+        ],
+        "type_experience": [
+            "Aventure",
+            "D\u00e9tente"
+        ],
+        "univers": [
+            "Livres"
+        ]
     }
 ]

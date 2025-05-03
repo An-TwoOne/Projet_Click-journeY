@@ -123,6 +123,47 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
+    const formul = document.querySelector("form");
+    const message_erreur = formul.querySelector("#message-erreur");
+
+    formul.addEventListener("submit", function (even) {
+        
+        const bouton_clique = even.submitter;
+
+        
+        if (bouton_clique.name === "deconnexion"){
+            return;
+        } 
+
+        even.preventDefault(); 
+
+        const nom = formul.querySelector("#nom").value.trim();
+        const email = formul.querySelector("#email").value.trim();
+        const mdp = formul.querySelector("#nouveau_mdp").value.trim();
+        const confirmation = formul.querySelector("#confirmation").value.trim();
+        const mobile = formul.querySelector("#telephone").value.trim();
+
+        let message = "";
+
+        if (!nom) {
+            message = "Le nom ne peut pas être vide.";
+        } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+            message = "L'adresse mail est invalide.";
+        } else if (mdp && mdp.length < 8) {
+            message = "Le mot de passe doit contenir au moins 8 caractères.";
+        } else if (mdp && mdp !== confirmation) {
+            message = "Les mots de passe ne correspondent pas.";
+        } else if (!/^\d{10,}$/.test(mobile)) {
+            message = "Le numéro de téléphone doit contenir au moins 10 chiffres.";
+        }
+
+        if (message) {
+            message_erreur.textContent = message;
+        } else {
+            message_erreur.textContent = "";
+            formul.submit();
+        }
+    });
 
 
 });

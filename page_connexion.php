@@ -72,6 +72,8 @@
     <link rel = "stylesheet" type = "text/css" href = "page_connexion.css">
     <script type='text/javascript' src="JS/page_connexion.js"></script>
     <link rel = "stylesheet" type = "text/css" href = "header.css">
+    <link id="theme" rel="stylesheet" href="commun.css">
+    <script type='text/javascript' src="JS/theme_couleur.js"></script>
     <link href="contenu_css/icon.png" rel="icon">
 </head>
 <body>
@@ -89,9 +91,9 @@
             <legend>
                 <b class="titre"> Connexion </b>
             </legend>
-                <input type="search" name="email"placeholder="Adresse-Mail" required/>
+                <input id="email" type="search" name="email"placeholder="Adresse-Mail" required/>
                 <div class="mdp-conteneur">
-                    <input type="password" name="Mot_de_passe" id="password" placeholder="Mot de passe" />
+                    <input id="Mot_de_passe" type="password" name="Mot_de_passe" id="password" placeholder="Mot de passe" />
                     <img src="contenu_css/oeil_icon_blanc.png" class="aff-mdp" alt="Afficher/Masquer">
                 </div>
         

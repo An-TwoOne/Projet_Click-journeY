@@ -30,6 +30,7 @@ session_start();
                     echo '<a href="page_panier.php"><img src="contenu_css/panier_icon.png" alt="icon_panier"></a>';
                 }
             ?>
+            <img src="contenu_css/theme_icon.png" alt="theme_icon" id="theme_couleur" class="logo_theme">
             <span>|</span>
             <?php
                 if (isset($_SESSION["Id"])) {

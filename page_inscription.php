@@ -23,6 +23,7 @@
             foreach ($utilisateurs as $utilisateur) {
                 if ($utilisateur['Mail'] == $_SESSION['Mail']) {
                     $erreur_message = "Cet email a déjà un compte associé, veuillez vous connecter";
+                    unset($_SESSION['Id']);
                     break 2;
                 }
                 if ($utilisateur['Id'] == $_SESSION['Id']) {
@@ -72,6 +73,8 @@
     <link rel = "stylesheet" type = "text/css" href = "page_inscription.css">
     <link rel = "stylesheet" type = "text/css" href = "header.css">
     <script type='text/javascript' src="JS/page_inscription.js"></script>
+    <link id="theme" rel="stylesheet" href="commun.css">
+    <script type='text/javascript' src="JS/theme_couleur.js"></script>
     <link href="contenu_css/icon.png" rel="icon">
 </head>
 <body>
@@ -84,10 +87,10 @@
         <legend>
             <b class="titre"> Créer un compte </b>
         </legend>
-            <input type="text" id="name" name="name" placeholder="Nom" required/>
-            <input type="text" name="prenom" id="prenom" placeholder="Prenom" value="" required/>
-            <input type="number" name="age" min="18" max="100" value="" step="1" placeholder="Âge" required/>
-            <input type="email" name="email"placeholder="Adresse-Mail" required/>
+            <input type="text" id="name" name="name" placeholder="Nom"   />
+            <input type="text" name="prenom" id="prenom" placeholder="Prenom" value=""   />
+            <input type="number" id="age" name="age" min="18" max="100" value="" step="1" placeholder="Âge" />
+            <input type="email" id="email" name="email"placeholder="Adresse-Mail" />
         <div class="pays">Selectionner votre pays</div>
             <select name="country">
             <optgroup label="Europe">
@@ -138,15 +141,15 @@
         </optgroup>
         </select>  
         <div class="mdp-conteneur">
-            <input id="nouveau_mdp" type="password" name="Mot_de_passe" id="password" placeholder="Mot de passe" required minlength="8" />
+            <input id="nouveau_mdp" type="password" name="Mot_de_passe" placeholder="Mot de passe" />
             <img src="contenu_css/oeil_icon_blanc.png" class="aff-mdp" alt="Afficher/Masquer">
         </div>
 
         <div class="mdp-conteneur">
-            <input type="password" name="confirmation" id="password" placeholder="Confirmer mot de passe " required />
+            <input type="password" name="confirmation" id="confirmation" placeholder="Confirmer mot de passe "  />
             <img src="contenu_css/oeil_icon_blanc.png" class="aff-mdp" alt="Afficher/Masquer">
         </div>
-        <input type="tel" id="telephone" name="mobile" placeholder=" N°mobile" required pattern="[0-9]+" title="Veuillez entrer numero valide" minlength="10"/>
+        <input type="tel" id="telephone" name="mobile" placeholder=" N°mobile"  title="Veuillez entrer numero valide" />
         <?php
         if (isset($erreur_message)) {
             echo "<p class='erreur_message'>$erreur_message</p>";

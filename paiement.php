@@ -1,69 +1,13 @@
 <?php
 session_start();
 
-if (!isset($_SESSION['Id'])) {
-    header('Location: page_connexion.php');
-    exit();
+// Vérifier si les informations nécessaires sont disponibles
+if (!isset($_SESSION['voyage']) || !isset($_POST['montant'])) {
+    die('Informations de paiement manquantes.');
 }
 
-require('getapikey.php'); 
-
-
-$transaction_id = bin2hex(random_bytes(12));
-
-
-$montant = $_GET['montant'] ?? '0.00';
-$vendeur = 'MEF-2_H'; 
-$retour_url = 'http://localhost/retour_paiement.php'; 
-
-
-$api_key = getAPIKey($vendeur);
-
-
-if (!preg_match("/^[0-9a-zA-Z]{15}$/", $api_key)) {
-    die('Clé API invalide');
-}
-
-
-$control = md5($api_key . "#" . $transaction_id . "#" . $montant . "#" . $vendeur . "#" . $retour_url);
-
-
-$absolute_path_paiements = "données_json/paiement.json";
-$absolute_path_dataVoyages = "données_json/voyage.json";
-
-
-$content_paiement = file_exists($absolute_path_paiements) ? file_get_contents($absolute_path_paiements) : '[]';
-$content_voyage = file_exists($absolute_path_dataVoyages) ? file_get_contents($absolute_path_dataVoyages) : '[]';
-
-
-$jsonArrayPaiement = json_decode($content_paiement, true);
-$jsonArrayVoyage = json_decode($content_voyage, true);
-
-
-$userData = [
-    'status' => $_GET['status'] ?? null,
-    'montant' => $montant,
-    'transaction' => $transaction_id,
-    'vendeur' => $vendeur,
-    'control' => $control,
-    'user' => $_SESSION['user'] ?? null
-];
-
-
-$jsonArrayPaiement[] = $userData;
-
-
-if (isset($_SESSION['voyage_data'])) {
-    $jsonArrayVoyage[] = $_SESSION['voyage_data'];
-}
-
-
-file_put_contents($absolute_path_paiements, json_encode($jsonArrayPaiement, JSON_PRETTY_PRINT));
-file_put_contents($absolute_path_dataVoyages, json_encode($jsonArrayVoyage, JSON_PRETTY_PRINT));
-
-
-unset($_SESSION['voyage_id']);
-unset($_SESSION['voyage_data']);
+$voyage_nom = htmlspecialchars($_SESSION['voyage']);
+$montant = number_format((float) $_POST['montant'], 2, '.', ''); // Formatage du montant
 ?>
 
 <!DOCTYPE html>
@@ -71,30 +15,33 @@ unset($_SESSION['voyage_data']);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Finalisation du Paiement</title>
-    
+    <title>Page de Paiement</title>
 </head>
 <body>
-    <?php if (isset($_GET['status']) && $_GET['status'] === 'accepted'): ?>
-        <h1>Paiement accepté !</h1>
-        <p>Merci pour votre paiement. Voici un récapitulatif de votre transaction :</p>
-        <ul>
-            <li><strong>Montant :</strong> <?= htmlspecialchars($montant) ?> €</li>
-            <li><strong>Transaction ID :</strong> <?= htmlspecialchars($transaction_id) ?></li>
-            <li><strong>Vendeur :</strong> <?= htmlspecialchars($vendeur) ?></li>
-        </ul>
-        <a href="page_accueil.php">Retour à l'accueil</a>
-    <?php else: ?>
-        <h1>Le paiement a échoué.</h1>
-        <p>Nous sommes désolés pour ce désagrément. Veuillez réessayer le paiement.</p>
-        <form action="https://www.plateforme-smc.fr/cybank/index.php" method="POST">
-            <input type="hidden" name="transaction" value="<?= htmlspecialchars($transaction_id) ?>">
-            <input type="hidden" name="montant" value="<?= htmlspecialchars($montant) ?>">
-            <input type="hidden" name="vendeur" value="<?= htmlspecialchars($vendeur) ?>">
-            <input type="hidden" name="retour" value="<?= htmlspecialchars($retour_url) ?>">
-            <input type="hidden" name="control" value="<?= htmlspecialchars($control) ?>">
-            <button type="submit">Valider et payer</button>
-        </form>
-    <?php endif; ?>
+    <h1>Récapitulatif du voyage</h1>
+    <p><strong>Titre du voyage:</strong> <span id="title"><?= $voyage_nom ?></span></p>
+    <p><strong>Dates:</strong> <span id="dates">Du 01 Juin 2025 au 10 Juin 2025</span></p> <!-- Exemple statique -->
+
+    <h2>Informations de paiement</h2>
+    <form action="https://www.plateforme-smc.fr/cybank/index.php" method="POST">
+        <input type="hidden" name="transaction" value="1234567890ABCDE"> <!-- Exemple statique -->
+        <input type="hidden" name="montant" value="<?= $montant ?>">
+        <input type="hidden" name="vendeur" value="MEF-2_H"> <!-- Exemple statique -->
+        <input type="hidden" name="retour" value="http://localhost/retour_paiement.php?session=s">
+
+        <label for="card_number">Numéro de carte:</label>
+        <input type="text" name="card_number" id="card_number" maxlength="16" pattern="\d{16}" placeholder="1234567812345678" required>
+
+        <label for="cardholder_name">Nom du titulaire de la carte:</label>
+        <input type="text" name="cardholder_name" id="cardholder_name" required>
+
+        <label for="expiry_date">Date d'expiration (MM/AAAA):</label>
+        <input type="text" name="expiry_date" id="expiry_date" pattern="\d{2}/\d{4}" placeholder="MM/AAAA" required>
+
+        <label for="cvv">Code de sécurité (CVV):</label>
+        <input type="text" name="cvv" id="cvv" maxlength="3" pattern="\d{3}" placeholder="123" required>
+
+        <input type="submit" value="Valider et payer">
+    </form>
 </body>
 </html>
