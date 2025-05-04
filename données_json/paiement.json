@@ -25,6 +25,13 @@
         "final_price": 1000,
         "vendeur":"MEF-2_H"
         
+},
+{
+    "Titre":"\u00c9pop\u00e9e Jurassique",
+        "date_depart": "2025-08-01",
+        "date_retour": "2025-08-10",
+        "final_price": 1000,
+        "vendeur":"MEF-2_H"
 }
 
 ]
