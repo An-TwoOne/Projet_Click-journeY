@@ -2,7 +2,7 @@
 
 
 body {
-    background-color: #141414f1;
+    background-color: var(--couleur-fond);
     color: var(--blanc);
     font-family: var(--police);
     text-align: center;

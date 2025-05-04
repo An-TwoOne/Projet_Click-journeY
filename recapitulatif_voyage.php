@@ -33,7 +33,8 @@ foreach ($selected_options as $option) {
                 const sousTotalCell = row.querySelector('.sous-total');
 
                 // Récupérer la quantité et calculer le sous-total
-                const quantite = parseInt(quantiteInput.value) || 0;
+                const quantite = parseInt(quantiteInput.value) || 1;
+                if (quantite < 1) quantiteInput.value = 1; // Assurer un minimum de 1
                 const sousTotal = prix * quantite;
 
                 // Mettre à jour le sous-total dans le tableau
@@ -49,6 +50,61 @@ foreach ($selected_options as $option) {
             // Mettre à jour le champ caché pour le formulaire de paiement
             document.getElementById('montant').value = total.toFixed(2);
         }
+
+        // Fonction pour enregistrer les quantités mises à jour
+        function sauvegarderQuantites() {
+            const updatedQuantities = [];
+            let changes = false;
+            
+            // Récupérer toutes les quantités mises à jour
+            document.querySelectorAll('.ligne-option').forEach((row, index) => {
+                const quantiteInput = row.querySelector('.quantite');
+                const newQuantity = parseInt(quantiteInput.value) || 1;
+                
+                // S'assurer que la quantité est au moins 1
+                if (newQuantity < 1) {
+                    quantiteInput.value = 1;
+                    newQuantity = 1;
+                }
+                
+                // Vérifier si la quantité a été modifiée
+                const currentOptions = <?= json_encode($selected_options) ?>;
+                const currentQuantity = parseInt(currentOptions[index].quantity);
+                
+                if (newQuantity !== currentQuantity) {
+                    changes = true;
+                    updatedQuantities.push({
+                        index: index,
+                        quantity: newQuantity
+                    });
+                }
+            });
+            
+            // Si aucun changement, rediriger directement
+            if (!changes) {
+                window.location.href = 'voyage.php?nom=<?= urlencode($_SESSION['voyage']) ?>';
+                return;
+            }
+            
+            // Créer un formulaire pour envoyer les données
+            const form = document.createElement('form');
+            form.method = 'POST';
+            form.action = 'voyage.php?nom=<?= urlencode($_SESSION['voyage']) ?>';
+            
+            const input = document.createElement('input');
+            input.type = 'hidden';
+            input.name = 'updated_quantities';
+            input.value = JSON.stringify(updatedQuantities);
+            
+            form.appendChild(input);
+            document.body.appendChild(form);
+            form.submit();
+        }
+
+        // Initialiser le calcul des prix au chargement de la page
+        document.addEventListener('DOMContentLoaded', function() {
+            mettreAJourPrix();
+        });
     </script>
 </head>
 <body>
@@ -60,8 +116,10 @@ foreach ($selected_options as $option) {
         <table border="1">
             <thead>
                 <tr>
+                    <th>Étape</th>
+                    <th>Type</th>
                     <th>Option</th>
-                    <th>Prix</th>
+                    <th>Prix unitaire</th>
                     <th>Quantité</th>
                     <th>Sous-total</th>
                 </tr>
@@ -69,12 +127,14 @@ foreach ($selected_options as $option) {
             <tbody>
                 <?php foreach ($selected_options as $option): ?>
                     <tr class="ligne-option">
+                        <td><?= htmlspecialchars(ucwords(str_replace('_', ' ', $option['etape']))) ?></td>
+                        <td><?= htmlspecialchars(ucwords(str_replace('_', ' ', $option['type']))) ?></td>
                         <td><?= htmlspecialchars($option['name']) ?></td>
                         <td class="prix"><?= htmlspecialchars($option['price']) ?></td>
                         <td>
-                            <input type="number" class="quantite" value="<?= htmlspecialchars($option['quantity']) ?>" min="1" oninput="mettreAJourPrix()">
+                            <input type="number" class="quantite" value="<?= intval($option['quantity']) ?>" min="1" oninput="mettreAJourPrix()">
                         </td>
-                        <td class="sous-total"><?= htmlspecialchars($option['price'] * $option['quantity']) ?> $</td>
+                        <td class="sous-total"><?= htmlspecialchars(floatval($option['price']) * intval($option['quantity'])) ?> $</td>
                     </tr>
                 <?php endforeach; ?>
             </tbody>
@@ -85,13 +145,13 @@ foreach ($selected_options as $option) {
         </div>
 
         <div class="boutons">
-            <!-- Formulaire pour rediriger vers paiement.php -->
+            
             <form action="paiement.php" method="POST">
                 <input type="hidden" id="montant" name="montant" value="<?= $total_price ?>">
                 <input type="submit" value="Passer au paiement" class="btn">
             </form>
-            <!-- Bouton pour revenir à la page de personnalisation -->
-            <a href="voyage.php?nom=<?= urlencode($_SESSION['voyage']) ?>" class="btn">🔧 Modifier la personnalisation</a>
+            
+            <button onclick="sauvegarderQuantites()" class="btn">🔧 Enregistrer et modifier la personnalisation</button>
         </div>
     </div>
 </body>

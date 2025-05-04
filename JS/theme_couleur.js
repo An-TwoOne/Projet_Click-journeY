@@ -13,16 +13,33 @@ function setCookie(nom, valeur, jour) {
 
 function changeTheme(mode) {
     const link = document.getElementById('theme');
+    const logo = document.getElementById('logo_site');
+
     if (mode === 'clair') {
         link.href = 'commun_theme2.css';
+        if (logo){
+             logo.src = 'contenu_css/logo_version_clair.png';
+        }
     } else {
         link.href = 'commun.css';
+        if (logo) {
+            logo.src = 'contenu_css/logo.png';
+        }
     }
 }
+
+    function avantDOM() {
+        const theme_sauvegarde = getCookie('theme') || 'sombre';
+        changeTheme(theme_sauvegarde);
+    }
+    avantDOM();
+
+
 
 document.addEventListener('DOMContentLoaded', function () {
     const btntheme = document.getElementById('theme_couleur');
     const theme_sauvegarde = getCookie('theme');
+    
 
 
     if (theme_sauvegarde === 'clair' || theme_sauvegarde === 'sombre') {
@@ -31,7 +48,6 @@ document.addEventListener('DOMContentLoaded', function () {
         changeTheme('sombre');
         setCookie('theme', 'sombre', 30);
     }
-
 
     btntheme.addEventListener('click', function () {
         let actuelTheme;

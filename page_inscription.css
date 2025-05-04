@@ -9,7 +9,7 @@ body {
         text-align: center;
         margin: 0px;
         padding: 0px;
-        background-color: #141414f1;
+        background-color: var(--couleur-fond);
         background-image: var(--topographique);
 
 }

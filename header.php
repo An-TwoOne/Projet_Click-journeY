@@ -4,7 +4,7 @@ session_start();
 
 <div class="bandeau">
         <div>
-            <a href="page_accueil.php"><img src="contenu_css/logo.png" alt="logo"></a>
+            <a href="page_accueil.php"><img id="logo_site" src="contenu_css/logo.png" alt="logo"></a>
             <a href="page_accueil.php">Accueil</a>
             <a href="page_destination.php">Destinations</a>
             <a href="page_destination.php#filtres"><img src="contenu_css/recherche_gris.png" alt="logo_recherche">Rechercher</a>

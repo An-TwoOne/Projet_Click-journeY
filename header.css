@@ -26,7 +26,7 @@
     margin: 0px 10px 0px 20px;
 }
 
-.bandeau img[src="contenu_css/logo.png"]{
+.bandeau #logo_site{
     width: 75px;
     margin-left: 85px;
     margin-top: 10px;
