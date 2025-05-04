@@ -54,7 +54,7 @@
                             "option": "Chasse \u00e0 la Prime intergalactique",
                             "image": "images\/chasse_bounty.png",
                             "Prix": "400$",
-                            "quantity": "2"
+                            "quantity": "1"
                         },
                         {
                             "option": "visite de l'arbre Monde",
@@ -154,7 +154,7 @@
                             "option": "Exploration de la plan\u00e8te",
                             "image": "images\/eau.png",
                             "Prix": "400$",
-                            "quantity": "5"
+                            "quantity": "6"
                         }
                     ]
                 }

@@ -3,7 +3,7 @@
 
 body {
     font-family: var(--police);
-    background-color: #141414f1;
+    background-color: var(--couleur-fond);
     padding: 0;
     margin: 0;
     display: flex;
