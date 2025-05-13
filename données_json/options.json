@@ -8,7 +8,7 @@
                             "option": "Megabuilding",
                             "image": "images\/megabuilding.png",
                             "Prix": "250$",
-                            "quantity": "3"
+                            "quantity": "1"
                         },
                         {
                             "option": "Hotel Holo",
@@ -92,7 +92,7 @@
                             "option": "Ch\u00e2teau m\u00e9di\u00e9val",
                             "image": "images\/hotel.png",
                             "Prix": "300$",
-                            "quantity": "3"
+                            "quantity": "1"
                         },
                         {
                             "option": "Auberge m\u00e9di\u00e9vale",
@@ -154,7 +154,7 @@
                             "option": "Exploration de la plan\u00e8te",
                             "image": "images\/eau.png",
                             "Prix": "400$",
-                            "quantity": "1"
+                            "quantity": "5"
                         }
                     ]
                 }

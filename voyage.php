@@ -354,7 +354,7 @@ if (empty($selected_options) && isset($_SESSION['selected_options'])) {
 
         // Pour chaque radio button, associer le champ de quantité
         document.querySelectorAll('input[type="radio"]').forEach(radio => {
-            radio.addEventListene theme_icon r('change', function() {
+            radio.addEventListener('change', function() {
                 // Désactiver tous les champs de quantité dans cette catégorie
                 const etape_type = this.name;
                 document.querySelectorAll(`input[name$="_nbr"]`).forEach(qtyInput => {
@@ -423,7 +423,6 @@ if (empty($selected_options) && isset($_SESSION['selected_options'])) {
 
                     echo "<div class='option-card'>
                             <label for='{$input_id}'>
-                                <img src='{$option['image']}' alt='{$option_name}' style='width: 50px; height: auto;'>
                                 {$option_name} - {$option_price}
                             </label>
                             <input type='radio' id='{$input_id}' name='{$etape_key}_{$type_key}' value='{$option_name}' " . ($is_selected ? 'checked' : '') . ">

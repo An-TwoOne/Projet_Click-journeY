@@ -151,7 +151,7 @@ body {
 }
 
 #sousbloc2:hover > :not(:hover) .casque_vr {
-    content: url("contenu_css/casque_vr_sombre.png");
+    content: url("/contenu_css/casque_vr_sombre.png");
 }
 
 .casque_vr {

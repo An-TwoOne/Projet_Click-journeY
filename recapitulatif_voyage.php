@@ -145,14 +145,15 @@ foreach ($selected_options as $option) {
         </div>
 
         <div class="boutons">
+
+            <button onclick="sauvegarderQuantites()" class="btn">Modifier la personnalisation 🔧</button>
             
             <form action="paiement.php" method="POST">
                 <input type="hidden" name="voyage" value="<?= htmlspecialchars($_SESSION['voyage']) ?>">
                 <input type="hidden" id="montant" name="montant" value="<?= $total_price ?>">
-                <input type="submit" value="Passer au paiement" class="btn">
+                <input type="submit" value="Passer au paiement 💳" class="btn">
             </form>
             
-            <button onclick="sauvegarderQuantites()" class="btn">🔧 Enregistrer et modifier la personnalisation</button>
         </div>
     </div>
 </body>

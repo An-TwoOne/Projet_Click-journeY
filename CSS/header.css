@@ -72,19 +72,19 @@ a[href="page_inscription.php"]:hover {
 }
 
 .bandeau img[src="contenu_css/icon_profil_gris.png"]:hover {
-    content: url("contenu_css/icon_profil.png");
+    content: url("/contenu_css/icon_profil.png");
 }
 
 .bandeau img[src="contenu_css/icon_profil_connecte.png"]:hover {
-    content: url("contenu_css/icon_profil.png");
+    content: url("/contenu_css/icon_profil.png");
 }
 
 .bandeau img[src="contenu_css/panier_icon.png"]:hover {
-    content: url("contenu_css/panier_icon_blanc.png");
+    content: url("/contenu_css/panier_icon_blanc.png");
 }
 
 .bandeau img[src="contenu_css/theme_icon.png"]:hover {
-    content: url("contenu_css/theme_icon_blanc.png");
+    content: url("/contenu_css/theme_icon_blanc.png");
 }
 
 .bandeau img[src="contenu_css/recherche_gris.png"]{
@@ -98,7 +98,7 @@ a[href="page_inscription.php"]:hover {
 }
 
 .bandeau a[href="page_destination.php#filtres"]:hover img[src="contenu_css/recherche_gris.png"] {
-    content: url("contenu_css/recherche_blanc.png");
+    content: url("/contenu_css/recherche_blanc.png");
 }
 
 a:hover {

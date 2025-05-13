@@ -1,6 +1,5 @@
 
 
-
 body {
     font-family: var(--police);
     background-color: var(--couleur-fond);
@@ -66,6 +65,9 @@ h2, h3 {
     text-decoration: none;
     border-radius: 8px;
     font-weight: bold;
+    border : none;
+    box-shadow: 0 0 3px #000000;
+    font-family: var(--police);
 }
 
 .btn:hover {
