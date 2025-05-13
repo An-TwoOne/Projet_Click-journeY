@@ -16,12 +16,12 @@ function changeTheme(mode) {
     const logo = document.getElementById('logo_site');
 
     if (mode === 'clair') {
-        link.href = 'commun_theme2.css';
+        link.href = 'CSS/commun_theme2.css';
         if (logo){
              logo.src = 'contenu_css/logo_version_clair.png';
         }
     } else {
-        link.href = 'commun.css';
+        link.href = 'CSS/commun.css';
         if (logo) {
             logo.src = 'contenu_css/logo.png';
         }

@@ -46,9 +46,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MultiversTrip Administrateur</title>
-    <link rel = "stylesheet" type = "text/css" href = "page_administrateur.css">
+    <link rel = "stylesheet" type = "text/css" href = "CSS/page_administrateur.css">
     <script type='text/javascript' src="JS/page_administrateur.js"></script>
-    <link id="theme" rel="stylesheet" href="commun.css">
+    <link id="theme" rel="stylesheet" href="CSS/commun.css">
     <script type='text/javascript' src="JS/theme_couleur.js"></script>
     <link href="contenu_css/icon.png" rel="icon">
 </head>

@@ -69,10 +69,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MultiversTrip connexion</title>
-    <link rel = "stylesheet" type = "text/css" href = "page_connexion.css">
+    <link rel = "stylesheet" type = "text/css" href = "CSS/page_connexion.css">
     <script type='text/javascript' src="JS/page_connexion.js"></script>
-    <link rel = "stylesheet" type = "text/css" href = "header.css">
-    <link id="theme" rel="stylesheet" href="commun.css">
+    <link rel = "stylesheet" type = "text/css" href = "CSS/header.css">
+    <link id="theme" rel="stylesheet" href="CSS/commun.css">
     <script type='text/javascript' src="JS/theme_couleur.js"></script>
     <link href="contenu_css/icon.png" rel="icon">
 </head>

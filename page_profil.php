@@ -73,11 +73,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MultiversTrip Profil</title>
-    <link rel="stylesheet" type="text/css" href="page_profil.css">
-    <link rel = "stylesheet" type = "text/css" href = "header.css">
+    <link rel="stylesheet" type="text/css" href="CSS/page_profil.css">
+    <link rel = "stylesheet" type = "text/css" href = "CSS/header.css">
     <link href="contenu_css/icon.png" rel="icon">
     <script type='text/javascript' src="JS/page_profil.js"></script>
-    <link id="theme" rel="stylesheet" href="commun.css">
+    <link id="theme" rel="stylesheet" href="CSS/commun.css">
     <script type='text/javascript' src="JS/theme_couleur.js"></script>
 </head>
 <body>
@@ -92,13 +92,12 @@
                     <img src="contenu_css/banniere.png" alt="banniere" class="banner-img">
                 </div>
                 <div class="avatar-container">
-                    <img src="contenu_css/photo_profil.png" alt="shiruy" class="avatar">
+                    <img src="contenu_css/icon.png" alt="icon" class="avatar">
                     <?php
                         if (isset($_SESSION['Statut']) && $_SESSION['Statut'] === "VIP") {
                             echo '<img src="contenu_css/logo_VIP.png" alt="logo_vip" class="logo_vip">';
                         }
                     ?>
-                    <img src="contenu_css/crayon_modifier.png" alt="Modifier" class="edit-icon">
                 </div>
                 <div class="profile-info">
                     <label>Nom du profil</label>

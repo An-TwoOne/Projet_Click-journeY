@@ -22,7 +22,7 @@ $nom_voyage = htmlspecialchars($_POST['voyage']); // Nom du voyage
 $montant = floatval($_POST['montant']); // Prix total transmis depuis le récapitulatif
 
 // Charger les données du fichier JSON
-$file = 'paiement.json';
+$file = 'données_json/paiement.json';
 if (!file_exists($file)) {
     die("Erreur : le fichier récapitulatif n'existe pas.");
 }

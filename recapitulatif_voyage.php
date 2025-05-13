@@ -16,10 +16,10 @@ foreach ($selected_options as $option) {
 <head>
     <meta charset="UTF-8">
     <title>MultiversTrip Récapitulatif du Voyage</title>
-    <link rel="stylesheet" href="recapitulatif_voyage.css">
-    <link rel = "stylesheet" type = "text/css" href = "header.css">
+    <link rel="stylesheet" href="CSS/recapitulatif_voyage.css">
+    <link rel = "stylesheet" type = "text/css" href = "CSS/header.css">
     <link href="contenu_css/icon.png" rel="icon">
-    <link id="theme" rel="stylesheet" href="commun.css">
+    <link id="theme" rel="stylesheet" href="CSS/commun.css">
     <script type='text/javascript' src="JS/theme_couleur.js"></script>
     <script>
         // Fonction JavaScript pour mettre à jour les prix dynamiquement
@@ -147,6 +147,7 @@ foreach ($selected_options as $option) {
         <div class="boutons">
             
             <form action="paiement.php" method="POST">
+                <input type="hidden" name="voyage" value="<?= htmlspecialchars($_SESSION['voyage']) ?>">
                 <input type="hidden" id="montant" name="montant" value="<?= $total_price ?>">
                 <input type="submit" value="Passer au paiement" class="btn">
             </form>

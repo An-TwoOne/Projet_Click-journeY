@@ -20,12 +20,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MultiversTrip Destinations</title>
-    <link rel="stylesheet" type="text/css" href="page_destination.css">
-    <link rel = "stylesheet" type = "text/css" href = "header.css">
-    <link rel = "stylesheet" type = "text/css" href = "filtre_recherche.css">
+    <link rel="stylesheet" type="text/css" href="CSS/page_destination.css">
+    <link rel = "stylesheet" type = "text/css" href = "CSS/header.css">
+    <link rel = "stylesheet" type = "text/css" href = "CSS/filtre_recherche.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
-    <link id="theme" rel="stylesheet" href="commun.css">
+    <link id="theme" rel="stylesheet" href="CSS/commun.css">
     <script type='text/javascript' src="JS/theme_couleur.js"></script>
     <link href="contenu_css/icon.png" rel="icon">
     <script type='text/javascript' src="JS/filtre_recherche.js"></script>

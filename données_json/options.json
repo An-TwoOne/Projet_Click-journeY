@@ -14,7 +14,7 @@
                             "option": "Hotel Holo",
                             "image": "images\/megabuilding.png",
                             "Prix": "150$",
-                            "quantity": "4"
+                            "quantity": "1"
                         },
                         {
                             "option": "Capsule Futuriste autonome",
@@ -28,13 +28,13 @@
                             "option": "Restaurant Hacker",
                             "image": "images\/restaurant_hacker.png",
                             "Prix": "200$",
-                            "quantity": "1"
+                            "quantity": "2"
                         },
                         {
                             "option": "Bar Lumineux",
                             "image": "images\/bar_lumineux.png",
                             "Prix": "175$",
-                            "quantity": "2"
+                            "quantity": "1"
                         },
                         {
                             "option": "Repas Nano Synth\u00e9tis\u00e9",
@@ -80,7 +80,7 @@
                             "option": "Drone-taxi",
                             "image": "images\/Drone.png",
                             "Prix": "200$",
-                            "quantity": "1"
+                            "quantity": "11"
                         }
                     ]
                 }
@@ -98,7 +98,7 @@
                             "option": "Auberge m\u00e9di\u00e9vale",
                             "image": "images\/ver.png",
                             "Prix": "150$",
-                            "quantity": "2"
+                            "quantity": "1"
                         }
                     ],
                     "restauration": [
@@ -140,7 +140,7 @@
                             "option": "Cuisine extraterrestre",
                             "image": "images\/fol.png",
                             "Prix": "300$",
-                            "quantity": "2"
+                            "quantity": "1"
                         },
                         {
                             "option": "Repas intergalactique",
@@ -154,7 +154,7 @@
                             "option": "Exploration de la plan\u00e8te",
                             "image": "images\/eau.png",
                             "Prix": "400$",
-                            "quantity": "6"
+                            "quantity": "1"
                         }
                     ]
                 }
@@ -426,7 +426,7 @@
                             "option": "Exploration de la foret enchant\u00e9e",
                             "image": "images\/eau.png",
                             "Prix": "400$",
-                            "quantity": "1"
+                            "quantity": "3"
                         }
                     ]
                 }

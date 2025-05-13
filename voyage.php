@@ -199,10 +199,10 @@ if (empty($selected_options) && isset($_SESSION['selected_options'])) {
 <head>
     <meta charset="UTF-8">
     <title>MultiversTrip Personnalisation du Voyage</title>
-    <link rel="stylesheet" href="voyage.css">
-    <link rel = "stylesheet" type = "text/css" href = "header.css">
+    <link rel="stylesheet" href="CSS/voyage.css">
+    <link rel = "stylesheet" type = "text/css" href = "CSS/header.css">
     <link href="contenu_css/icon.png" rel="icon">
-    <link id="theme" rel="stylesheet" href="commun.css">
+    <link id="theme" rel="stylesheet" href="CSS/commun.css">
     <script type='text/javascript' src="JS/theme_couleur.js"></script>
     <script>
     // Fonction pour calculer et afficher le prix total en temps réel
@@ -354,7 +354,7 @@ if (empty($selected_options) && isset($_SESSION['selected_options'])) {
 
         // Pour chaque radio button, associer le champ de quantité
         document.querySelectorAll('input[type="radio"]').forEach(radio => {
-            radio.addEventListener('change', function() {
+            radio.addEventListene theme_icon r('change', function() {
                 // Désactiver tous les champs de quantité dans cette catégorie
                 const etape_type = this.name;
                 document.querySelectorAll(`input[name$="_nbr"]`).forEach(qtyInput => {
