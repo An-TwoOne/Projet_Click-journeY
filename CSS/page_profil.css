@@ -3,7 +3,7 @@
 
 body {
     background-color: var(--couleur-fond);
-    color: var(--blanc);
+    color: #ffffff;
     font-family: var(--police);
     text-align: center;
     margin: 0px;
@@ -160,7 +160,7 @@ h1{
 
 .indication{
     font-size: 12px;
-    color: var(--blanc);
+    color: #ffffff;
 }
 
 .profil_modifier{
@@ -221,5 +221,12 @@ h1{
 #message-erreur{
     font-size: 15px;
     padding-top: 30px;
-    color: var(--or);
+}
+
+.erreur{
+    color:red;
+}
+
+.chargement_message{
+    color:#ffffff;
 }

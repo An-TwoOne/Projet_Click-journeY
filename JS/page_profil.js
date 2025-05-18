@@ -124,7 +124,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     const formul = document.querySelector("form");
-    const message_erreur = formul.querySelector("#message-erreur");
+    const message_zone = formul.querySelector("#message-erreur");
 
     formul.addEventListener("submit", function (even) {
         
@@ -158,11 +158,65 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         if (message) {
-            message_erreur.textContent = message;
-        } else {
-            message_erreur.textContent = "";
-            formul.submit();
-        }
+            message_zone.className = 'erreur';
+            message_zone.textContent = message;
+            return;
+        } 
+
+        
+        
+        
+        const formData = new FormData(formul);
+        
+        
+        formData.append('ajax_request', 'true');
+        
+        
+        message_zone.className = 'chargement_message';
+        message_zone.textContent = 'Mise à jour en cours...';
+        
+        
+        const request = new Request('page_profil.php', {
+            method: 'POST',
+            body: formData
+        });
+        
+        
+        window.fetch(request)
+            .then((response) => {
+                if (!response.ok) {
+                    throw new Error(`Erreur HTTP: ${response.status}`);
+                }
+                return response.json(); 
+            })
+            .then((data) => {
+                
+                if (data.success) {
+                    
+                    message_zone.className = 'profil_modifier';
+                    message_zone.textContent = data.message;
+                    
+                    const saveButton = document.querySelector(".save");
+                    if (saveButton) {
+                        saveButton.style.display = "none";
+                    }   
+                    
+                    setTimeout(() => {
+                        message_zone.textContent = '';
+                        message_zone.className = ''; 
+                    }, 4000);
+
+                } else {
+                    message_zone.className = 'erreur';
+                    message_zone.textContent = data.message;
+                }
+            })
+            .catch((error) => {
+                message_zone.className = 'erreur';
+                message_zone.textContent = "Une erreur s'est produite lors de la mise à jour du profil.";
+                console.error('Erreur:', error);
+            })
+        
     });
 
 

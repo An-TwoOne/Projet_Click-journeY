@@ -13,7 +13,7 @@
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease-in-out;
-    color: var(--blanc);
+    color: #ffffff;
     font-family: var(--police);
     font-size: 15px;
     accent-color: var(--turquoise);
@@ -101,7 +101,7 @@ label {
 
 #aff_prix{
     margin-left: 0px;
-    color: var(--blanc);
+    color: #ffffff;
     font-family: var(--police);
     font-size: 16px;
 }

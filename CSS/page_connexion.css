@@ -49,6 +49,7 @@ button {
         border-radius: 5px;
         font-size: 1em;
         font-family: var(--police);
+        
 }
 
 input,
@@ -89,7 +90,7 @@ button:hover {
 }
 
 .message_inscription {
-        color: rgb(235, 235, 235);
+        color: var(--blanc);
         font-size: 12px;
 }
 
@@ -120,4 +121,9 @@ button:hover {
         top: 20px;
         cursor: pointer;
         
+}
+
+
+input{
+    color: var(--champ-formule);     
 }

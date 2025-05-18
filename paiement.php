@@ -47,10 +47,8 @@ if (!$voyage_trouve) {
 
 // Récupérer les informations du voyage
 $titre_voyage = $voyage_trouve['Titre'];
-$date_debut = $voyage_trouve['date_depart'];
-$date_fin = $voyage_trouve['date_retour'];
-$vendeur = $voyage_trouve['vendeur'];
-$retour = "http://localhost/projet_info/Projet_Click-journeY/retour_paiement.php";
+$vendeur = $voyage_trouve['Vendeur'];
+$retour = "https://ominous-space-memory-pj7xg9775qgvh74j-3000.app.github.dev/retour_paiement.php";
 
 // Générer un ID de transaction unique
 $transaction = generateTransactionId();
@@ -77,8 +75,6 @@ if (preg_match("/^[0-9a-zA-Z]{15}$/", $api_key)) {
     <h1>Récapitulatif du voyage</h1>
 
     <p><strong>Titre du voyage :</strong> <?php echo htmlspecialchars($titre_voyage); ?></p>
-    <p><strong>Date de début :</strong> <?php echo htmlspecialchars($date_debut); ?></p>
-    <p><strong>Date de fin :</strong> <?php echo htmlspecialchars($date_fin); ?></p>
     <p><strong>Montant total :</strong> <?php echo htmlspecialchars($montant); ?> EUR</p>
 
     <h2>Redirection vers CY Bank pour paiement</h2>

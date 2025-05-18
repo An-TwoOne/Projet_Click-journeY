@@ -14,9 +14,16 @@
         exit();
     }
 
+    $si_Ajax = isset($_POST['ajax_request']) && $_POST['ajax_request'] === 'true';
     
 
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+
+        $response = [
+            'success' => false,
+            'message' => ''
+        ];
+
 
         $_SESSION['Nom'] = $_POST['name'];
         $_SESSION['Mobile'] = $_POST['mobile'];
@@ -54,19 +61,37 @@
         }
         if (empty($erreur_mdp)) {
             file_put_contents('données_json/utilisateurs.json', json_encode($utilisateurs));
-            $_SESSION['profil_modifier'] = "Profil mis à jour avec succès";
+            $message_success = "Profil mis à jour avec succès";
+
+            if ($si_Ajax) {
+                $response['success'] = true;
+                $response['message'] = $message_success;
+                echo json_encode($response);
+                exit();
+            } else {
+                $_SESSION['profil_modifier'] = $message_success;
+            }
             
         }else{
-            $_SESSION['profil_modifier'] = $erreur_mdp;
+            if ($si_Ajax) {
+                $response['success'] = false;
+                $response['message'] = $erreur_mdp;
+                echo json_encode($response);
+                exit();
+            } else {
+                $_SESSION['profil_modifier'] = $erreur_mdp;
+            }
         }
-        header("Location: page_profil.php");
-        exit();
+        if (!$si_Ajax) {
+            header("Location: page_profil.php");
+            exit();
+        }
     }
-?>
+
    
 
 
-
+if (!$si_Ajax) {?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -160,3 +185,4 @@
     
 </body>
 </html>
+<?php } ?>

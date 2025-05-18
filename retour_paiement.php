@@ -2,7 +2,7 @@
 require('getapikey.php'); 
 
 session_start();
-
+$select_id = $_SESSION['Id'];
 
 $transaction = $_GET['transaction'] ?? null;
 $montant = $_GET['montant'] ?? null;
@@ -30,7 +30,32 @@ if ($calculated_control !== $control) {
     die('Valeur de contrôle invalide');
 }
 
+$transaction_data = array(
+    'ID' =>$select_id ,
+    'Titre' => $_SESSION['voyage'] ?? 'Inconnu',
+    'Identification transaction' => $transaction,
+    'Paiement' => $montant,
+    'Vendeur' => $vendeur,
+    'Statut' => $status,
+    'Date' => date('Y-m-d H:i:s') // Ajouter la date et l'heure de la transaction
+);
 
+$file = 'données_json/paiement.json';
+if (file_exists($file)) {
+    // Charger les données existantes
+    $current_data = json_decode(file_get_contents($file), true);
+    if (!$current_data) {
+        $current_data = [];
+    }
+    $current_data[] = $transaction_data;
+    file_put_contents($file, json_encode($current_data, JSON_PRETTY_PRINT));
+} else {
+    // Créer un nouveau fichier avec la transaction
+    $current_data = array($transaction_data);
+    file_put_contents($file, json_encode($current_data, JSON_PRETTY_PRINT));
+}
+
+// Traiter le statut du paiement
 if ($status === 'accepted') {
     echo "<h1>Paiement accepté !</h1>";
     echo "<p>Merci pour votre paiement. Votre transaction a été validée.</p>";

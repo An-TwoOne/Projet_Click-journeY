@@ -2,10 +2,10 @@
 
 body {
     font-family: var(--police);
-    background: linear-gradient(135deg, rgba(71, 71, 71, 0.9), #161616), url('/mnt/data/image.png');
+    background: linear-gradient(135deg, var(--gris), var(--fond-bis)), url('/mnt/data/image.png');
     background-size: cover;
     background-position: center center;
-    color: var(--noir);
+    color: #ffffff;
     margin: 0;
     padding: 0;
     display: flex;
@@ -29,7 +29,7 @@ h2 {
     margin-top: 150px;
     font-size: var(--taille-titre);
     margin-bottom: var(--marge);
-    color: var(--noir);
+    color: #ffffff;
 }
 
 .section-title {
@@ -52,7 +52,7 @@ h2 {
 }
 
 .option-card {
-    background-color: var(--blanc);
+    background-color: #ffffff;
     border: 1px solid #ddd;
     border-radius: 12px;
     padding: 20px;
@@ -175,5 +175,5 @@ h2 {
 }
 
 #total-price{
-    color:#ffffff;
+    color:var(--blanc);
 }

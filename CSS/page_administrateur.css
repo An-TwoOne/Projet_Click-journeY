@@ -77,9 +77,10 @@ th, td {
 input[type="checkbox"]{
     transform: scale(1.2); 
     accent-color: var(--turquoise);
+    cursor: pointer;
 }
 
-input[name="exclure"]{
+input[name="exclure[]"] {
     margin-left: 22px;
 }
 
@@ -120,5 +121,18 @@ input[name="exclure"]{
 .pages a.active {
     background-color: var(--noir);
 }
+
+
+.chargement-icon{
+    width: 18px;
+    vertical-align: middle;
+    
+    
+}
+
+td:nth-last-child(2) {
+    text-align: center;
+}
+
 
 

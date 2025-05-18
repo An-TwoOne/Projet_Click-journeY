@@ -3,37 +3,83 @@ document.addEventListener("DOMContentLoaded", pageChargee);
 function pageChargee() {
     const btnenregistrer = document.querySelector(".enregistrer");
     const formul = document.querySelector("form");
-
     const lignes = document.querySelectorAll("#contenu");
 
     
-    function attentemodif(checkbox) {
-        checkbox.disabled = true;
+    function attentemodif() {
         btnenregistrer.disabled = true;
-    
         setTimeout(function () {
-            checkbox.disabled = false;
             btnenregistrer.disabled = false;
         }, 1000); 
     }
 
     lignes.forEach(function (ligne) {
+
+
         const vipCheckbox = ligne.querySelector(".check_vip");
         const excluCheckbox = ligne.querySelector(".check_exclu");
+
+        function envoyerMAJ(checkbox, statut) {
+            const userId = checkbox.value;
+
+
+            const chargement = document.createElement("img");
+            chargement.src = "../contenu_css/chargement_anim.gif";
+            chargement.classList.add("chargement-icon");
+            
+
+            const parent = checkbox.parentNode;
+            checkbox.style.display = "none";
+            parent.appendChild(chargement);
+           
+            requestAnimationFrame(() => {
+            fetch("../maj_statut_utilisateur.php", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({ id: userId, statut: statut })
+            })
+            .then((res) => {
+                if (!res.ok) throw new Error("Erreur serveur");
+                return res.json();
+            })
+            .then((data) => {
+                console.log(data.message);
+            })
+            .catch((err) => {
+                alert("Erreur lors de la mise à jour");
+                console.error(err);
+            })
+            .finally(() => {
+                chargement.remove();             
+                checkbox.style.display = ""; 
+            });
+
+            });
+        }
 
         vipCheckbox.addEventListener("change", function () {
             if (vipCheckbox.checked) {
                 excluCheckbox.checked = false;
+                envoyerMAJ(vipCheckbox, "VIP");
+            }else {
+                envoyerMAJ(vipCheckbox, "null");
             }
-            attentemodif(vipCheckbox);
+            
+            attentemodif();
         });
 
         excluCheckbox.addEventListener("change", function () {
             if (excluCheckbox.checked) {
                 vipCheckbox.checked = false;
+                envoyerMAJ(excluCheckbox, "Exclu");
+            }else{
+                envoyerMAJ(excluCheckbox, "null");
             }
-            attentemodif(excluCheckbox);
+            attentemodif();
         });
+
     });
 
     formul.addEventListener("submit", function (even) {
@@ -48,6 +94,5 @@ function pageChargee() {
         }, 1500);
     });
 
-   
 
 }

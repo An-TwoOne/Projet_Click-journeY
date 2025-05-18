@@ -42,7 +42,7 @@ function pageChargee() {
                 if (longueur < 8) {
                     mdpCompteur.style.color = "red";
                 } else {
-                    mdpCompteur.style.color = "white";
+                    mdpCompteur.style.color = "var(--blanc)";
                 }
             } else if (mdpCompteur) {
                 mdpCompteur.remove();

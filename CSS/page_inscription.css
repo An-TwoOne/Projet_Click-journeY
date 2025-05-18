@@ -76,7 +76,7 @@ button:hover {
 }
 
 select {
-        background-color: #161616;
+        background-color: var(--fond-bis);
 }
 
 
@@ -104,6 +104,10 @@ select {
 #mdp-compteur{
         font-size: 12px;
         margin-left: -80%;
+}
+
+input{
+        color:var(--champ-formule);
 }
 
 

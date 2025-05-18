@@ -25,7 +25,7 @@ body {
 }
 
 .bloc h1{
-    color: var(--blanc);
+    color: #ffffff;
     text-align: center;
     font-family: var(--police);
     margin-top: 365px;
@@ -47,7 +47,7 @@ body {
     margin-right: 110px;
     font-family: var(--police);
     padding: 10px 0px 10px 30px;
-    color: var(--blanc);
+    color: #ffffff;
     font-size: var(--taille-police);
     line-height: 1.8;
     border-radius: 10px;
@@ -97,7 +97,7 @@ body {
 }
 
 #bloc2{
-    background-color:#141414;
+    background-color:var(--fond-bis);
     margin-top: -25px;
     padding-top: 120px;
     padding-bottom: 90px;
@@ -109,12 +109,12 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     margin: 50px 70px;
-    background-color: #141414;
+    background-color: var(--fond-bis);
 }
 
 .zone1 {
     background-color: var(--gris);
-    color: var(--blanc);
+    color: #ffffff;
     font-family: var(--police);
     font-size: var(--taille-police);
     padding: 25px;
