@@ -245,5 +245,31 @@
         "Admin": "Non",
         "UserName": null,
         "Statut": "VIP"
+    },
+    {
+        "Id": "150ad22e",
+        "Mail": "mallouch@gmail.com",
+        "Mdp": "$2y$10$TP\/tylXI9IM.w3AU0bqmHu\/9djW2gayYBsY7jzkS9Wm09MtmUBZ3C",
+        "Nom": "BIE",
+        "Prenom": "FRANCOISE",
+        "Age": "18",
+        "Pays": "France",
+        "Mobile": "7788989899",
+        "Admin": "Non",
+        "UserName": null,
+        "Statut": "Exclu"
+    },
+    {
+        "Id": "6ec6fdcf",
+        "Mail": "dodo@gmail.com",
+        "Mdp": "$2y$10$M1VOPTPkHF7.8gmf.CkMceX6aPU4VhBq78WQjijihpZM2eBz6g.4e",
+        "Nom": "Donald",
+        "Prenom": "Duck",
+        "Age": "22",
+        "Pays": "France",
+        "Mobile": "843434343434343484934",
+        "Admin": "Non",
+        "UserName": null,
+        "Statut": "Exclu"
     }
 ]

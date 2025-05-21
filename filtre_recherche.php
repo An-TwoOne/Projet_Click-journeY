@@ -1,6 +1,3 @@
-<?php
- session_start();
-?>
 
 
 <div id="filtres" class="filtres_conteneur">

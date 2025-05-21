@@ -1,5 +1,23 @@
 <?php
 session_start();
+
+ $json_donnees = file_get_contents('données_json/utilisateurs.json');
+ $utilisateurs = json_decode($json_donnees, true);
+
+foreach ($utilisateurs as $utilisateur) {
+        if ($utilisateur['Id'] === $_SESSION['Id']) {
+            if($utilisateur['Statut'] === "Exclu"){
+                
+                header("Location: page_connexion.php");
+                $_SESSION['message'] = "Votre compte a été bloqué";
+                session_destroy();
+                exit();
+        }
+        
+                   
+    }
+}
+
 ?>
 
 <div class="bandeau">
