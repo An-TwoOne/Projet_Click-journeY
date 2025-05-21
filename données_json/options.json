@@ -6,19 +6,19 @@
                     "hebergement": [
                         {
                             "option": "Megabuilding",
-                            "image": "images\/megabuilding.png",
+                            "image": "contenu_css/megabuilding.png",
                             "Prix": "250$",
                             "quantity": "3"
                         },
                         {
                             "option": "Hotel Holo",
-                            "image": "images\/megabuilding.png",
+                            "image": "contenu_css/hotel_holo.png",
                             "Prix": "150$",
                             "quantity": "1"
                         },
                         {
                             "option": "Capsule Futuriste autonome",
-                            "image": "images\/capsule.png",
+                            "image": "contenu_css/capsule.png",
                             "Prix": "100$",
                             "quantity": "1"
                         }
@@ -26,19 +26,19 @@
                     "restauration": [
                         {
                             "option": "Restaurant Hacker",
-                            "image": "images\/restaurant_hacker.png",
+                            "image": "contenu_css/restaurant_hacker.png",
                             "Prix": "200$",
                             "quantity": "2"
                         },
                         {
                             "option": "Bar Lumineux",
-                            "image": "images\/bar_lumineux.png",
+                            "image": "contenu_css/bar_lumineux.png",
                             "Prix": "175$",
                             "quantity": "1"
                         },
                         {
                             "option": "Repas Nano Synth\u00e9tis\u00e9",
-                            "image": "images\/Nano.png",
+                            "image": "contenu_css/Nano.png",
                             "Prix": "50$",
                             "quantity": "1"
                         }
@@ -46,19 +46,19 @@
                     "activites": [
                         {
                             "option": "Hackathon Spatial",
-                            "image": "images\/hackathon_spatial.png",
+                            "image": "contenu_css/Hackathon Spatial futuriste dans 100.png",
                             "Prix": "300$",
                             "quantity": "1"
                         },
                         {
                             "option": "Chasse \u00e0 la Prime intergalactique",
-                            "image": "images\/chasse_bounty.png",
+                            "image": "contenu_css/chasse_bounty.png",
                             "Prix": "400$",
                             "quantity": "1"
                         },
                         {
                             "option": "visite de l'arbre Monde",
-                            "image": "images\/r\u00e9alit\u00e9.png",
+                            "image": "contenu_css/AEBUSTE.png",
                             "Prix": "500$",
                             "quantity": "1"
                         }
@@ -66,19 +66,19 @@
                     "transport": [
                         {
                             "option": "Voiture autonome vol\u00e9e",
-                            "image": "images\/voiture_autonome.png",
+                            "image": "contenu_css/voiture_autonome.png",
                             "Prix": "100$",
                             "quantity": "1"
                         },
                         {
                             "option": "Moto Hover",
-                            "image": "images\/moto_hover.png",
+                            "image": "contenu_css/moto_hover.png",
                             "Prix": "150$",
                             "quantity": "1"
                         },
                         {
                             "option": "Drone-taxi",
-                            "image": "images\/Drone.png",
+                            "image": "contenu_css/Drone.png",
                             "Prix": "200$",
                             "quantity": "11"
                         }
@@ -90,13 +90,13 @@
                     "hebergement": [
                         {
                             "option": "Ch\u00e2teau m\u00e9di\u00e9val",
-                            "image": "images\/hotel.png",
+                            "image": "contenu_css/hotel.png",
                             "Prix": "300$",
                             "quantity": "1"
                         },
                         {
                             "option": "Auberge m\u00e9di\u00e9vale",
-                            "image": "images\/ver.png",
+                            "image": "contenu_css/ver.png",
                             "Prix": "150$",
                             "quantity": "1"
                         }
@@ -104,13 +104,13 @@
                     "restauration": [
                         {
                             "option": "Banquet m\u00e9di\u00e9val",
-                            "image": "images\/italie.png",
+                            "image": "contenu_css/italie.png",
                             "Prix": "200$",
                             "quantity": "1"
                         },
                         {
                             "option": "Taverne m\u00e9di\u00e9vale",
-                            "image": "images\/Plato.png",
+                            "image": "contenu_css/Plato.png",
                             "Prix": "175$",
                             "quantity": "1"
                         }
@@ -118,7 +118,7 @@
                     "activites": [
                         {
                             "option": "Tournoi de chevalerie",
-                            "image": "images\/sous.png",
+                            "image": "contenu_css/sous.png",
                             "Prix": "300$",
                             "quantity": "1"
                         }
@@ -129,8 +129,8 @@
                 {
                     "hebergement": [
                         {
-                            "option": "H\u00f4tel extraterrestre",
-                            "image": "images\/France.png",
+                            "option": "France le berger d'amour",
+                            "image": "contenu_css/France.png",
                             "Prix": "500$",
                             "quantity": "1"
                         }
@@ -138,13 +138,13 @@
                     "restauration": [
                         {
                             "option": "Cuisine extraterrestre",
-                            "image": "images\/fol.png",
+                            "image": "contenu_css/fol.png",
                             "Prix": "300$",
                             "quantity": "1"
                         },
                         {
                             "option": "Repas intergalactique",
-                            "image": "images\/imersif.png",
+                            "image": "contenu_css/imersif.png",
                             "Prix": "200$",
                             "quantity": "1"
                         }
@@ -152,7 +152,7 @@
                     "activites": [
                         {
                             "option": "Exploration de la plan\u00e8te",
-                            "image": "images\/eau.png",
+                            "image": "contenu_css/eau.png",
                             "Prix": "400$",
                             "quantity": "5"
                         }
@@ -168,19 +168,19 @@
                     "hebergement": [
                         {
                             "option": "Station Orbitale",
-                            "image": "images\/station_orbitale.png",
+                            "image": "contenu_css/station_orbitale.png",
                             "Prix": "500$",
                             "quantity": "1"
                         },
                         {
                             "option": "Vaisseau Spatial de Luxe",
-                            "image": "images\/vaisseau_spatial.png",
+                            "image": "contenu_css/vaisseau_spatial.png",
                             "Prix": "700$",
                             "quantity": "1"
                         },
                         {
                             "option": "Base Lunaire sur Mars",
-                            "image": "images\/base_mars.png",
+                            "image": "contenu_css/base_mars.png",
                             "Prix": "600$",
                             "quantity": "1"
                         }
@@ -188,19 +188,19 @@
                     "restauration": [
                         {
                             "option": "Restaurant 5 \u00e9toiles sur une plan\u00e8te lointaine",
-                            "image": "images\/restaurant_etoile.png",
+                            "image": "contenu_css/restaurant_etoile.png",
                             "Prix": "300$",
                             "quantity": "1"
                         },
                         {
                             "option": "Fast Food dans l'espace",
-                            "image": "images\/fast_food_spatial.png",
+                            "image": "contenu_css/fast_food_spatial.png",
                             "Prix": "50$",
                             "quantity": "1"
                         },
                         {
                             "option": "Self Catering Interstellaire",
-                            "image": "images\/self_catering_spatial.png",
+                            "image": "contenu_css/self_catering_spatial.png",
                             "Prix": "100$",
                             "quantity": "1"
                         }
@@ -208,19 +208,19 @@
                     "activites": [
                         {
                             "option": "Exploration d'Ast\u00e9ro\u00efdes",
-                            "image": "images\/exploration_asteroide.png",
+                            "image": "contenu_css/exploration_asteroide.png",
                             "Prix": "400$",
                             "quantity": "1"
                         },
                         {
                             "option": "Sport en Z\u00e9ro Gravit\u00e9",
-                            "image": "images\/sport_zero_gravite.png",
+                            "image": "contenu_css/sport_zero_gravite.png",
                             "Prix": "200$",
                             "quantity": "1"
                         },
                         {
                             "option": "Travers\u00e9e de l'hyperespace",
-                            "image": "images\/traverse_hyperespace.png",
+                            "image": "contenu_css/traverse_hyperespace.png",
                             "Prix": "500$",
                             "quantity": "1"
                         }
@@ -232,13 +232,13 @@
                     "hebergement": [
                         {
                             "option": "Colonies sur une Exoplan\u00e8te",
-                            "image": "images\/exoplanete.png",
+                            "image": "contenu_css/exoplanete.png",
                             "Prix": "700$",
                             "quantity": "1"
                         },
                         {
                             "option": "Base Souterraine sur Titan",
-                            "image": "images\/lune.png",
+                            "image": "contenu_css/lune.png",
                             "Prix": "600$",
                             "quantity": "1"
                         }
@@ -246,13 +246,13 @@
                     "restauration": [
                         {
                             "option": "Repas Synth\u00e9tiques \u00e0 la Starship",
-                            "image": "images\/espace.png",
+                            "image": "contenu_css/espace.png",
                             "Prix": "200$",
                             "quantity": "1"
                         },
                         {
                             "option": "D\u00eener dans un Restaurant Spatial Orbitant autour d'un Soleil Lointain",
-                            "image": "images\/blond.png",
+                            "image": "contenu_css/blond.png",
                             "Prix": "350$",
                             "quantity": "1"
                         }
@@ -260,13 +260,13 @@
                     "activites": [
                         {
                             "option": "Exploration des Canyons Extraterrestres",
-                            "image": "images\/marge.png",
+                            "image": "contenu_css/marge.png",
                             "Prix": "400$",
                             "quantity": "1"
                         },
                         {
                             "option": "Safari Extraterrestre sur une Plan\u00e8te Sauvage",
-                            "image": "images\/plante.png",
+                            "image": "contenu_css/plante.png",
                             "Prix": "500$",
                             "quantity": "1"
                         }
@@ -278,13 +278,13 @@
                     "hebergement": [
                         {
                             "option": "Station Orbitale \u00e0 la Fronti\u00e8re de l'Hyperspace",
-                            "image": "images\/station_orbitale_hyperespace.png",
+                            "image": "contenu_css/station_orbitale_hyperespace.png",
                             "Prix": "750$",
                             "quantity": "1"
                         },
                         {
                             "option": "Vaisseau Colonie en Voyage Interstellaire",
-                            "image": "images\/vaisseau_colonie.png",
+                            "image": "contenu_css/vaisseau_colonie.png",
                             "Prix": "800$",
                             "quantity": "1"
                         }
@@ -292,7 +292,7 @@
                     "restauration": [
                         {
                             "option": "Cuisine Intergalactique au C\u0153ur d'un Trou Noir",
-                            "image": "images\/cuisine_trou_noir.png",
+                            "image": "contenu_css/cuisine_trou_noir.png",
                             "Prix": "400$",
                             "quantity": "1"
                         }
@@ -300,13 +300,13 @@
                     "activites": [
                         {
                             "option": "Lancer dans un Trou de Ver",
-                            "image": "images\/lancer_trou_verb.png",
+                            "image": "contenu_css/lancer_trou_verb.png",
                             "Prix": "500$",
                             "quantity": "1"
                         },
                         {
                             "option": "visite du stade des gladiateurs intergalactiques",
-                            "image": "images\/stade.png",
+                            "image": "contenu_css/stade.png",
                             "Prix": "350$",
                             "quantity": "1"
                         }
@@ -322,13 +322,13 @@
                     "hebergement": [
                         {
                             "option": "Ch\u00e2teau m\u00e9di\u00e9val",
-                            "image": "images\/hotel.png",
+                            "image": "contenu_css/Un Château fortifié imaginaire du Moyen-Age, dans.png",
                             "Prix": "300$",
                             "quantity": "1"
                         },
                         {
-                            "option": "Auberge m\u00e9di\u00e9vale",
-                            "image": "images\/ver.png",
+                            "option": "Auberge fleurie entre les lignes du temps",
+                            "image": "contenu_css/fleurie.png",
                             "Prix": "150$",
                             "quantity": "1"
                         }
@@ -336,21 +336,21 @@
                     "restauration": [
                         {
                             "option": "Banquet m\u00e9di\u00e9val",
-                            "image": "images\/italie.png",
+                            "image": "contenu_css/Medieval banquet in the yard of a majestic castle….png",
                             "Prix": "200$",
                             "quantity": "1"
                         },
                         {
                             "option": "Taverne m\u00e9di\u00e9vale",
-                            "image": "images\/Plato.png",
+                            "image": "contenu_css/taverne du roi.png",
                             "Prix": "175$",
                             "quantity": "1"
                         }
                     ],
                     "activites": [
                         {
-                            "option": "visite du chateau",
-                            "image": "images\/sous.png",
+                            "option": "Quête du dragon source",
+                            "image": "contenu_css/dragonsource.png",
                             "Prix": "300$",
                             "quantity": "1"
                         }
@@ -362,13 +362,13 @@
                     "hebergement": [
                         {
                             "option": "Ch\u00e2teau m\u00e9di\u00e9val",
-                            "image": "images\/hotel.png",
+                            "image": "contenu_css/Un Château fortifié imaginaire du Moyen-Age, dans.png",
                             "Prix": "300$",
                             "quantity": "1"
                         },
                         {
-                            "option": "Auberge m\u00e9di\u00e9vale",
-                            "image": "images\/ver.png",
+                            "option": "Auberge m\u00e9di\u00e9vale ",
+                            "image": "contenu_css/Auberge médiévale.png",
                             "Prix": "150$",
                             "quantity": "1"
                         }
@@ -376,13 +376,13 @@
                     "restauration": [
                         {
                             "option": "Banquet au sommet du mont dragon",
-                            "image": "images\/italie.png",
+                            "image": "contenu_css/MONT.png",
                             "Prix": "200$",
                             "quantity": "1"
                         },
                         {
                             "option": "Taverne du roi arthur",
-                            "image": "images\/Plato.png",
+                            "image": "contenu_css/tarverne royale.png",
                             "Prix": "175$",
                             "quantity": "1"
                         }
@@ -390,7 +390,7 @@
                     "activites": [
                         {
                             "option": "bataille navale",
-                            "image": "images\/sous.png",
+                            "image": "contenu_css/bataille navale.png",
                             "Prix": "300$",
                             "quantity": "1"
                         }
@@ -402,7 +402,7 @@
                     "hebergement": [
                         {
                             "option": "Auberge m\u00e9di\u00e9vale",
-                            "image": "images\/France.png",
+                            "image": "contenu_css/Auberge médiévale.png",
                             "Prix": "5$",
                             "quantity": "1"
                         }
@@ -410,13 +410,13 @@
                     "restauration": [
                         {
                             "option": "Repas m\u00e9di\u00e9val",
-                            "image": "images\/fol.png",
+                            "image": "contenu_css/med.png",
                             "Prix": "300$",
                             "quantity": "1"
                         },
                         {
                             "option": "Repas du roi arthur",
-                            "image": "images\/imersif.png",
+                            "image": "contenu_css/Arthur.png",
                             "Prix": "200$",
                             "quantity": "1"
                         }
@@ -424,7 +424,7 @@
                     "activites": [
                         {
                             "option": "Exploration de la foret enchant\u00e9e",
-                            "image": "images\/eau.png",
+                            "image": "contenu_css/Green Aesthetic Forest Nature Video.png",
                             "Prix": "400$",
                             "quantity": "3"
                         }
@@ -432,5 +432,1240 @@
                 }
             ]
         }
+    ],
+     "Épopée Jurassique": [
+        {
+            "Etape1": [
+                {
+                    "hebergement": [
+                        {
+                            "option": "Cabane dans les arbres jurassiques",
+                            "image": "contenu_css/cabane_jurassique.png",
+                            "Prix": "300$",
+                            "quantity": "1"
+                        },
+                        {
+                            "option": "Tente renforcée anti-dinosaures",
+                            "image": "contenu_css/tente_jurassique.png",
+                            "Prix": "200$",
+                            "quantity": "2"
+                        }
+                    ],
+                    "restauration": [
+                        {
+                            "option": "Buffet préhistorique",
+                            "image": "contenu_css/buffet_prehistorique.png",
+                            "Prix": "250$",
+                            "quantity": "1"
+                        },
+                        {
+                            "option": "Barbecue géant de viandes exotiques",
+                            "image": "contenu_css/barbecue_jurassique.png",
+                            "Prix": "180$",
+                            "quantity": "1"
+                        }
+                    ],
+                    "activites": [
+                        {
+                            "option": "Safari dinosaures",
+                            "image": "contenu_css/safari_dino.png",
+                            "Prix": "400$",
+                            "quantity": "1"
+                        },
+                        {
+                            "option": "Fouilles paléontologiques",
+                            "image": "contenu_css/fouilles_paleo.png",
+                            "Prix": "250$",
+                            "quantity": "1"
+                        }
+                    ],
+                    "transport": [
+                        {
+                            "option": "Jeep tout-terrain renforcée",
+                            "image": "contenu_css/jeep_jurassique.png",
+                            "Prix": "300$",
+                            "quantity": "1"
+                        },
+                        {
+                            "option": "Pterodactyle apprivoisé",
+                            "image": "contenu_css/pterodactyle.png",
+                            "Prix": "450$",
+                            "quantity": "1"
+                        }
+                    ]
+                }
+            ],
+            "Etape2": [
+                {
+                    "hebergement": [
+                        {
+                            "option": "Hutte fortifiée de la vallée des T-Rex",
+                            "image": "contenu_css/hutte_trex.png",
+                            "Prix": "350$",
+                            "quantity": "1"
+                        }
+                    ],
+                    "restauration": [
+                        {
+                            "option": "Festin primitif",
+                            "image": "contenu_css/festin_primitif.png",
+                            "Prix": "280$",
+                            "quantity": "1"
+                        }
+                    ],
+                    "activites": [
+                        {
+                            "option": "Rencontre avec les herbivores",
+                            "image": "contenu_css/rencontre_herbivores.png",
+                            "Prix": "300$",
+                            "quantity": "1"
+                        }
+                    ]
+                }
+            ],
+            "Etape3": [
+                {
+                    "hebergement": [
+                        {
+                            "option": "Centre de recherche préhistorique",
+                            "image": "contenu_css/centre_recherche_dino.png",
+                            "Prix": "400$",
+                            "quantity": "1"
+                        }
+                    ],
+                    "restauration": [
+                        {
+                            "option": "Menu évolution des espèces",
+                            "image": "contenu_css/menu_evolution.png",
+                            "Prix": "350$",
+                            "quantity": "1"
+                        }
+                    ],
+                    "activites": [
+                        {
+                            "option": "Observation de l'extinction massive",
+                            "image": "contenu_css/extinction_massive.png",
+                            "Prix": "500$",
+                            "quantity": "1"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "\u00cele des pirates": [
+        {
+            "Etape1": [
+                {
+                    "hebergement": [
+                        {
+                            "option": "Cabine de navire pirate",
+                            "image": "contenu_css/cabine_pirate.png",
+                            "Prix": "250$",
+                            "quantity": "1"
+                        },
+                        {
+                            "option": "Taverne du port",
+                            "image": "contenu_css/taverne_port.png",
+                            "Prix": "180$",
+                            "quantity": "2"
+                        }
+                    ],
+                    "restauration": [
+                        {
+                            "option": "Banquet du capitaine",
+                            "image": "contenu_css/banquet_capitaine.png",
+                            "Prix": "220$",
+                            "quantity": "1"
+                        },
+                        {
+                            "option": "Rhum et biscuits de mer",
+                            "image": "contenu_css/rhum_biscuits.png",
+                            "Prix": "150$",
+                            "quantity": "1"
+                        }
+                    ],
+                    "activites": [
+                        {
+                            "option": "Chasse au trésor",
+                            "image": "contenu_css/chasse_tresor.png",
+                            "Prix": "300$",
+                            "quantity": "1"
+                        },
+                        {
+                            "option": "Combat à l'épée",
+                            "image": "contenu_css/combat_epee.png",
+                            "Prix": "250$",
+                            "quantity": "1"
+                        }
+                    ],
+                    "transport": [
+                        {
+                            "option": "Navire corsaire",
+                            "image": "contenu_css/navire_corsaire.png",
+                            "Prix": "400$",
+                            "quantity": "1"
+                        },
+                        {
+                            "option": "Chaloupe rapide",
+                            "image": "contenu_css/chaloupe.png",
+                            "Prix": "200$",
+                            "quantity": "1"
+                        }
+                    ]
+                }
+            ],
+            "Etape2": [
+                {
+                    "hebergement": [
+                        {
+                            "option": "Fort pirate abandonné",
+                            "image": "contenu_css/fort_pirate.png",
+                            "Prix": "280$",
+                            "quantity": "1"
+                        }
+                    ],
+                    "restauration": [
+                        {
+                            "option": "Festin des flibustiers",
+                            "image": "contenu_css/festin_flibustiers.png",
+                            "Prix": "240$",
+                            "quantity": "1"
+                        }
+                    ],
+                    "activites": [
+                        {
+                            "option": "Abordage de navire marchand",
+                            "image": "contenu_css/abordage_navire.png",
+                            "Prix": "350$",
+                            "quantity": "1"
+                        }
+                    ]
+                }
+            ],
+            "Etape3": [
+                {
+                    "hebergement": [
+                        {
+                            "option": "Île au trésor",
+                            "image": "contenu_css/ile_tresor.png",
+                            "Prix": "450$",
+                            "quantity": "1"
+                        }
+                    ],
+                    "restauration": [
+                        {
+                            "option": "Banquet de victoire",
+                            "image": "contenu_css/banquet_victoire.png",
+                            "Prix": "300$",
+                            "quantity": "1"
+                        }
+                    ],
+                    "activites": [
+                        {
+                            "option": "Découverte du trésor légendaire",
+                            "image": "contenu_css/tresor_legendaire.png",
+                            "Prix": "500$",
+                            "quantity": "1"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Expédition Far West": [
+        {
+            "Etape1": [
+                {
+                    "hebergement": [
+                        {
+                            "option": "Ranch de cow-boy",
+                            "image": "contenu_css/ranch_cowboy.png",
+                            "Prix": "280$",
+                            "quantity": "1"
+                        },
+                        {
+                            "option": "Tente de trappeur",
+                            "image": "contenu_css/tente_trappeur.png",
+                            "Prix": "200$",
+                            "quantity": "1"
+                        }
+                    ],
+                    "restauration": [
+                        {
+                            "option": "Barbecue texan",
+                            "image": "contenu_css/barbecue_texan.png",
+                            "Prix": "230$",
+                            "quantity": "1"
+                        },
+                        {
+                            "option": "Saloon authentique",
+                            "image": "contenu_css/saloon.png",
+                            "Prix": "180$",
+                            "quantity": "1"
+                        }
+                    ],
+                    "activites": [
+                        {
+                            "option": "Rodéo sauvage",
+                            "image": "contenu_css/rodeo.png",
+                            "Prix": "250$",
+                            "quantity": "1"
+                        },
+                        {
+                            "option": "Duel à midi",
+                            "image": "contenu_css/duel_midi.png",
+                            "Prix": "200$",
+                            "quantity": "1"
+                        }
+                    ],
+                    "transport": [
+                        {
+                            "option": "Cheval mustang",
+                            "image": "contenu_css/cheval_mustang.png",
+                            "Prix": "300$",
+                            "quantity": "1"
+                        },
+                        {
+                            "option": "Diligence",
+                            "image": "contenu_css/diligence.png",
+                            "Prix": "350$",
+                            "quantity": "1"
+                        }
+                    ]
+                }
+            ],
+            "Etape2": [
+                {
+                    "hebergement": [
+                        {
+                            "option": "Ville fantôme",
+                            "image": "contenu_css/ville_fantome.png",
+                            "Prix": "320$",
+                            "quantity": "1"
+                        }
+                    ],
+                    "restauration": [
+                        {
+                            "option": "Feu de camp des pionniers",
+                            "image": "contenu_css/feu_camp.png",
+                            "Prix": "200$",
+                            "quantity": "1"
+                        }
+                    ],
+                    "activites": [
+                        {
+                            "option": "Chasse aux bandits",
+                            "image": "contenu_css/chasse_bandits.png",
+                            "Prix": "380$",
+                            "quantity": "1"
+                        }
+                    ]
+                }
+            ],
+            "Etape3": [
+                {
+                    "hebergement": [
+                        {
+                            "option": "Fort militaire de la frontière",
+                            "image": "contenu_css/fort_militaire.png",
+                            "Prix": "350$",
+                            "quantity": "1"
+                        }
+                    ],
+                    "restauration": [
+                        {
+                            "option": "Festin du shérif",
+                            "image": "contenu_css/festin_sheriff.png",
+                            "Prix": "270$",
+                            "quantity": "1"
+                        }
+                    ],
+                    "activites": [
+                        {
+                            "option": "Ruée vers l'or",
+                            "image": "contenu_css/ruee_or.png",
+                            "Prix": "400$",
+                            "quantity": "1"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Gotham City": [
+        {
+            "Etape1": [
+                {
+                    "hebergement": [
+                        {
+                            "option": "Penthouse de luxe",
+                            "image": "contenu_css/penthouse_gotham.png",
+                            "Prix": "500$",
+                            "quantity": "1"
+                        },
+                        {
+                            "option": "Hôtel art déco",
+                            "image": "contenu_css/hotel_gotham.png",
+                            "Prix": "350$",
+                            "quantity": "1"
+                        }
+                    ],
+                    "restauration": [
+                        {
+                            "option": "Restaurant de haute société",
+                            "image": "contenu_css/restaurant_luxe.png",
+                            "Prix": "300$",
+                            "quantity": "1"
+                        },
+                        {
+                            "option": "Bar clandestin",
+                            "image": "contenu_css/bar_clandestin.png",
+                            "Prix": "200$",
+                            "quantity": "1"
+                        }
+                    ],
+                    "activites": [
+                        {
+                            "option": "Patrouille nocturne",
+                            "image": "contenu_css/patrouille_nocturne.png",
+                            "Prix": "400$",
+                            "quantity": "1"
+                        },
+                        {
+                            "option": "Enquête criminelle",
+                            "image": "contenu_css/enquete_criminelle.png",
+                            "Prix": "350$",
+                            "quantity": "1"
+                        }
+                    ],
+                    "transport": [
+                        {
+                            "option": "Véhicule blindé high-tech",
+                            "image": "contenu_css/vehicule_blinde.png",
+                            "Prix": "450$",
+                            "quantity": "1"
+                        },
+                        {
+                            "option": "Moto urbaine rapide",
+                            "image": "contenu_css/moto_urbaine.png",
+                            "Prix": "300$",
+                            "quantity": "1"
+                        }
+                    ]
+                }
+            ],
+            "Etape2": [
+                {
+                    "hebergement": [
+                        {
+                            "option": "Manoir gothique",
+                            "image": "contenu_css/manoir_gothique.png",
+                            "Prix": "600$",
+                            "quantity": "1"
+                        }
+                    ],
+                    "restauration": [
+                        {
+                            "option": "Dîner mystère",
+                            "image": "contenu_css/diner_mystere.png",
+                            "Prix": "350$",
+                            "quantity": "1"
+                        }
+                    ],
+                    "activites": [
+                        {
+                            "option": "Infiltration d'asile psychiatrique",
+                            "image": "contenu_css/asile_psychiatrique.png",
+                            "Prix": "450$",
+                            "quantity": "1"
+                        }
+                    ]
+                }
+            ],
+            "Etape3": [
+                {
+                    "hebergement": [
+                        {
+                            "option": "Cave secrète",
+                            "image": "contenu_css/cave_secrete.png",
+                            "Prix": "550$",
+                            "quantity": "1"
+                        }
+                    ],
+                    "restauration": [
+                        {
+                            "option": "Repas du justicier",
+                            "image": "contenu_css/repas_justicier.png",
+                            "Prix": "300$",
+                            "quantity": "1"
+                        }
+                    ],
+                    "activites": [
+                        {
+                            "option": "Démantèlement de réseau criminel",
+                            "image": "contenu_css/demantelement_reseau.png",
+                            "Prix": "500$",
+                            "quantity": "1"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Japon Féodal": [
+        {
+            "Etape1": [
+                {
+                    "hebergement": [
+                        {
+                            "option": "Temple bouddhiste",
+                            "image": "contenu_css/temple_bouddhiste.png",
+                            "Prix": "280$",
+                            "quantity": "1"
+                        },
+                        {
+                            "option": "Ryokan traditionnel",
+                            "image": "contenu_css/ryokan.png",
+                            "Prix": "350$",
+                            "quantity": "1"
+                        }
+                    ],
+                    "restauration": [
+                        {
+                            "option": "Banquet samouraï",
+                            "image": "contenu_css/banquet_samourai.png",
+                            "Prix": "300$",
+                            "quantity": "1"
+                        },
+                        {
+                            "option": "Repas de monastère zen",
+                            "image": "contenu_css/repas_zen.png",
+                            "Prix": "200$",
+                            "quantity": "1"
+                        }
+                    ],
+                    "activites": [
+                        {
+                            "option": "Entraînement au sabre",
+                            "image": "contenu_css/entrainement_sabre.png",
+                            "Prix": "400$",
+                            "quantity": "1"
+                        },
+                        {
+                            "option": "Cérémonie du thé",
+                            "image": "contenu_css/ceremonie_the.png",
+                            "Prix": "250$",
+                            "quantity": "1"
+                        }
+                    ],
+                    "transport": [
+                        {
+                            "option": "Cheval de guerre",
+                            "image": "contenu_css/cheval_guerre.png",
+                            "Prix": "320$",
+                            "quantity": "1"
+                        },
+                        {
+                            "option": "Palanquin royal",
+                            "image": "contenu_css/palanquin.png",
+                            "Prix": "380$",
+                            "quantity": "1"
+                        }
+                    ]
+                }
+            ],
+            "Etape2": [
+                {
+                    "hebergement": [
+                        {
+                            "option": "Château féodal livre enchanté ",
+                            "image": "contenu_css/chateau_feodal.png",
+                            "Prix": "450$",
+                            "quantity": "1"
+                        }
+                    ],
+                    "restauration": [
+                        {
+                            "option": "Festin du shogun",
+                            "image": "contenu_css/festin_shogun.png",
+                            "Prix": "380$",
+                            "quantity": "1"
+                        }
+                    ],
+                    "activites": [
+                        {
+                            "option": "Mission ninja",
+                            "image": "contenu_css/mission_ninja.png",
+                            "Prix": "420$",
+                            "quantity": "1"
+                        }
+                    ]
+                }
+            ],
+            "Etape3": [
+                {
+                    "hebergement": [
+                        {
+                            "option": "Village caché dans les montagnes",
+                            "image": "contenu_css/village_cache.png",
+                            "Prix": "350$",
+                            "quantity": "1"
+                        }
+                    ],
+                    "restauration": [
+                        {
+                            "option": "Cuisine de montagne",
+                            "image": "contenu_css/cuisine_montagne.png",
+                            "Prix": "250$",
+                            "quantity": "1"
+                        }
+                    ],
+                    "activites": [
+                        {
+                            "option": "Bataille finale",
+                            "image": "contenu_css/bataille_finale.png",
+                            "Prix": "500$",
+                            "quantity": "1"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Académie de Sorcellerie": [
+        {
+            "Etape1": [
+                {
+                    "hebergement": [
+                        {
+                            "option": "Dortoir des apprentis",
+                            "image": "contenu_css/dortoir_apprentis.png",
+                            "Prix": "300$",
+                            "quantity": "1"
+                        },
+                        {
+                            "option": "Tour de l'alchimiste",
+                            "image": "contenu_css/tour_alchimiste.png",
+                            "Prix": "400$",
+                            "quantity": "1"
+                        }
+                    ],
+                    "restauration": [
+                        {
+                            "option": "Grande salle des festins",
+                            "image": "contenu_css/grande_salle.png",
+                            "Prix": "280$",
+                            "quantity": "1"
+                        },
+                        {
+                            "option": "Cuisines magiques",
+                            "image": "contenu_css/cuisines_magiques.png",
+                            "Prix": "250$",
+                            "quantity": "1"
+                        }
+                    ],
+                    "activites": [
+                        {
+                            "option": "Cours de potions",
+                            "image": "contenu_css/cours_potions.png",
+                            "Prix": "350$",
+                            "quantity": "1"
+                        },
+                        {
+                            "option": "Duel de sortilèges",
+                            "image": "contenu_css/duel_sortileges.png",
+                            "Prix": "400$",
+                            "quantity": "1"
+                        }
+                    ],
+                    "transport": [
+                        {
+                            "option": "Balai volant",
+                            "image": "contenu_css/balai_volant.png",
+                            "Prix": "320$",
+                            "quantity": "1"
+                        },
+                        {
+                            "option": "Créature magique apprivoisée",
+                            "image": "contenu_css/creature_magique.png",
+                            "Prix": "450$",
+                            "quantity": "1"
+                        }
+                    ]
+                }
+            ],
+            "Etape2": [
+                {
+                    "hebergement": [
+                        {
+                            "option": "Chambre des secrets",
+                            "image": "contenu_css/chambre_secrets.png",
+                            "Prix": "500$",
+                            "quantity": "1"
+                        }
+                    ],
+                    "restauration": [
+                        {
+                            "option": "Banquet des enchanteurs",
+                            "image": "contenu_css/banquet_enchanteurs.png",
+                            "Prix": "350$",
+                            "quantity": "1"
+                        }
+                    ],
+                    "activites": [
+                        {
+                            "option": "Quête dans la forêt interdite",
+                            "image": "contenu_css/foret_interdite.png",
+                            "Prix": "420$",
+                            "quantity": "1"
+                        }
+                    ]
+                }
+            ],
+            "Etape3": [
+                {
+                    "hebergement": [
+                        {
+                            "option": "Sanctuaire des arcanes",
+                            "image": "contenu_css/sanctuaire_arcanes.png",
+                            "Prix": "550$",
+                            "quantity": "1"
+                        }
+                    ],
+                    "restauration": [
+                        {
+                            "option": "Festin d'adieu",
+                            "image": "contenu_css/festin_adieu.png",
+                            "Prix": "400$",
+                            "quantity": "1"
+                        }
+                    ],
+                    "activites": [
+                        {
+                            "option": "Affrontement contre le mage noir",
+                            "image": "contenu_css/affrontement_mage.png",
+                            "Prix": "600$",
+                            "quantity": "1"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Atlantide Engloutie": [
+        {
+            "Etape1": [
+                {
+                    "hebergement": [
+                        {
+                            "option": "Bulle sous-marine",
+                            "image": "contenu_css/bulle_sousmarine.png",
+                            "Prix": "350$",
+                            "quantity": "1"
+                        },
+                        {
+                            "option": "Palais de corail",
+                            "image": "contenu_css/palais_corail.png",
+                            "Prix": "450$",
+                            "quantity": "1"
+                        }
+                    ],
+                    "restauration": [
+                        {
+                            "option": "Festin des abysses",
+                            "image": "contenu_css/festin_abysses.png",
+                            "Prix": "300$",
+                            "quantity": "1"
+                        },
+                        {
+                            "option": "Cuisine moléculaire atlante",
+                            "image": "contenu_css/cuisine_atlante.png",
+                            "Prix": "280$",
+                            "quantity": "1"
+                        }
+                    ],
+                    "activites": [
+                        {
+                            "option": "Exploration de ruines englouties",
+                            "image": "contenu_css/ruines_englouties.png",
+                            "Prix": "380$",
+                            "quantity": "1"
+                        },
+                        {
+                            "option": "Plongée avec créatures abyssales",
+                            "image": "contenu_css/plongee_abyssale.png",
+                            "Prix": "420$",
+                            "quantity": "1"
+                        }
+                    ],
+                    "transport": [
+                        {
+                            "option": "Sous-marin personnel",
+                            "image": "contenu_css/sousmarin_personnel.png",
+                            "Prix": "400$",
+                            "quantity": "1"
+                        },
+                        {
+                            "option": "Monture marine",
+                            "image": "contenu_css/monture_marine.png",
+                            "Prix": "350$",
+                            "quantity": "1"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Pixel World": [
+        {
+            "Etape1": [
+                {
+                    "hebergement": [
+                        {
+                            "option": "Base cubique 8-bit",
+                            "image": "contenu_css/base_cubique.png",
+                            "Prix": "250$",
+                            "quantity": "1"
+                        },
+                        {
+                            "option": "Château pixelisé",
+                            "image": "contenu_css/chateau_pixel.png",
+                            "Prix": "350$",
+                            "quantity": "1"
+                        }
+                    ],
+                    "restauration": [
+                        {
+                            "option": "Restaurant power-up",
+                            "image": "contenu_css/restaurant_powerup.png",
+                            "Prix": "200$",
+                            "quantity": "1"
+                        },
+                        {
+                            "option": "Taverne de fin de niveau",
+                            "image": "contenu_css/taverne_pixel.png",
+                            "Prix": "180$",
+                            "quantity": "1"
+                        }
+                    ],
+                    "activites": [
+                        {
+                            "option": "Quête principale",
+                            "image": "contenu_css/quete_principale.png",
+                            "Prix": "300$",
+                            "quantity": "1"
+                        },
+                        {
+                            "option": "Mini-jeux arcade",
+                            "image": "contenu_css/minijeux_arcade.png",
+                            "Prix": "250$",
+                            "quantity": "1"
+                        }
+                    ],
+                    "transport": [
+                        {
+                            "option": "Monture pixelisée",
+                            "image": "contenu_css/monture_pixel.png",
+                            "Prix": "280$",
+                            "quantity": "1"
+                        },
+                        {
+                            "option": "Kart rétro",
+                            "image": "contenu_css/kart_retro.png",
+                            "Prix": "320$",
+                            "quantity": "1"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    
+    "Myst\u00e8res d'\u00c9gypte": [
+        {
+            "Etape1": [
+                {
+                    "hebergement": [
+                        {
+                            "option": "Hôtel au bord du Nil",
+                            "image": "contenu_css/hotel_nil.png",
+                            "Prix": "250€",
+                            "quantity": "3"
+                        },
+                        {
+                            "option": "Chambre dans pyramide reconstituée",
+                            "image": "contenu_css/pyramide_chambre.png",
+                            "Prix": "350€",
+                            "quantity": "1"
+                        }
+                    ],
+                    "restauration": [
+                        {
+                            "option": "Festin pharaonique",
+                            "image": "contenu_css/festin_pharaon.png",
+                            "Prix": "200€",
+                            "quantity": "1"
+                        },
+                        {
+                            "option": "Cuisine traditionnelle égyptienne",
+                            "image": "contenu_css/cuisine_egypte.png",
+                            "Prix": "150€",
+                            "quantity": "2"
+                        }
+                    ],
+                    "activites": [
+                        {
+                            "option": "Exploration des pyramides interdites",
+                            "image": "contenu_css/pyramides.png",
+                            "Prix": "300€",
+                            "quantity": "1"
+                        },
+                        {
+                            "option": "Rituel des pharaons",
+                            "image": "contenu_css/rituel_pharaon.png",
+                            "Prix": "400€", 
+                            "quantity": "1"
+                        }
+                    ],
+                    "transport": [
+                        {
+                            "option": "Bateau sur le Nil",
+                            "image": "contenu_css/bateau_nil.png",
+                            "Prix": "150€",
+                            "quantity": "2"
+                        },
+                        {
+                            "option": "Chameau royal",
+                            "image": "contenu_css/chameau.png",
+                            "Prix": "100€",
+                            "quantity": "1"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "L\u00e9gendes Nordiques": [
+        {
+            "Etape1": [
+                {
+                    "hebergement": [
+                        {
+                            "option": "Hutte viking",
+                            "image": "contenu_css/hutte_viking.png",
+                            "Prix": "300€",
+                            "quantity": "2"
+                        },
+                        {
+                            "option": "Auberge de Loki",
+                            "image": "contenu_css/auberge_loki.png",
+                            "Prix": "250€",
+                            "quantity": "1"
+                        }
+                    ],
+                    "restauration": [
+                        {
+                            "option": "Festin d'Odin",
+                            "image": "contenu_css/festin_odin.png",
+                            "Prix": "350€",
+                            "quantity": "1"
+                        },
+                        {
+                            "option": "Taverne des Vikings",
+                            "image": "contenu_css/taverne_viking.png",
+                            "Prix": "200€",
+                            "quantity": "2"
+                        }
+                    ],
+                    "activites": [
+                        {
+                            "option": "Préparation au Ragnarök",
+                            "image": "contenu_css/ragnarok.png",
+                            "Prix": "500€",
+                            "quantity": "1"
+                        },
+                        {
+                            "option": "Navigation sur drakkar",
+                            "image": "contenu_css/drakkar.png",
+                            "Prix": "400€",
+                            "quantity": "1"
+                        }
+                    ],
+                    "transport": [
+                        {
+                            "option": "Traîneau tiré par des loups",
+                            "image": "contenu_css/traineau_loups.png",
+                            "Prix": "300€",
+                            "quantity": "1"
+                        },
+                        {
+                            "option": "Drakkar royal",
+                            "image": "contenu_css/drakkar_royal.png",
+                            "Prix": "350€",
+                            "quantity": "1"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Terres Dévastées": [
+        {
+            "Etape1": [
+                {
+                    "hebergement": [
+                        {
+                            "option": "Abri fortifié",
+                            "image": "contenu_css/abri_fortifie.png",
+                            "Prix": "200€",
+                            "quantity": "2"
+                        },
+                        {
+                            "option": "Bunker souterrain",
+                            "image": "contenu_css/bunker.png",
+                            "Prix": "300€",
+                            "quantity": "1"
+                        }
+                    ],
+                    "restauration": [
+                        {
+                            "option": "Rations de survie",
+                            "image": "contenu_css/rations.png",
+                            "Prix": "100€",
+                            "quantity": "3"
+                        },
+                        {
+                            "option": "Festin de chasseur",
+                            "image": "contenu_css/festin_chasseur.png",
+                            "Prix": "250€",
+                            "quantity": "1"
+                        }
+                    ],
+                    "activites": [
+                        {
+                            "option": "Course-poursuite dans le désert",
+                            "image": "contenu_css/course_desert.png",
+                            "Prix": "350€",
+                            "quantity": "1"
+                        },
+                        {
+                            "option": "Défi des clans",
+                            "image": "contenu_css/defi_clans.png",
+                            "Prix": "400€",
+                            "quantity": "1"
+                        }
+                    ],
+                    "transport": [
+                        {
+                            "option": "Véhicule blindé",
+                            "image": "contenu_css/vehicule_blinde.png",
+                            "Prix": "300€",
+                            "quantity": "1"
+                        },
+                        {
+                            "option": "Moto customisée",
+                            "image": "contenu_css/moto_custom.png",
+                            "Prix": "200€",
+                            "quantity": "1"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Cit\u00e9 \u00e0 Vapeur": [
+        {
+            "Etape1": [
+                {
+                    "hebergement": [
+                        {
+                            "option": "Hôtel victorien",
+                            "image": "contenu_css/hotel_victorien.png",
+                            "Prix": "350€",
+                            "quantity": "2"
+                        },
+                        {
+                            "option": "Dirigeable-hôtel",
+                            "image": "contenu_css/dirigeable_hotel.png",
+                            "Prix": "450€",
+                            "quantity": "1"
+                        }
+                    ],
+                    "restauration": [
+                        {
+                            "option": "Salon de thé à vapeur",
+                            "image": "contenu_css/salon_the.png",
+                            "Prix": "150€",
+                            "quantity": "2"
+                        },
+                        {
+                            "option": "Taverne des inventeurs",
+                            "image": "contenu_css/taverne_inventeurs.png",
+                            "Prix": "200€",
+                            "quantity": "1"
+                        }
+                    ],
+                    "activites": [
+                        {
+                            "option": "Exploration urbaine en dirigeable",
+                            "image": "contenu_css/exploration_dirigeable.png",
+                            "Prix": "300€",
+                            "quantity": "1"
+                        },
+                        {
+                            "option": "Laboratoire d'inventions folles",
+                            "image": "contenu_css/laboratoire.png",
+                            "Prix": "350€",
+                            "quantity": "1"
+                        }
+                    ],
+                    "transport": [
+                        {
+                            "option": "Train à vapeur deluxe",
+                            "image": "contenu_css/train_vapeur.png",
+                            "Prix": "250€",
+                            "quantity": "1"
+                        },
+                        {
+                            "option": "Automobile à rouages",
+                            "image": "contenu_css/auto_rouages.png",
+                            "Prix": "200€",
+                            "quantity": "1"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Atlantide Perdu": [
+        {
+            "Etape1": [
+                {
+                    "hebergement": [
+                        {
+                            "option": "Palais sous-marin",
+                            "image": "contenu_css/palais_sousmarin.png",
+                            "Prix": "500€",
+                            "quantity": "1"
+                        },
+                        {
+                            "option": "Bulle de cristal",
+                            "image": "contenu_css/bulle_cristal.png",
+                            "Prix": "400€",
+                            "quantity": "2"
+                        }
+                    ],
+                    "restauration": [
+                        {
+                            "option": "Festin abyssal",
+                            "image": "contenu_css/festin_abyssal.png",
+                            "Prix": "300€",
+                            "quantity": "1"
+                        },
+                        {
+                            "option": "Délices des profondeurs",
+                            "image": "contenu_css/delices_profondeurs.png",
+                            "Prix": "250€",
+                            "quantity": "2"
+                        }
+                    ],
+                    "activites": [
+                        {
+                            "option": "Exploration des ruines sous-marines",
+                            "image": "contenu_css/ruines_sousmarines.png",
+                            "Prix": "350€",
+                            "quantity": "1"
+                        },
+                        {
+                            "option": "Rencontre avec créatures abyssales",
+                            "image": "contenu_css/creatures_abyssales.png",
+                            "Prix": "400€",
+                            "quantity": "1"
+                        }
+                    ],
+                    "transport": [
+                        {
+                            "option": "Sous-marin de cristal",
+                            "image": "contenu_css/sousmarin_cristal.png",
+                            "Prix": "350€",
+                            "quantity": "1"
+                        },
+                        {
+                            "option": "Créature marine apprivoisée",
+                            "image": "contenu_css/creature_marine.png",
+                            "Prix": "300€",
+                            "quantity": "1"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Odyssée Antique": [
+        {
+            "Etape1": [
+                {
+                    "hebergement": [
+                        {
+                            "option": "Villa grecque",
+                            "image": "contenu_css/villa_grecque.png",
+                            "Prix": "350€",
+                            "quantity": "2"
+                        },
+                        {
+                            "option": "Temple d'Athènes reconverti",
+                            "image": "contenu_css/temple_athenes.png",
+                            "Prix": "450€",
+                            "quantity": "1"
+                        }
+                    ],
+                    "restauration": [
+                        {
+                            "option": "Banquet des dieux",
+                            "image": "contenu_css/banquet_dieux.png",
+                            "Prix": "400€",
+                            "quantity": "1"
+                        },
+                        {
+                            "option": "Taverne des spartiates",
+                            "image": "contenu_css/taverne_spartiates.png",
+                            "Prix": "250€",
+                            "quantity": "2"
+                        }
+                    ],
+                    "activites": [
+                        {
+                            "option": "Entraînement avec les Spartiates",
+                            "image": "contenu_css/entrainement_spartiates.png",
+                            "Prix": "300€",
+                            "quantity": "1"
+                        },
+                        {
+                            "option": "Rencontre avec créatures mythologiques",
+                            "image": "contenu_css/creatures_mythologiques.png",
+                            "Prix": "450€",
+                            "quantity": "1"
+                        }
+                    ],
+                    "transport": [
+                        {
+                            "option": "Char tiré par des chevaux",
+                            "image": "contenu_css/char_chevaux.png",
+                            "Prix": "200€",
+                            "quantity": "1"
+                        },
+                        {
+                            "option": "Navire grec",
+                            "image": "contenu_css/navire_grec.png",
+                            "Prix": "300€",
+                            "quantity": "1"
+                        }
+                    ]
+                }
+            ]
+        }
     ]
+    
+    
 }

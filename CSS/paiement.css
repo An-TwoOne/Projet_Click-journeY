@@ -1,44 +1,55 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    background-color: var(--couleur-fond);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--police);
+    background-image: var(--topographique);
+    
+}
+
+.conteneur{
     color: #333;
     text-align: center;
-    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 160px;
+    background: rgb(240, 239, 239);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
 
-h1 {
-    font-size: 2.5rem;
-    color: #007BFF;
+
+.titre {
+    font-size: 2rem;
+    color:#000000;
+    margin-top:20px;
 }
 
-p {
-    font-size: 1.2rem;
-    margin: 20px 0;
+
+.redirection{
+    font-size:15px;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 20px auto;
-    text-align: left;
-    display: inline-block;
-}
-
-ul li {
-    font-size: 1rem;
-    margin: 5px 0;
-}
-
-a {
+.redirection_lien {
     display: inline-block;
     margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #007BFF;
+    padding: 5px 10px;
+    background-color: #3a898f;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
 }
 
-a:hover {
-    background-color: #0056b3;
+.redirection_lien:hover {
+    background-color: #47a7ad;
 }
+
+h2{
+    margin-top: 35px;
+}
+
+

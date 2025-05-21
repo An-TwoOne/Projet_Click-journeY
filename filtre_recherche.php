@@ -7,9 +7,6 @@
         <form id="filtre_recherche"  method="post">
             <h4 class="titre_filtres">Trouver votre voyage idéal</h4>
             <hr/>
-            <label for="date">Date:</label>
-            <input type="date" id="date" name="date" >
-
             <label for="duree">Durée du voyage:</label>
             <select id="duree" name="duree" >
                 <option value="un_jour">un jour</option>

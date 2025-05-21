@@ -93,10 +93,11 @@ function calculerPrixTotal($options) {
 </head>
 <body>
     <?php include('header.php') ?>
+    
 <div class="panier-container">
         <div class="panier-header">
             <h1>Votre Panier MultiversTrip</h1>
-            <span>👽 Voyages intergalactiques: <?php echo count($voyages_utilisateur); ?></span>
+            <span> 👽 : <?php echo count($voyages_utilisateur); ?> voyages</span>
         </div>
         
         <?php if (empty($voyages_utilisateur)): ?>
@@ -139,12 +140,12 @@ function calculerPrixTotal($options) {
                             <div class="voyage-title"><?php echo htmlspecialchars($voyage['Titre']); ?></div>
                             <div class="voyage-details">
                                 <div class="voyage-detail">
-                                    <span>Options:</span>
-                                    <span><?php echo $nb_options; ?> activités/services</span>
+                                    <span></span>
+                                    <span>Options:<span></span><?php echo $nb_options; ?> activités/services</span>
                                 </div>
                                 <div class="voyage-detail">
-                                    <span>Univers:</span>
-                                    <span>Multivers #<?php echo substr(md5($voyage['Titre']), 0, 6); ?></span>
+                                    <span></span>
+                                    <span>Univers:<span></span>Multivers #<?php echo substr(md5($voyage['Titre']), 0, 6); ?></span>
                                 </div>
                             </div>
                             <div class="voyage-price"><?php echo number_format($prix_total, 2); ?> $</div>
@@ -152,12 +153,12 @@ function calculerPrixTotal($options) {
                                 <form method="post" action="">
                                     <input type="hidden" name="action" value="voir_recap">
                                     <input type="hidden" name="voyage" value="<?php echo htmlspecialchars($voyage['Titre']); ?>">
-                                    <button type="submit" class="btn btn-primary"><span class="icon-cart">🛒</span> Détails</button>
+                                    <button type="submit" class="btn btn-primary"><img  class="icon_recap" src="contenu_css/liste_detail.png" alt="icon_liste"></a>Détails</button>
                                 </form>
                                 <form method="post" action="">
                                     <input type="hidden" name="action" value="supprimer">
                                     <input type="hidden" name="voyage" value="<?php echo htmlspecialchars($voyage['Titre']); ?>">
-                                    <button type="submit" class="btn btn-danger">🗑️</button>
+                                    <button type="submit" class="btn btn-danger"><img  class="icon_recap" src="contenu_css/croix_icon.png" alt="icon_supp"></a></button>
                                 </form>
                             </div>
                         </div>

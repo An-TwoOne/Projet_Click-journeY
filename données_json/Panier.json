@@ -380,48 +380,24 @@
         ]
     },
     {
-        "ID": "4744c1d0",
-        "Titre": "Monde futuriste",
+        "ID": "e4cb894c",
+        "Titre": "voyage intergalactique",
         "Specificit\u00e9 du voyage": [
-            {
-                "etape": "Etape3",
-                "type": "activites",
-                "name": "Exploration de la plan\u00e8te",
-                "price": "400",
-                "quantity": 3,
-                "image": "images\/eau.png"
-            },
-            {
-                "etape": "Etape1",
-                "type": "restauration",
-                "name": "Restaurant Hacker",
-                "price": "200",
-                "quantity": 1,
-                "image": "images\/restaurant_hacker.png"
-            },
-            {
-                "etape": "Etape2",
-                "type": "activites",
-                "name": "Tournoi de chevalerie",
-                "price": "300",
-                "quantity": 1,
-                "image": "images\/sous.png"
-            },
-            {
-                "etape": "Etape3",
-                "type": "restauration",
-                "name": "Repas intergalactique",
-                "price": "200",
-                "quantity": 1,
-                "image": "images\/imersif.png"
-            },
             {
                 "etape": "Etape1",
                 "type": "hebergement",
-                "name": "Hotel Holo",
-                "price": "150",
-                "quantity": 1,
-                "image": "images\/megabuilding.png"
+                "name": "Station Orbitale",
+                "price": "500",
+                "quantity": 4,
+                "image": "contenu_css\/station_orbitale.png"
+            },
+            {
+                "etape": "Etape1",
+                "type": "restauration",
+                "name": "Self Catering Interstellaire",
+                "price": "100",
+                "quantity": 3,
+                "image": "contenu_css\/self_catering_spatial.png"
             }
         ]
     }

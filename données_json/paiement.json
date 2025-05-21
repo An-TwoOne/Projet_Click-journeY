@@ -1,7 +1,7 @@
 [
     {
         "ID": "imo7b8d008j5gstqinpd5o2h1u",
-        "Titre": "Monde futuriste",
+        "Titre": "voyage m\u00e9di\u00e9val",
         "Identification transaction": "bvDy773TByTliYcem8Mb0TtX",
         "Paiement": "250",
         "Vendeur": "MEF-2_H",
@@ -43,5 +43,68 @@
         "Vendeur": "MEF-2_H",
         "Statut": "accepted",
         "Date": "2025-05-18 12:42:45"
+    },
+    {
+        "ID": "e4cb894c",
+        "Titre": "Monde futuriste",
+        "Identification transaction": "O8ub7XXoe9lJWktYQK",
+        "Paiement": "560025",
+        "Vendeur": "MEF-2_H",
+        "Statut": "accepted",
+        "Date": "2025-05-19 09:26:43"
+    },
+    {
+        "ID": "e4cb894c",
+        "Titre": "Monde futuriste",
+        "Identification transaction": "gawLzTqRNbOTAUdzHDFJdF",
+        "Paiement": "150",
+        "Vendeur": "MEF-2_H",
+        "Statut": "denied",
+        "Date": "2025-05-19 11:32:16"
+    },
+    {
+        "ID": "e4cb894c",
+        "Titre": "Monde futuriste",
+        "Identification transaction": "gawLzTqRNbOTAUdzHDFJdF",
+        "Paiement": "150",
+        "Vendeur": "MEF-2_H",
+        "Statut": "denied",
+        "Date": "2025-05-19 11:33:25"
+    },
+    {
+        "ID": "e4cb894c",
+        "Titre": "Monde futuriste",
+        "Identification transaction": "gawLzTqRNbOTAUdzHDFJdF",
+        "Paiement": "150",
+        "Vendeur": "MEF-2_H",
+        "Statut": "denied",
+        "Date": "2025-05-19 11:34:28"
+    },
+    {
+        "ID": "e4cb894c",
+        "Titre": "Monde futuriste",
+        "Identification transaction": "gawLzTqRNbOTAUdzHDFJdF",
+        "Paiement": "150",
+        "Vendeur": "MEF-2_H",
+        "Statut": "denied",
+        "Date": "2025-05-19 11:34:46"
+    },
+    {
+        "ID": "e4cb894c",
+        "Titre": "Monde futuriste",
+        "Identification transaction": "gawLzTqRNbOTAUdzHDFJdF",
+        "Paiement": "150",
+        "Vendeur": "MEF-2_H",
+        "Statut": "denied",
+        "Date": "2025-05-19 11:35:39"
+    },
+    {
+        "ID": "e4cb894c",
+        "Titre": "Monde futuriste",
+        "Identification transaction": "gawLzTqRNbOTAUdzHDFJdF",
+        "Paiement": "150",
+        "Vendeur": "MEF-2_H",
+        "Statut": "denied",
+        "Date": "2025-05-19 11:35:42"
     }
 ]

@@ -149,8 +149,8 @@ function genererOptions(conteneur, options, etapeKey, typeKey) {
         
         const img = document.createElement('img');
         img.src = option.image;
-        img.style.width = '50px';
-        img.style.height = 'auto';
+        img.style.width = '350px';
+        img.style.height = '200px';
         
         label.appendChild(img);
         label.appendChild(document.createTextNode(` ${optionName} - ${option.Prix}`));

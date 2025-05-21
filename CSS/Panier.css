@@ -1,19 +1,11 @@
 
-        :root {
-            --crunchyroll-orange: #F47521;
-            --crunchyroll-dark: #23252b;
-            --crunchyroll-gray: #2B2D35;
-            --crunchyroll-light-gray: #3A3C42;
-            --crunchyroll-text: #FFFFFF;
-            --crunchyroll-secondary-text: #DADADA;
-        }
-        
         body {
-            font-family: 'Roboto', sans-serif;
-            background-color: var(--crunchyroll-dark);
-            color: var(--crunchyroll-text);
+            font-family:var(--police);
+            background-color: var(--gris);
+            color: var(--blanc);
             margin: 0;
             padding: 0;
+            display: flex;
         }
         
         .panier-container {
@@ -26,29 +18,37 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            margin-top:95px;
             margin-bottom: 30px;
-            border-bottom: 2px solid var(--crunchyroll-orange);
-            padding-bottom: 15px;
+            border-bottom: 2px solid var(--turquoise);
+            padding-bottom: 5px;
         }
         
         .panier-header h1 {
-            color: var(--crunchyroll-orange);
+            color: #FFFFFF;
             margin: 0;
             font-size: 28px;
         }
         
+        .panier-header span{
+            color:#FFFFFF;
+        }
+
         .voyage-cards {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(1200px, 1fr));
             gap: 20px;
+            
+
         }
         
         .voyage-card {
-            background-color: var(--crunchyroll-gray);
+            background-color: var(--noir);
             border-radius: 8px;
             overflow: hidden;
             transition: transform 0.3s ease;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            
         }
         
         .voyage-card:hover {
@@ -57,7 +57,7 @@
         }
         
         .voyage-image {
-            height: 180px;
+            height: 130px;
             background-size: cover;
             background-position: center;
             position: relative;
@@ -67,7 +67,7 @@
             position: absolute;
             top: 0;
             right: 0;
-            background-color: var(--crunchyroll-orange);
+            background-color: var(--turquoise);
             color: white;
             padding: 5px 10px;
             font-size: 12px;
@@ -76,33 +76,36 @@
         }
         
         .voyage-info {
-            padding: 15px;
+            padding: 30px;
         }
         
         .voyage-title {
             font-size: 18px;
             font-weight: bold;
             margin-bottom: 10px;
-            color: var(--crunchyroll-text);
+            color: var(--blanc);
         }
         
         .voyage-details {
-            font-size: 14px;
-            color: var(--crunchyroll-secondary-text);
-            margin-bottom: 15px;
+            font-size: 10px;
+            color: var(--gris);
+            
+            
         }
         
         .voyage-detail {
             display: flex;
             justify-content: space-between;
             margin-bottom: 5px;
+            font-size: 10px;
         }
         
         .voyage-price {
             font-size: 20px;
             font-weight: bold;
-            color: var(--crunchyroll-orange);
-            margin-bottom: 15px;
+            color: var(--or);
+            margin-bottom: 25px;
+            margin-left: 30px;
         }
         
         .voyage-actions {
@@ -120,27 +123,32 @@
         }
         
         .btn-primary {
-            background-color: var(--crunchyroll-orange);
+            background-color: var(--turquoise);
             color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         
         .btn-primary:hover {
-            background-color: #e06718;
+            background-color: #01af9b;
         }
         
         .btn-danger {
-            background-color: #e74c3c;
+            background-color:  rgba(255, 0, 0, 0.863);
             color: white;
+            padding: 5px;
+            padding-right: 1px;
         }
         
         .btn-danger:hover {
-            background-color: #c0392b;
+            background-color: #a32213;
         }
         
         .empty-panier {
             text-align: center;
             padding: 50px 0;
-            color: var(--crunchyroll-secondary-text);
+            color: #FFFFFF;
         }
         
         .empty-panier h2 {
@@ -164,34 +172,14 @@
         }
         
         .panier-summary {
-            background-color: var(--crunchyroll-gray);
+            background-color: var(--gris);
             border-radius: 8px;
             padding: 20px;
             margin-top: 30px;
         }
         
-        .summary-header {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 15px;
-            padding-bottom: 10px;
-            border-bottom: 1px solid var(--crunchyroll-light-gray);
-        }
         
-        .summary-total {
-            display: flex;
-            justify-content: space-between;
-            font-size: 20px;
-            font-weight: bold;
-            margin-top: 15px;
-            padding-top: 15px;
-            border-top: 1px solid var(--crunchyroll-light-gray);
-        }
-        
-        .summary-total span:last-child {
-            color: var(--crunchyroll-orange);
-        }
-        
+    
         .btn-checkout {
             display: block;
             width: 100%;
@@ -206,4 +194,9 @@
             .voyage-cards {
                 grid-template-columns: 1fr;
             }
+        }
+
+        .icon_recap{
+            height: 25px;
+            margin-right: 5px;
         }

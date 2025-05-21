@@ -152,7 +152,7 @@
         "Pays": "France",
         "Mobile": "9909999099090",
         "Admin": "Non",
-        "UserName": "Picsou le richou",
+        "UserName": "Picsou gros richou",
         "Statut": "VIP"
     },
     {
@@ -206,5 +206,44 @@
         "Admin": "Non",
         "UserName": null,
         "Statut": null
+    },
+    {
+        "Id": "df722b70",
+        "Mail": "franckteufeur@cool.it",
+        "Mdp": "$2y$10$YyWywc3VdFQ2EYZYl.bSuewToWy2PalHlx4c9ZtATCBKFJsdnLhqC",
+        "Nom": "athleticW",
+        "Prenom": "francky",
+        "Age": "18",
+        "Pays": "Congo-Brazzaville",
+        "Mobile": "34456689708",
+        "Admin": "Non",
+        "UserName": "chocofrapino",
+        "Statut": "Exclu"
+    },
+    {
+        "Id": "b9160c26",
+        "Mail": "multivers@mail.en",
+        "Mdp": "$2y$10$21qyZxWRq0RLe9yHNnVfSe1dl.bTACuVqzobTSnSLJjQxWmWLwaaC",
+        "Nom": "testfinal",
+        "Prenom": "test",
+        "Age": "18",
+        "Pays": "Angleterre",
+        "Mobile": "59556452654789456",
+        "Admin": "Non",
+        "UserName": null,
+        "Statut": "Exclu"
+    },
+    {
+        "Id": "b7c080bd",
+        "Mail": "testage@gmail.com",
+        "Mdp": "$2y$10$Irb3.ZA.1qXUsr27M.RlBOVs1kEp4rYkMcFzQcPMoPllLgXZaZxHS",
+        "Nom": "test",
+        "Prenom": "testeur",
+        "Age": "19",
+        "Pays": "France",
+        "Mobile": "43435535343435455454544434345",
+        "Admin": "Non",
+        "UserName": null,
+        "Statut": "VIP"
     }
 ]

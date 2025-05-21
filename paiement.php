@@ -69,26 +69,35 @@ if (preg_match("/^[0-9a-zA-Z]{15}$/", $api_key)) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Récapitulatif du voyage et paiement</title>
+    <title>MultiversTrip Récapitulatif du voyage paiement</title>
+    <link rel="stylesheet" href="CSS/paiement.css">
+    <link rel = "stylesheet" type = "text/css" href = "CSS/header.css">
+    <link href="contenu_css/icon.png" rel="icon">
+    <link id="theme" rel="stylesheet" href="CSS/commun.css">
+    <script type='text/javascript' src="JS/theme_couleur.js"></script>
 </head>
 <body>
-    <h1>Récapitulatif du voyage</h1>
 
-    <p><strong>Titre du voyage :</strong> <?php echo htmlspecialchars($titre_voyage); ?></p>
-    <p><strong>Montant total :</strong> <?php echo htmlspecialchars($montant); ?> EUR</p>
+    <?php include('header.php') ?>
+    <div class="conteneur">
+        <h1 class="titre">Récapitulatif du voyage</h1>
 
-    <h2>Redirection vers CY Bank pour paiement</h2>
-    <form action="https://www.plateforme-smc.fr/cybank/index.php" method="POST">
-        <!-- Informations de la transaction -->
-        <input type="hidden" name="transaction" value="<?php echo htmlspecialchars($transaction); ?>">
-        <input type="hidden" name="montant" value="<?php echo htmlspecialchars($montant); ?>">
-        <input type="hidden" name="vendeur" value="<?php echo htmlspecialchars($vendeur); ?>">
-        <input type="hidden" name="retour" value="<?php echo htmlspecialchars($retour); ?>">
-        <input type="hidden" name="control" value="<?php echo htmlspecialchars($control); ?>">
+        <p><strong>Titre du voyage :</strong> <?php echo htmlspecialchars($titre_voyage); ?></p>
+        <p><strong>Montant total :</strong> <?php echo htmlspecialchars($montant); ?> EUR</p>
 
-        <button type="submit">Continuer vers le paiement sécurisé</button>
-    </form>
+        <h2>Redirection vers CY Bank pour paiement</h2>
+        <form action="https://www.plateforme-smc.fr/cybank/index.php" method="POST">
+            <!-- Informations de la transaction -->
+            <input type="hidden" name="transaction" value="<?php echo htmlspecialchars($transaction); ?>">
+            <input type="hidden" name="montant" value="<?php echo htmlspecialchars($montant); ?>">
+            <input type="hidden" name="vendeur" value="<?php echo htmlspecialchars($vendeur); ?>">
+            <input type="hidden" name="retour" value="<?php echo htmlspecialchars($retour); ?>">
+            <input type="hidden" name="control" value="<?php echo htmlspecialchars($control); ?>">
 
-    <p>Si la redirection n'a pas lieu automatiquement, <a href="https://www.plateforme-smc.fr/cybank/index.php">cliquez ici</a>.</p>
+        <button class="bouton" type="submit">Continuer vers le paiement sécurisé</button>
+        </form>
+
+        <p class="redirection">Si la redirection n'a pas lieu automatiquement, <a class="redirection_lien" href="https://www.plateforme-smc.fr/cybank/index.php">cliquez ici</a></p>
+    </div> 
 </body>
 </html>

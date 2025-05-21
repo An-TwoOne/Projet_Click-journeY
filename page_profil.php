@@ -14,6 +14,7 @@
         exit();
     }
 
+
     $si_Ajax = isset($_POST['ajax_request']) && $_POST['ajax_request'] === 'true';
     
 
@@ -112,6 +113,10 @@ if (!$si_Ajax) {?>
     <form method="post" >
         <div class="profile-container">
             <h1>Votre Profil</h1>
+               <div class="profile-nav">
+            <a href="page_profil.php" class="nav-tab active">Informations</a>
+            <a href="accept.php" class="nav-tab">Mes Voyages</a>
+        </div>
             <div class="profile-card">
                 <div class="banner">
                     <img src="contenu_css/banniere.png" alt="banniere" class="banner-img">

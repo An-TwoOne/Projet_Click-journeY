@@ -55,16 +55,34 @@ if (file_exists($file)) {
     file_put_contents($file, json_encode($current_data, JSON_PRETTY_PRINT));
 }
 
-// Traiter le statut du paiement
-if ($status === 'accepted') {
-    echo "<h1>Paiement accepté !</h1>";
-    echo "<p>Merci pour votre paiement. Votre transaction a été validée.</p>";
-    echo "<p>Transaction ID : " . htmlspecialchars($transaction) . "</p>";
-    echo "<p>Montant : " . htmlspecialchars($montant) . " €</p>";
-    echo "<a href='page_accueil.php'>Retour à l'accueil</a>";
-} else {
-    echo "<h1>Paiement refusé.</h1>";
-    echo "<p>Votre paiement n'a pas pu être validé. Veuillez réessayer.</p>";
-    echo "<a href='paiement.php'>Retour au paiement</a>";
-}
 ?>
+
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Retour Paiement </title>
+    <link rel="stylesheet" href="CSS/retour_paiement.css">
+   
+</head>
+<body>
+    <div class="conteneur"> 
+    <?php
+        if ($status === 'accepted') {
+            echo "<h1>Paiement accepté !</h1>";
+            echo "<p>Merci pour votre paiement. Votre transaction a été validée.</p>";
+            echo "<p>Transaction ID : " . htmlspecialchars($transaction) . "</p>";
+            echo "<p>Montant : " . htmlspecialchars($montant) . " €</p>";
+            echo "<a class='retour' href='page_accueil.php'>Retour à l'Accueil</a>";
+        } else {
+            echo "<h1>Paiement refusé.</h1>";
+            echo "<p>Votre paiement n'a pas pu être validé. Veuillez réessayer.</p>";
+            echo "<a class='retour' href='paiement.php'>Retour au Paiement</a>";
+        }
+    ?>
+    </div>
+    
+</body>
+</html>
