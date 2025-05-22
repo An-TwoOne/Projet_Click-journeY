@@ -13,13 +13,21 @@ function generateTransactionId() {
     return $transactionId;
 }
 
-// Vérifier si les données nécessaires sont passées
-if (!isset($_POST['voyage']) || !isset($_POST['montant'])) {
+// Vérifier les données - d'abord POST, puis session comme fallback
+$nom_voyage = null;
+$montant = null;
+
+if (isset($_POST['voyage']) && isset($_POST['montant'])) {
+    // Données venant du formulaire normal
+    $nom_voyage = htmlspecialchars($_POST['voyage']);
+    $montant = floatval($_POST['montant']);
+} elseif (isset($_SESSION['voyage_titre']) && isset($_SESSION['montant_paiement'])) {
+    // Données venant de la session (retour après paiement refusé)
+    $nom_voyage = htmlspecialchars($_SESSION['voyage_titre']);
+    $montant = floatval($_SESSION['montant_paiement']);
+} else {
     die("Erreur : données manquantes.");
 }
-
-$nom_voyage = htmlspecialchars($_POST['voyage']); // Nom du voyage
-$montant = floatval($_POST['montant']); // Prix total transmis depuis le récapitulatif
 
 // Charger les données du fichier JSON
 $file = 'données_json/paiement.json';
@@ -62,6 +70,9 @@ if (preg_match("/^[0-9a-zA-Z]{15}$/", $api_key)) {
 } else {
     die("Clé API invalide.");
 }
+
+// Stocker le voyage en session pour le retour
+$_SESSION['voyage'] = $nom_voyage;
 ?>
 
 <!DOCTYPE html>

@@ -14,8 +14,6 @@ function initialiserDonnees() {
             
             toutesOptions = data;
             
-     
-            analyserDependances();
             
            
             chargerSelectionsPrecedentes();
@@ -29,28 +27,8 @@ function initialiserDonnees() {
         });
 }
 
-function analyserDependances() {
-    
-    
-    const voyage = document.querySelector('form').getAttribute('data-voyage');
-    
-    if (!toutesOptions[voyage]) return;
-    
-    dependancesOptions = {
-        transport: {
-            
-            "Voiture autonome volée": {
-                hebergement: ["Megabuilding", "Hotel Holo"]
-            },
-            "Moto Hover": {
-                hebergement: ["Capsule Futuriste autonome"]
-            },
-            "Drone-taxi": {
-                hebergement: ["Megabuilding", "Hotel Holo", "Capsule Futuriste autonome"]
-            }
-        }
-    };
-}
+
+
 
 // Fonction pour charger les sélections précédentes depuis sessionStorage
 function chargerSelectionsPrecedentes() {
@@ -166,9 +144,6 @@ function genererOptions(conteneur, options, etapeKey, typeKey) {
         
         // Ajouter un écouteur d'événement pour le bouton radio
         radio.addEventListener('change', function() {
-            // Mettre à jour les options dépendantes
-            mettreAJourOptionsDependantes(etapeKey, typeKey, this.value);
-            
             // Activer le champ de quantité correspondant
             activerChampQuantite(etapeKey, typeKey, optionName);
             
@@ -251,41 +226,10 @@ function mettreAJourQuantite(etapeKey, typeKey, optionName, quantite) {
     }
 }
 
-// Fonction pour mettre à jour les options dépendantes
-function mettreAJourOptionsDependantes(etapeKey, typeKey, valeurSelectionnee) {
-    // Vérifier s'il existe des dépendances pour cette option
-    if (dependancesOptions[typeKey] && dependancesOptions[typeKey][valeurSelectionnee]) {
-        
-        // Pour chaque type dépendant
-        for (const typeDependant in dependancesOptions[typeKey][valeurSelectionnee]) {
-            const optionsDisponibles = dependancesOptions[typeKey][valeurSelectionnee][typeDependant];
+
+
             
-            // Trouver l'étape qui contient ce type
-            let etapeDependante = null;
-            const voyage = document.querySelector('form').getAttribute('data-voyage');
             
-            for (const etape in toutesOptions[voyage][0]) {
-                if (toutesOptions[voyage][0][etape][0][typeDependant]) {
-                    etapeDependante = etape;
-                    break;
-                }
-            }
-            
-            if (etapeDependante) {
-                // Filtrer les options selon les dépendances
-                const optionsFiltrees = toutesOptions[voyage][0][etapeDependante][0][typeDependant].filter(
-                    option => optionsDisponibles.includes(option.option)
-                );
-                
-                // Mettre à jour l'affichage des options
-                const conteneur = document.getElementById(`${etapeDependante}_${typeDependant}_container`);
-                if (conteneur) {
-                    genererOptions(conteneur, optionsFiltrees, etapeDependante, typeDependant);
-                }
-            }
-        }
-    }
-}
 
 // Fonction pour sauvegarder les sélections
 function sauvegarderSelection(etapeKey, typeKey, valeur) {

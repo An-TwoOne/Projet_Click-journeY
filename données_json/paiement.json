@@ -10,7 +10,7 @@
     },
     {
         "ID": "imo7b8d008j5gstqinpd5o2h1u",
-        "Titre": "Monde futuriste",
+        "Titre": "voyage intergalactique",
         "Identification transaction": "bvDy773TByTliYcem8Mb0TtX",
         "Paiement": "250",
         "Vendeur": "MEF-2_H",
@@ -19,7 +19,7 @@
     },
     {
         "ID": "4744c1d0",
-        "Titre": "Monde futuriste",
+        "Titre": "Japon F\u00e9odal",
         "Identification transaction": "DUjUEbuhBos6J78Ls5",
         "Paiement": "2250",
         "Vendeur": "MEF-2_H",
@@ -28,7 +28,7 @@
     },
     {
         "ID": "4744c1d0",
-        "Titre": "Monde futuriste",
+        "Titre": "Acad\u00e9mie de Sorcellerie",
         "Identification transaction": "DUjUEbuhBos6J78Ls5",
         "Paiement": "2250",
         "Vendeur": "MEF-2_H",
@@ -106,5 +106,68 @@
         "Vendeur": "MEF-2_H",
         "Statut": "denied",
         "Date": "2025-05-19 11:35:42"
+    },
+    {
+        "ID": "4744c1d0",
+        "Titre": "voyage intergalactique",
+        "Identification transaction": "jOrsMNppmHMkboN7",
+        "Paiement": "500",
+        "Vendeur": "MEF-2_H",
+        "Statut": "denied",
+        "Date": "2025-05-22 07:14:17"
+    },
+    {
+        "ID": "4744c1d0",
+        "Titre": "voyage intergalactique",
+        "Identification transaction": "jOrsMNppmHMkboN7",
+        "Paiement": "500",
+        "Vendeur": "MEF-2_H",
+        "Statut": "denied",
+        "Date": "2025-05-22 07:16:25"
+    },
+    {
+        "ID": "4744c1d0",
+        "Titre": "voyage intergalactique",
+        "Identification transaction": "nOQL5juEXos5k7letk",
+        "Paiement": "500",
+        "Vendeur": "MEF-2_H",
+        "Statut": "denied",
+        "Date": "2025-05-22 07:16:38"
+    },
+    {
+        "ID": "4744c1d0",
+        "Titre": "voyage intergalactique",
+        "Identification transaction": "fH31POsJFaPM",
+        "Paiement": "500",
+        "Vendeur": "MEF-2_H",
+        "Statut": "accepted",
+        "Date": "2025-05-22 07:16:47"
+    },
+    {
+        "ID": "4744c1d0",
+        "Titre": "Monde futuriste",
+        "Identification transaction": "gKFtbhyv4GMDhlu3",
+        "Paiement": "500",
+        "Vendeur": "MEF-2_H",
+        "Statut": "accepted",
+        "Date": "2025-05-22 07:17:03"
+    },
+    {
+        "ID": "4744c1d0",
+        "Titre": "voyage intergalactique",
+        "Identification transaction": "uPCtV1BbDl3TAzUtHyv",
+        "Paiement": "500",
+        "Vendeur": "MEF-2_H",
+        "Statut": "denied",
+        "Date": "2025-05-22 07:18:58"
+    },
+    {
+        "ID": "4744c1d0",
+        "Titre": "voyage intergalactique",
+        "Identification transaction": "uPCtV1BbDl3TAzUtHyv",
+        "Paiement": "500",
+        "Vendeur": "MEF-2_H",
+        "Statut": "denied",
+        "Date": "2025-05-22 07:19:21"
     }
 ]
